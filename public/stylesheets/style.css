@@ -4,6 +4,7 @@
   --dark-grey: rgba(65, 65, 65, 0.22);
   --dark-blue: #0a2440;
   --line: #dddddd;
+  --button-color: #c69c41;
 
   /* font */
   --font-Montserrat: "Montserrat", sans-serif;
@@ -86,13 +87,15 @@ li {
   position: fixed;
   line-height: 65px;
   text-align: center;
+  background: rgba(65, 65, 65, 0.22);
+  backdrop-filter: blur(12.5px);
 }
 
 .nav div.logo {
   float: left;
   width: auto;
   height: auto;
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 
 .nav div.logo a {
@@ -102,7 +105,7 @@ li {
 }
 
 .nav div.logo a:hover {
-  color: #00e676;
+  color: var(--button-color);
 }
 
 .nav div.main_list {
@@ -126,23 +129,29 @@ li {
   padding-right: 3rem;
 }
 
+.nav div.main_list ul li .active {
+  color: var(--button, #c69c41);
+}
+
 .nav div.main_list ul li a {
-  text-decoration: none;
-  color: #fff;
-  line-height: 65px;
-  font-size: 2.4rem;
+  color: white;
+  text-align: center;
+  font-family: var(--font-Montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.225px;
 }
 
 .nav div.main_list ul li a:hover {
-  color: #00e676;
+  color: var(--button-color);
 }
 
 /* Home section */
 
 .home {
   width: 100%;
-  height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
   background-position: center top;
   background-size: cover;
 }
@@ -171,7 +180,8 @@ li {
     display: block;
   }
   .nav div.logo {
-    margin-left: 15px;
+    margin-left: 0px;
+    padding-left: 15px;
   }
   .nav div.main_list {
     width: 100%;
@@ -200,7 +210,7 @@ li {
   .nav div.main_list ul li a {
     text-align: center;
     width: 100%;
-    font-size: 3rem;
+    font-size: 1rem;
     padding: 20px;
   }
   .nav div.media_button {
@@ -402,22 +412,8 @@ li {
 
 .affix {
   padding: 0;
-  background-color: #111;
+  background: rgba(65, 65, 65, 0.22);
+  backdrop-filter: blur(12.5px);
 }
 
-.myH2 {
-  text-align: center;
-  font-size: 4rem;
-}
-.myP {
-  text-align: justify;
-  padding-left: 15%;
-  padding-right: 15%;
-  font-size: 20px;
-}
-@media all and (max-width: 700px) {
-  .myP {
-    padding: 2%;
-  }
-}
 /***** End header navbar *****/
