@@ -1,0 +1,16 @@
+/***** small_header *****/
+@media (max-width: 576px) {
+  .small_header_itemTwo {
+    margin-right: 20px;
+  }
+  .bg-video-wrap {
+    display: none;
+  }
+  .section_home_destinations {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+  }
+}
+/***** End small_header *****/

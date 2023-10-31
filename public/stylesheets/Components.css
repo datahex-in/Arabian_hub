@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  /* color */
+  --dark-grey: rgba(65, 65, 65, 0.22);
+  --dark-blue: #0a2440;
+  --line: #dddddd;
+  --button: #c69c41;
+  --light-blue: #0a4b77;
+
+  /* font */
+  --font-Montserrat: "Montserrat", sans-serif;
+}
+
+.btn {
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  font-family: var(--font-Montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 6px;
+  line-height: normal;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: -0.225px;
+}
+.login_btn {
+  color: #eed66f;
+  border: 1px solid #eed66f;
+  background: transparent;
+}
+.login_btn:hover {
+  color: white;
+  background: var(--button, #c69c41);
+}
+
+.visit_btn {
+  color: #fff;
+  background: var(--button, #c69c41);
+  border: none;
+}
+
+.btn_search {
+  border-radius: 8px;
+  background: var(--light-blue);
+  color: white;
+  border: none;
+}
