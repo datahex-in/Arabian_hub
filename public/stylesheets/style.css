@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap");
 :root {
   /* color */
   --dark-grey: rgba(65, 65, 65, 0.22);
@@ -10,6 +10,7 @@
 
   /* font */
   --font-Montserrat: "Montserrat", sans-serif;
+  --font-playfair: "Playfair Display", serif;
 }
 * {
   margin: 0;
@@ -25,7 +26,9 @@ a {
 li {
   list-style: none;
 }
-
+.uppercase {
+  text-transform: uppercase;
+}
 /***** small header *****/
 .small_header {
   display: flex;
@@ -417,24 +420,39 @@ li {
 /***** End header navbar *****/
 
 /***** Section_home *****/
+.section_home_head {
+  position: relative;
+}
 .section_home {
   display: grid;
-  grid-template-columns: 650px auto;
+  grid-template-rows: minmax(100px, auto);
+  grid-template-columns: minmax(auto, 43%) 1fr;
+}
+.section_home_left {
+  position: relative;
 }
 .section_home_content {
-  width: 500px;
   position: absolute;
-  top: 200px;
+  top: 220px;
   left: 60px;
 }
 .section_title {
   padding: 5px 0px;
   color: var(--golden-h1, #eed66f);
-  font-family: Playfair Display;
+  font-family: var(--font-playfair);
   font-size: 46px;
   font-style: normal;
   font-weight: 400;
   line-height: 62px; /* 134.783% */
+}
+.section_title_large {
+  color: var(--golden-h1, #eed66f);
+  font-family: var(--font-playfair);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px; /* 115.625% */
+  letter-spacing: -0.96px;
 }
 .section_content {
   padding: 5px 0px;
@@ -446,39 +464,35 @@ li {
   line-height: 144.9%; /* 28.98px */
   letter-spacing: -0.3px;
 }
-.section_home_destinations {
+.section_home_data {
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 10px;
-  left: 60px;
-  top: 490px;
+  left: 0em;
+  top: 16em;
   z-index: 4;
-  width: 889px;
-  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   border-radius: 4px;
   padding: 10px;
   background: rgba(111, 111, 111, 0.13);
   backdrop-filter: blur(50px);
 }
-
 .form__group {
   position: relative;
-  padding: 20px 0 0;
-  width: 100%;
-  max-width: 200px;
+  padding: 10px 10px;
+  max-width: 250px;
 }
-
 .form__field {
   cursor: pointer;
-  font-family: inherit;
-  width: 100%;
+  color: #c2c2c2;
+  font-family: var(--font-Montserrat);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   border: none;
   border-bottom: 2px solid #9b9b9b;
   outline: 0;
-  font-size: 17px;
-  color: #fff;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -488,10 +502,9 @@ input[type="date"]:required:invalid::-webkit-datetime-edit {
 }
 input[type="date"]:focus::-webkit-datetime-edit {
   color: rgb(157, 157, 157) !important;
+  visibility: hidden;
 }
-.form__field::placeholder {
-  color: transparent;
-}
+
 .form__label {
   font-family: var(--font-Montserrat);
   font-size: 16px;
@@ -500,10 +513,10 @@ input[type="date"]:focus::-webkit-datetime-edit {
   line-height: normal;
   position: absolute;
   padding: 3px;
-  top: 20px;
+  top: 10px;
   display: block;
   transition: 0.2s;
-  font-size: 17px;
+  font-size: 16px;
   color: #9b9b9b;
   pointer-events: none;
 }
@@ -558,5 +571,87 @@ input[type="date"]:focus::-webkit-datetime-edit {
   background-size: 3px 3px;
   z-index: 2;
 }
-
 /***** End Section_home *****/
+
+/***** experience Section *****/
+.section_experience {
+  padding: 5em 4em;
+  width: 100%;
+}
+.section_row_one {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-rows: minmax(100px, auto);
+  grid-template-columns: 3fr 1fr 2fr; /* Adjust the fr values as needed */
+  gap: 10px;
+}
+.section_row_two {
+  padding-top: 2em;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.section_bar {
+  border: 1px solid var(--golden-h1);
+  width: 60px;
+  height: 3px;
+  background-color: var(--golden-h1);
+  margin-top: 30px;
+}
+.section_experience_one {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.section_experience_two {
+  position: relative;
+}
+.section_experience_three {
+  position: relative;
+}
+.section_experience_four {
+  position: relative;
+}
+.section_experience_five {
+  position: relative;
+}
+.section_experience_six {
+  position: relative;
+}
+.section_experience_img {
+  width: 100%;
+  height: 100%;
+}
+.section_experience_title {
+  width: 60px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: #fff;
+  font-family: var(--font-playfair);
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.8%; /* 53.152px */
+}
+.arrow-down-left {
+  position: absolute;
+  top: 10px;
+  width: 50px;
+  right: 10px;
+}
+.arrow-down-left-btm {
+  position: absolute;
+  top: 10px;
+  width: 50px;
+  right: 45px;
+}
+
+/***** End Section *****/
