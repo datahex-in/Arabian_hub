@@ -21,3 +21,6 @@ function closebar() {
     hihu.classList.add("animate__fadeOut");
   }
 }
+/*navbar-close*/
+
+// image slider
