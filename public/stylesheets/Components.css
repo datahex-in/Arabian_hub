@@ -25,25 +25,25 @@
   cursor: pointer;
   letter-spacing: -0.225px;
 }
-.login_btn {
-  color: #eed66f;
-  border: 1px solid #eed66f;
+.btn-white {
+  color: #eed66f !important;
+  border: 1px solid #eed66f !important;
   background: transparent;
 }
-.login_btn:hover {
+.btn-white:hover {
   color: white;
   background: var(--button, #c69c41);
 }
 
-.visit_btn {
-  color: #fff;
-  background: var(--button, #c69c41);
-  border: none;
+.btn-yellow {
+  color: #fff !important;
+  background: var(--button, #c69c41) !important;
+  border: none !important;
 }
 
-.btn_search {
+.btn-blue {
   border-radius: 8px;
-  background: var(--light-blue);
-  color: white;
+  background: var(--light-blue) !important;
+  color: white !important;
   border: none;
 }
