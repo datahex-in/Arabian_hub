@@ -227,7 +227,6 @@
   }
   .slider {
     margin: 20px;
-    width: 70%;
     overflow: hidden;
   }
 
@@ -250,7 +249,7 @@
   .slider__buttons {
     position: absolute;
     bottom: 245px;
-    left: 70px;
+    left: 120px;
     margin-top: 1rem;
   }
 
