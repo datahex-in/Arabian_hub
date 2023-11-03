@@ -6,6 +6,7 @@
   --line: #dddddd;
   --button: #c69c41;
   --light-blue: #0a4b77;
+  --Golden-gradient: #f2edcf;
 
   /* font */
   --font-Montserrat: "Montserrat", sans-serif;
@@ -46,4 +47,13 @@
   background: var(--light-blue) !important;
   color: white !important;
   border: none;
+}
+.btn-yellow-gradient {
+  border-radius: 4px;
+  border: 1px solid var(--Golden-gradient, #dd9a0a) !important ;
+  color: white !important;
+  font-size: 12px !important;
+}
+.current-btn {
+  background-color: var(--button, #c69c41) !important;
 }
