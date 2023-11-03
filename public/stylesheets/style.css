@@ -667,3 +667,15 @@ input[type="date"]:focus::-webkit-datetime-edit {
   height: 712px;
   padding: 20px;
 }
+.similar_package {
+  background-color: var(y);
+}
+.section_mini_title {
+  color: var(--h1-colour, #fff9d9);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
