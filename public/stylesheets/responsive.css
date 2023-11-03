@@ -33,7 +33,7 @@
     letter-spacing: -0.96px;
   }
   .section_content {
-    width: auto;
+    width: 300px;
     padding: 10px 0px;
     font-size: 13px;
     line-height: 140.9%; /* 28.98px */
@@ -214,12 +214,17 @@
     grid-template-rows: auto;
     grid-gap: 3.5em;
   }
-  .section_desitnation_right {
+  .section_destination_right {
     margin: auto;
-    width: 80%;
+    width: 100%;
+  }
+  .section_destination_left {
+    width: 400px;
+    padding-top: 0em;
   }
   .slider {
-    width: 100%;
+    margin: 20px;
+    width: 70%;
     overflow: hidden;
   }
 
@@ -240,24 +245,23 @@
 
   /* Additional styling for buttons (adjust as needed) */
   .slider__buttons {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-    padding: 10px;
+    position: absolute;
+    bottom: 245px;
+    left: 70px;
+    margin-top: 1rem;
   }
 
   .slider__button {
     padding: 10px 20px;
-    background: #333;
     color: #fff;
     border: none;
+    background: none;
     cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
   }
 
   .slider__button[disabled] {
-    background: #ccc;
     cursor: not-allowed;
   }
 }
