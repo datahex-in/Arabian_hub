@@ -34,6 +34,9 @@ li {
 .uppercase {
   text-transform: uppercase;
 }
+.capitilize {
+  text-transform: capitalize;
+}
 /***** small header *****/
 .small_header {
   display: flex;
@@ -839,3 +842,25 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 
 /***** End Destination Section *****/
+
+/* tours sections___________- */
+.tour_section_header {
+  padding: 140px 0px;
+}
+.desert_safari img {
+  width: 587px;
+  height: 712px;
+  padding: 20px;
+}
+.similar_package {
+  background-color: var(y);
+}
+.section_mini_title {
+  color: var(--h1-colour, #fff9d9);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}

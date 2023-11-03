@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arabian Hub</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
@@ -155,11 +156,11 @@
           <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left-up">
         </div>
       </div>
-      <div class="section_experience_three section_position"><img src="/images/experience img/sand tours.png"
-          alt="loading" class="section_experience_img">
+      <div class="section_experience_three section_position">
+        <img src="/images/experience img/sand tours.png" alt="loading" class="section_experience_img">
         <div class="section_experience_items">
           <h3 class="section_experience_title">Sand Tours</h3>
-          <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left-up">
+          <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
         </div>
       </div>
     </div>
@@ -200,7 +201,8 @@
             <span class="section_head_title">About</span>
           </div>
           <div class="section_title">What sets us apart?</div>
-          <p class="section_content">At Arabian Hub, we are your passport to unforgettable journeys and cherished
+          <p class="section_content section_content_left">At Arabian Hub, we are your passport to unforgettable journeys
+            and cherished
             memories. As a premier travel
             agency based in the heart of the United Arab Emirates, we specialize in curating exceptional trip packages
             to
@@ -247,7 +249,8 @@
             <span class="section_head_title">mesmerising places for you</span>
           </div>
           <div class="section_title">Destinations</div>
-          <p class="section_content">At Arabian Hub, we are your passport to unforgettable journeys and cherished
+          <p class="section_content section_content_left">At Arabian Hub, we are your passport to unforgettable
+            journeys and cherished
             memories. As a premier travel agency based in the heart of the United Arab Emirates, we specialize in
             curating exceptional trip packages to some..</p>
         </div>
@@ -301,50 +304,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="/javascripts/Navbar.js"></script>
   <script src="/javascripts/main.js"></script>
-  <script>
-    const slider = document.querySelector("[data-slider]");
-
-    const track = slider.querySelector("[data-slider-track]");
-    const prev = slider.querySelector("[data-slider-prev]");
-    const next = slider.querySelector("[data-slider-next]");
-
-    if (track) {
-      prev.addEventListener("click", () => {
-        next.removeAttribute("disabled");
-
-        track.scrollTo({
-          left: track.scrollLeft - track.firstElementChild.offsetWidth,
-          behavior: "smooth"
-        });
-      });
-
-      next.addEventListener("click", () => {
-        prev.removeAttribute("disabled");
-
-        track.scrollTo({
-          left: track.scrollLeft + track.firstElementChild.offsetWidth,
-          behavior: "smooth"
-        });
-      });
-
-      track.addEventListener("scroll", () => {
-        const trackScrollWidth = track.scrollWidth;
-        const trackOuterWidth = track.clientWidth;
-
-        prev.removeAttribute("disabled");
-        next.removeAttribute("disabled");
-
-        if (track.scrollLeft <= 0) {
-          prev.setAttribute("disabled", "");
-        }
-
-        if (track.scrollLeft === trackScrollWidth - trackOuterWidth) {
-          next.setAttribute("disabled", "");
-        }
-      });
-    }
-
-  </script>
 </body>
 
 </html>

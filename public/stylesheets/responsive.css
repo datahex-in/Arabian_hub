@@ -32,8 +32,15 @@
     line-height: 30px; /* 115.625% */
     letter-spacing: -0.96px;
   }
+  .section_home_content > .section_content {
+    width: auto;
+    padding: 10px 0px;
+    font-size: 13px;
+    line-height: 140.9%; /* 28.98px */
+    letter-spacing: -0.3px;
+  }
   .section_content {
-    width: 300px;
+    width: 80vw;
     padding: 10px 0px;
     font-size: 13px;
     line-height: 140.9%; /* 28.98px */
@@ -174,10 +181,6 @@
     grid-gap: 0.5em;
     justify-content: space-around;
     padding-top: 30px;
-  }
-  .section_about_left .section_content {
-    text-align: left;
-    width: 300px;
   }
   .section_about_right {
     margin-top: 20px;

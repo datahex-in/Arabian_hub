@@ -28,7 +28,7 @@
 .btn-white {
   color: #eed66f !important;
   border: 1px solid #eed66f !important;
-  background: transparent;
+  background: transparent !important;
 }
 .btn-white:hover {
   color: white;
