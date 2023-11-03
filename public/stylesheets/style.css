@@ -29,6 +29,9 @@ li {
 .uppercase {
   text-transform: uppercase;
 }
+.capitilize {
+  text-transform: capitalize;
+}
 /***** small header *****/
 .small_header {
   display: flex;
@@ -654,4 +657,13 @@ input[type="date"]:focus::-webkit-datetime-edit {
   right: 45px;
 }
 
-/***** End Section *****/
+/* **** End Section **** */
+/* tours sections___________- */
+.tour_section_header {
+  padding: 140px 0px;
+}
+.desert_safari img {
+  width: 587px;
+  height: 712px;
+  padding: 20px;
+}
