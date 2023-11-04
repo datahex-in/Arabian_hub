@@ -70,12 +70,13 @@ if (track) {
 /*image slider end*/
 
 /*packagecards*/
-
 (function ($) {
   "use strict";
 
   var carousels = function () {
-    $(".owl-carousel1").owlCarousel({
+    var owl = $(".owl-carousel1");
+
+    owl.owlCarousel({
       loop: true,
       center: true,
       margin: 0,
@@ -88,7 +89,7 @@ if (track) {
         },
         680: {
           items: 2,
-          nav: false,
+          nav: true,
           loop: false,
         },
         1000: {
@@ -96,6 +97,16 @@ if (track) {
           nav: true,
         },
       },
+    });
+
+    // Next button
+    $("#nextButton").click(function () {
+      owl.trigger("next.owl.carousel");
+    });
+
+    // Previous button
+    $("#prevButton").click(function () {
+      owl.trigger("prev.owl.carousel");
     });
   };
 

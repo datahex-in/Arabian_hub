@@ -49,11 +49,20 @@
   border: none;
 }
 .btn-yellow-gradient {
+  position: relative;
   border-radius: 4px;
   border: 1px solid var(--Golden-gradient, #dd9a0a) !important ;
   color: white !important;
   font-size: 12px !important;
 }
-.current-btn {
+
+.btn-yellow-gradient::after {
+  content: url("/images/packages img/arrow-down.png");
+  position: absolute;
+  top: 37px;
+  left: 60px;
+}
+
+.btn-yellow-gradient:hover {
   background-color: var(--button, #c69c41) !important;
 }
