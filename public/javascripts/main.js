@@ -114,3 +114,20 @@ if (track) {
     carousels();
   });
 })(jQuery);
+
+// faq_section
+$(document).ready(function () {
+  $(".section-at-title").click(function () {
+    $(this)
+      .toggleClass("active")
+      .next(".at-tab")
+      .slideToggle()
+      .parent()
+      .siblings()
+      .find(".at-tab")
+      .slideUp()
+      .prev()
+      .removeClass("active");
+  });
+});
+// faq_end_section
