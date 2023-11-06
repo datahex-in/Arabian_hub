@@ -22,6 +22,15 @@
     top: 140px;
     left: 0px;
   }
+  .section_head_title {
+    color: var(--desc-colour, #d9d9d9);
+    font-family: var(--font-Montserrat);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
   .section_title {
     padding: 0px 0px;
     font-size: 16px;
@@ -149,7 +158,7 @@
     line-height: 120.8%; /* 53.152px */
   }
   .section_experience_img {
-    width: 100%;
+    width: 95%;
     object-fit: cover;
     height: 120px;
     position: relative;
@@ -158,7 +167,7 @@
     position: absolute;
     top: 10px;
     width: 20px;
-    right: 10px;
+    right: 40px;
     z-index: 1;
   }
   .arrow-down-left {
