@@ -1300,7 +1300,9 @@ input::selection {
 .footer_bottom_items {
   margin-top: 10em;
 }
-
+.footer-col {
+  margin-bottom: 20px;
+}
 .footer-col h4 {
   font-size: 18px;
   color: #fff;
@@ -1311,7 +1313,7 @@ input::selection {
   left: 30px;
 }
 .footer_content {
-  margin-top: 20px;
+  padding-top: 30px;
   color: var(--desc-colour, #d9d9d9);
   font-family: var(--font-plus-jakarta);
   font-size: 17.28px;
