@@ -49,7 +49,7 @@
     letter-spacing: -0.3px;
   }
   .section_content {
-    width: 80vw;
+    width: auto;
     padding: 10px 0px;
     font-size: 13px;
     line-height: 140.9%; /* 28.98px */
@@ -158,7 +158,7 @@
     line-height: 120.8%; /* 53.152px */
   }
   .section_experience_img {
-    width: 95%;
+    width: 100%;
     object-fit: cover;
     height: 120px;
     position: relative;
@@ -227,7 +227,7 @@
     grid-gap: 3.5em;
   }
   .section_destination_left {
-    width: 400px;
+    width: auto;
     padding-top: 0em;
   }
   .slider {
@@ -253,7 +253,7 @@
   /* Additional styling for buttons (adjust as needed) */
   .slider__buttons {
     position: absolute;
-    bottom: 365px;
+    top: 220px;
     left: 58px;
     margin-top: 1rem;
   }
@@ -325,13 +325,13 @@
   }
   .section_travel_items {
     position: absolute;
-    top: 45px !important;
+    top: 40px !important;
     left: 45px;
     z-index: 1;
     top: 0px;
   }
   .section_travel_content {
-    width: 60vw;
+    width: 50vw;
     color: #fff4bd;
     font-family: var(--font-Montserrat);
     font-size: 12px;
@@ -340,7 +340,7 @@
     line-height: inherit; /* 146.875% */
   }
   .section_travel_title {
-    width: auto;
+    width: 50vw;
     color: var(--golden-h1, #eed66f);
     font-family: var(--font-playfair);
     font-size: 14px;
@@ -407,6 +407,10 @@
     font-weight: 500;
     position: relative;
     left: 0px;
+  }
+  .footer-col ol,
+  ul {
+    padding-left: 0em !important;
   }
 }
 /***** End footer *****/

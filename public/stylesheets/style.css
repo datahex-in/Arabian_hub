@@ -1051,7 +1051,12 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .owl-carousel button.owl-dot {
   outline: 0;
 }
-
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  height: 640px;
+  -webkit-transform: translate3d(0, 0, 0);
+}
 /***** Activity_Section *****/
 .section_activity {
   position: relative;
@@ -1344,7 +1349,10 @@ input::selection {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
+.footer-col ol,
+ul {
+  padding-left: 2em !important;
+}
 .footer-col ul li a:hover {
   color: #fff;
   padding-left: 7px;
