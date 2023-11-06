@@ -848,7 +848,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 /* tours sections___________- */
 .tour_section_header {
-  padding: 140px 0px;
+  padding: 140px 50px;
 }
 .desert_safari img {
   width: 587px;
@@ -1008,4 +1008,13 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .owl-carousel button.owl-dot {
   outline: 0;
+}
+/* package_details */
+.package_time {
+  color: var(--Desc-colour, #d9d9d9);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

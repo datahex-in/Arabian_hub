@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arabian Hub</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/responsive.css">
-    <link rel="stylesheet" href="/stylesheets/components.css">
-
+    <link rel="stylesheet" href="/stylesheets/Components.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -76,13 +76,13 @@
                 </div>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Packages</a></li>
-                        <li><a href="#">Destinations</a></li>
-                        <li><a href="#">Activities</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><Button class=" btn login_btn">Log in</Button></li>
-                        <li><Button class=" btn visit_btn">Book Visit</Button></li>
+                        <li><a href="/" class="active">Home</a></li>
+                        <li><a href="/packages">Packages</a></li>
+                        <li><a href="/destinations">Destinations</a></li>
+                        <li><a href="/activities">Activities</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><button type="button" class="btn btn-white">Log in</button></li>
+                        <li><button type="button" class="btn btn-yellow">Book Visit</button></li>
                     </ul>
                 </div>
                 <span class="navTrigger">
@@ -95,11 +95,6 @@
     </header>
     <!-- ========== End navbar ========== -->
 
-    <!-- ========== Start home section ========== -->
-
-    <!-- ========== End home section ========== -->
-
-    <!-- ========== Start Experience Section ========== -->
     <div class=" section_sand">
         <div class="section_row_one" style="background-image: url('/images/sandtours/sand.svg');">
             <div class="section_experience_one">
@@ -109,11 +104,11 @@
                 <div class="tour_section_header">
 
                     <h1 class="section_title capitilize ">
-                        sand tours
+                        Sand Tours
                     </h1>
                     <p class="section_content" style="width: 700px;">Discover your next adventure, where every click
-                        leads to a new
-                        experience. Seamlessly create and organize your travel plans, leaving no destination uncharted.
+                        leads to a new experience. Seamlessly create and organize your travel plans, leaving no
+                        destination uncharted.
                     </p>
                 </div>
             </div>
@@ -134,12 +129,292 @@
             <h1 class="section_mini_title">Similar Packages</h1>
         </div>
     </div>
+
+    <!-- ========== Start Experience Section ========== -->
+    <div class="container section_experience">
+        <div class="section_row_one">
+            <div class="section_experience_one">
+                <div class="section_experience_bar">
+                    <hr class="section_bar_yellow">
+                </div>
+                <div>
+                    <p class="section_content uppercase">Offering you a wide array of activities, each providing a </p>
+                    <h1 class="section_title_large">
+                        Unique & Diverse Experience
+                    </h1>
+                </div>
+            </div>
+            <div class="section_experience_two section_position"><img src="/images/experience img/road trips.png"
+                    alt="Loading" class="section_experience_img">
+                <div class="section_experience_items">
+                    <h3 class="section_experience_title">Road Trips</h3>
+                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left-up">
+                </div>
+            </div>
+            <div class="section_experience_three section_position">
+                <img src="/images/experience img/sand tours.png" alt="loading" class="section_experience_img">
+                <div class="section_experience_items">
+                    <h3 class="section_experience_title">Sand Tours</h3>
+                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
+                </div>
+            </div>
+        </div>
+        <div class="section_row_two">
+            <div class="section_experience_four section_position"><img src="/images/experience img/airplane.png"
+                    alt="loading" class="section_experience_img">
+                <div class="section_experience_items">
+                    <h3 class="section_experience_title">Air Tours</h3>
+                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
+                </div>
+            </div>
+            <div class="section_experience_five  section_position"><img src="/images/experience img/water boats.jpg"
+                    alt="loading" class="section_experience_img">
+                <div class="section_experience_items">
+                    <h3 class="section_experience_title">Water Boats</h3>
+                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
+                </div>
+            </div>
+            <div class="section_experience_six section_position"><img src="/images/experience img/party.png"
+                    alt="loading" class="section_experience_img">
+                <div class="section_experience_items">
+                    <h3 class="section_experience_title">Party Moods</h3>
+                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ========== End Experience Section ========== -->
 
+    <!-- ========== Start about_Section ========== -->
+    <div class="section_about">
+        <div class="container">
+            <div class="section_about_box">
+                <div class="section_about_left">
+                    <div class="section_about_head"><span class="section_about_line">
+                            <hr class="section_bar_white">
+                        </span>
+                        <span class="section_head_title">About</span>
+                    </div>
+                    <div class="section_title">What sets us apart?</div>
+                    <p class="section_content section_content_left">At Arabian Hub, we are your passport to
+                        unforgettable journeys
+                        and cherished
+                        memories. As a premier travel
+                        agency based in the heart of the United Arab Emirates, we specialize in curating exceptional
+                        trip packages
+                        to
+                        some of the world's most famous destinations, all with a touch of the Arabian allure.</p>
+                    <button type="button" class="btn btn-yellow">Book Visit</button>
+                </div>
+                <div class="section_about_right">
+                    <div class="section_about_card card_active">
+                        <h1 class="about_card_title">Feature Title</h2>
+                            <img src="/images/about img/vip.svg" alt="" class="about_card_img">
+                            <p class="about_card_content">lorem data is now shown in below</p>
+                    </div>
+                    <div class="section_about_card">
+                        <h1 class="about_card_title">Feature Title</h2>
+                            <img src="/images/about img/star_box.svg" alt="" class="about_card_img">
+                            <p class="about_card_content">lorem data is now shown in below</p>
+                    </div>
+                    <div class="section_about_card">
+                        <h1 class="about_card_title">Feature Title</h2>
+                            <img src="/images/about img/location.svg" alt="" class="about_card_img">
+                            <p class="about_card_content">lorem data is now shown in below</p>
+                    </div>
+                    <div class="section_about_card">
+                        <h1 class="about_card_title">Feature Title</h2>
+                            <img src="/images/about img/camel.svg" alt="" class="about_card_img">
+                            <p class="about_card_content">lorem data is now shown in below</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_gradient_topright"></div>
+        <div class="about_gradient_bottomleft"></div>
+    </div>
+    <!-- ========== End about_Section ========== -->
 
+    <!-- ========== Start Destiantion Section ========== -->
+    <div class="section_destination">
+        <div class="container">
+            <div class="section_destination_box">
+                <div class="section_destination_left">
+                    <div class="section_about_head"><span class="section_about_line">
+                            <hr class="section_bar_white">
+                        </span>
+                        <span class="section_head_title">mesmerising places for you</span>
+                    </div>
+                    <div class="section_title">Destinations</div>
+                    <p class="section_content section_content_left">At Arabian Hub, we are your passport to
+                        unforgettable
+                        journeys and cherished
+                        memories. As a premier travel agency based in the heart of the United Arab Emirates, we
+                        specialize in
+                        curating exceptional trip packages to some..</p>
+                </div>
+                <div class="section_destination_right">
+                    <div class="container">
+                        <div class="slider" data-slider>
+                            <ul class="slider__track" data-slider-track>
+                                <li>
+                                    <div class="slide"><img src="/images/destiantion img/slider_img_one.png" alt=""
+                                            class="slider_img_items"></div>
+                                </li>
+                                <li>
+                                    <div class="slide">
+                                        <img src="/images/destiantion img/slider_img_two.svg" alt=""
+                                            class="slider_img_items">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slide">
+                                        <img src="/images/destiantion img/slider_img_one.png" alt=""
+                                            class="slider_img_items">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slide"> <img src="/images/destiantion img/slider_img_one.png" alt=""
+                                            class="slider_img_items"></div>
+                                </li>
+                                <li>
+                                    <div class="slide"> <img src="/images/destiantion img/slider_img_one.png" alt=""
+                                            class="slider_img_items"></div>
+                                </li>
+                                <li>
+                                    <div class="slide"> <img src="/images/destiantion img/slider_img_one.png" alt=""
+                                            class="slider_img_items"></div>
+                                </li>
+                            </ul>
+                            <div class="slider__buttons">
+                                <button class="slider__button" data-slider-prev disabled>
+                                    <img src="/images/destiantion img/arrow_left.svg" alt="">
+                                </button>
+                                <button class="slider__button" data-slider-next>
+                                    <img src="/images/destiantion img/arrow_right.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End Destiantion Section ========== -->
+
+
+    <!-- ========== Start popularSection ========== -->
+    <div class="section_package">
+        <div class="container">
+            <div class="section_package_box">
+                <div class="section_package_left">
+                    <div class="section_about_head">
+                        <span class="section_about_line">
+                            <hr class="section_bar_yellow">
+                        </span>
+                        <span class="section_head_title">mesmerising places for you</span>
+                    </div>
+                    <div class="section_title">Popular Packages</div>
+                </div>
+                <div class="section_package_right">
+                    <p class="section_content">
+                        At Arabian Hub, we are your passport to unforgettable journeys and cherished memories. As a
+                        premier travel
+                        agency based in the heart of the United Arab Emirates, we specialize in curating exceptional
+                        trip packages
+                        to some.
+                    </p>
+                    <div class="section_package_btn"> <button type="button" class="btn btn-yellow">View All</button>
+                        <span class="section_btn_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
+                                viewBox="0 0 15 16" fill="none">
+                                <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727" stroke="white"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></span>
+                    </div>
+                </div>
+            </div>
+            <div class="section_package_tabs">
+                <li><button type="button" class="btn btn-yellow-gradient">Ajman</button></li>
+                <li><button type="button" class="btn btn-yellow-gradient">Ras-al-Khaima</button></li>
+                <li><button type="button" class="btn btn-yellow-gradient current-btn">Dubai</button></li>
+                <li><button type="button" class="btn btn-yellow-gradient">Ajman</button></li>
+                <li><button type="button" class="btn btn-yellow-gradient">Umm Al-Quwain</button></li>
+                <div class="section_tab_btn"> <img src="/images/packages img/arrow-down.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== Start package cards ========== -->
+    <div class="gtco-testimonials">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+            <div>
+                <div class="card text-center"><img class="carousel-img-items" src="/images/packages img/waterfall.png"
+                        alt="">
+                    <div class="card-body">
+                        <h5>Ronne Galle <br />
+                            <span> Project Manager </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat ” </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="carousel-img-items"
+                        src="/images/destiantion img/slider_img_two.svg" alt="">
+                    <div class="card-body">
+                        <h5>Martha Brown<br />
+                            <span> Project Manager </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat ” </p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="card text-center"><img class="carousel-img-items"
+                        src="/images/destiantion img/slider_img_two.svg" alt="">
+                    <div class="card-body">
+                        <h5>Martha Brown<br />
+                            <span> Project Manager </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat ” </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="carousel-img-items"
+                        src="/images/destiantion img/slider_img_one.png" alt="">
+                    <div class="card-body">
+                        <h5>Hanna Lisem<br />
+                            <span> Project Manager </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat ” </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_gradient_topright"></div>
+        <div class="about_gradient_bottomleft"></div>
+    </div>
+    <!-- ========== End package cards ========== -->
+    <!-- ========== End popularSection ========== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/javascripts/Navbar.js"></script>
+    <!-- Add jQuery (use a specific version if needed) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- Add Owl Carousel theme CSS (optional) -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Add Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="/javascripts/main.js"></script>
+    <script src="/javascripts/Navbar.js"></script>
 </body>
 
 </html>
