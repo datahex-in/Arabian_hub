@@ -7,7 +7,15 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var toursRouter = require("./routes/tours");
-
+var PackagesRouter = require("./routes/packages");
+var DestinationRouter = require("./routes/destination");
+var ActivitiesRouter = require("./routes/activities");
+var ContactRouter = require("./routes/contact");
+var MessageRouter = require("./routes/message");
+var CurateRouter = require("./routes/curate");
+var QuestionRouter = require("./routes/question");
+var BookRouter = require("./routes/book");
+var PackagesNameRouter = require("./routes/packagesName");
 var app = express();
 
 // view engine setup
@@ -23,6 +31,15 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/tours", toursRouter);
+app.use("/packages", PackagesRouter);
+app.use("/packagesname", PackagesNameRouter);
+app.use("/destinations", DestinationRouter);
+app.use("/activities", ActivitiesRouter);
+app.use("/contact", ContactRouter);
+app.use("/message", MessageRouter);
+app.use("/curate", CurateRouter);
+app.use("/question", QuestionRouter);
+app.use("/book", BookRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
