@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arabian Hub</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="/stylesheets/responsive.css">
-  <link rel="stylesheet" href="/stylesheets/components.css">
+  <link rel="stylesheet" href="/stylesheets/Components.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -155,8 +156,8 @@
           <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left-up">
         </div>
       </div>
-      <div class="section_experience_three section_position"><img src="/images/experience img/sand tours.png"
-          alt="loading" class="section_experience_img">
+      <div class="section_experience_three section_position">
+        <img src="/images/experience img/sand tours.png" alt="loading" class="section_experience_img">
         <div class="section_experience_items">
           <h3 class="section_experience_title">Sand Tours</h3>
           <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left-up">
@@ -200,7 +201,8 @@
             <span class="section_head_title">About</span>
           </div>
           <div class="section_title">What sets us apart?</div>
-          <p class="section_content">At Arabian Hub, we are your passport to unforgettable journeys and cherished
+          <p class="section_content section_content_left">At Arabian Hub, we are your passport to unforgettable journeys
+            and cherished
             memories. As a premier travel
             agency based in the heart of the United Arab Emirates, we specialize in curating exceptional trip packages
             to
@@ -247,7 +249,8 @@
             <span class="section_head_title">mesmerising places for you</span>
           </div>
           <div class="section_title">Destinations</div>
-          <p class="section_content">At Arabian Hub, we are your passport to unforgettable journeys and cherished
+          <p class="section_content section_content_left">At Arabian Hub, we are your passport to unforgettable
+            journeys and cherished
             memories. As a premier travel agency based in the heart of the United Arab Emirates, we specialize in
             curating exceptional trip packages to some..</p>
         </div>
@@ -270,16 +273,16 @@
                   </div>
                 </li>
                 <li>
-                  <div class="slide">4</div>
+                  <div class="slide"> <img src="/images/destiantion img/slider_img_one.png" alt=""
+                      class="slider_img_items"></div>
                 </li>
                 <li>
-                  <div class="slide">5</div>
+                  <div class="slide"> <img src="/images/destiantion img/slider_img_one.png" alt=""
+                      class="slider_img_items"></div>
                 </li>
                 <li>
-                  <div class="slide">6</div>
-                </li>
-                <li>
-                  <div class="slide">7</div>
+                  <div class="slide"> <img src="/images/destiantion img/slider_img_one.png" alt=""
+                      class="slider_img_items"></div>
                 </li>
               </ul>
               <div class="slider__buttons">
@@ -298,53 +301,403 @@
   </div>
   <!-- ========== End Destiantion Section ========== -->
 
+
+  <!-- ========== Start popularSection ========== -->
+  <div class="section_package">
+    <div class="container">
+      <div class="section_package_box">
+        <div class="section_package_left">
+          <div class="section_about_head">
+            <span class="section_about_line">
+              <hr class="section_bar_yellow">
+            </span>
+            <span class="section_head_title">mesmerising places for you</span>
+          </div>
+          <div class="section_title">Popular Packages</div>
+        </div>
+        <div class="section_package_right">
+          <p class="section_content">
+            At Arabian Hub, we are your passport to unforgettable journeys and cherished memories. As a premier travel
+            agency based in the heart of the United Arab Emirates, we specialize in curating exceptional trip packages
+            to some.
+          </p>
+          <div class="section_package_btn"> <button type="button" class="btn btn-yellow">View All</button> <span
+              class="section_btn_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
+                viewBox="0 0 15 16" fill="none">
+                <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727" stroke="white" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></span></div>
+        </div>
+      </div>
+      <div class="section_package_tabs">
+        <li><button type="button" class="btn btn-yellow-gradient">Ajman</button></li>
+        <li><button type="button" class="btn btn-yellow-gradient">Ras-al-Khaima</button></li>
+        <li><button type="button" class="btn btn-yellow-gradient current-btn">Dubai</button></li>
+        <li><button type="button" class="btn btn-yellow-gradient">Ajman</button></li>
+        <li><button type="button" class="btn btn-yellow-gradient">Umm Al-Quwain</button></li>
+      </div>
+    </div>
+  </div>
+  <!-- ========== Start package cards ========== -->
+  <div class="gtco-testimonials">
+    <div class="owl-carousel owl-carousel1 owl-theme">
+      <div>
+        <div class="card text-center"><img class="carousel-img-items" src="/images/packages img/waterfall.png" alt="">
+          <div class="card-body-items">
+            <div class="package_title">Package Name</div>
+            <div class="package_price">AED</div>
+            <div class="package_travel">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.875 10C1.875 5.5142 5.5142 1.875 10 1.875C14.4858 1.875 18.125 5.5142 18.125 10C18.125 14.4858 14.4858 18.125 10 18.125C5.5142 18.125 1.875 14.4858 1.875 10ZM10 3.125C6.20455 3.125 3.125 6.20455 3.125 10C3.125 13.7954 6.20455 16.875 10 16.875C13.7954 16.875 16.875 13.7954 16.875 10C16.875 6.20455 13.7954 3.125 10 3.125Z"
+                    fill="#DDDDDD" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10 4.375C10.3452 4.375 10.625 4.65482 10.625 5V10H13.75C14.0952 10 14.375 10.2798 14.375 10.625C14.375 10.9702 14.0952 11.25 13.75 11.25H10C9.65482 11.25 9.375 10.9702 9.375 10.625V5C9.375 4.65482 9.65482 4.375 10 4.375Z"
+                    fill="#DDDDDD" />
+                </svg> 6hrs
+              </span> <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.375 6.50391C3.375 3.50906 5.92109 1.125 9 1.125C12.0789 1.125 14.625 3.50906 14.625 6.50391C14.625 8.19227 13.7121 10.2811 12.7122 12.0867C11.6972 13.9192 10.5283 15.5703 9.90146 16.4168C9.79803 16.5582 9.66278 16.6733 9.50663 16.7528C9.34969 16.8326 9.17609 16.8743 9 16.8743C8.82391 16.8743 8.65031 16.8326 8.49337 16.7528C8.3372 16.6733 8.20194 16.5582 8.0985 16.4168C7.47168 15.5699 6.30279 13.9182 5.28782 12.0854C4.28789 10.2798 3.375 8.19107 3.375 6.50391ZM9 2.25C6.48907 2.25 4.5 4.18242 4.5 6.50391C4.5 7.87534 5.27461 9.73939 6.27199 11.5404C7.25166 13.3095 8.38638 14.9145 9 15.7437C9.6136 14.9149 10.7483 13.3104 11.728 11.5416C12.7254 9.74087 13.5 7.8766 13.5 6.50391C13.5 4.18242 11.5109 2.25 9 2.25Z"
+                    fill="#DDDDDD" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
+                    fill="#DDDDDD" />
+                </svg> Dubai,Uae
+              </span>
+            </div>
+            <div class="package_data_price">
+              1200
+            </div>
+            <div>
+              <button type="button" class="btn btn-yellow-gradient">Know More </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center"><img class="carousel-img-items" src="/images/destiantion img/slider_img_two.svg"
+            alt="">
+          <div class="card-body-items">
+            <div class="package_title">Package Name</div>
+            <div class="package_price">AED</div>
+            <div class="package_travel">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.875 10C1.875 5.5142 5.5142 1.875 10 1.875C14.4858 1.875 18.125 5.5142 18.125 10C18.125 14.4858 14.4858 18.125 10 18.125C5.5142 18.125 1.875 14.4858 1.875 10ZM10 3.125C6.20455 3.125 3.125 6.20455 3.125 10C3.125 13.7954 6.20455 16.875 10 16.875C13.7954 16.875 16.875 13.7954 16.875 10C16.875 6.20455 13.7954 3.125 10 3.125Z"
+                    fill="#DDDDDD" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10 4.375C10.3452 4.375 10.625 4.65482 10.625 5V10H13.75C14.0952 10 14.375 10.2798 14.375 10.625C14.375 10.9702 14.0952 11.25 13.75 11.25H10C9.65482 11.25 9.375 10.9702 9.375 10.625V5C9.375 4.65482 9.65482 4.375 10 4.375Z"
+                    fill="#DDDDDD" />
+                </svg> 6hrs
+              </span> <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.375 6.50391C3.375 3.50906 5.92109 1.125 9 1.125C12.0789 1.125 14.625 3.50906 14.625 6.50391C14.625 8.19227 13.7121 10.2811 12.7122 12.0867C11.6972 13.9192 10.5283 15.5703 9.90146 16.4168C9.79803 16.5582 9.66278 16.6733 9.50663 16.7528C9.34969 16.8326 9.17609 16.8743 9 16.8743C8.82391 16.8743 8.65031 16.8326 8.49337 16.7528C8.3372 16.6733 8.20194 16.5582 8.0985 16.4168C7.47168 15.5699 6.30279 13.9182 5.28782 12.0854C4.28789 10.2798 3.375 8.19107 3.375 6.50391ZM9 2.25C6.48907 2.25 4.5 4.18242 4.5 6.50391C4.5 7.87534 5.27461 9.73939 6.27199 11.5404C7.25166 13.3095 8.38638 14.9145 9 15.7437C9.6136 14.9149 10.7483 13.3104 11.728 11.5416C12.7254 9.74087 13.5 7.8766 13.5 6.50391C13.5 4.18242 11.5109 2.25 9 2.25Z"
+                    fill="#DDDDDD" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
+                    fill="#DDDDDD" />
+                </svg> Dubai,Uae
+              </span>
+            </div>
+            <div class="package_data_price">
+              1200
+            </div>
+            <div>
+              <button type="button" class="btn btn-yellow-gradient">Know More </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center"><img class="carousel-img-items" src="/images/destiantion img/slider_img_two.svg"
+            alt="">
+          <div class="card-body-items">
+            <div class="package_title">Package Name</div>
+            <div class="package_price">AED</div>
+            <div class="package_travel">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.875 10C1.875 5.5142 5.5142 1.875 10 1.875C14.4858 1.875 18.125 5.5142 18.125 10C18.125 14.4858 14.4858 18.125 10 18.125C5.5142 18.125 1.875 14.4858 1.875 10ZM10 3.125C6.20455 3.125 3.125 6.20455 3.125 10C3.125 13.7954 6.20455 16.875 10 16.875C13.7954 16.875 16.875 13.7954 16.875 10C16.875 6.20455 13.7954 3.125 10 3.125Z"
+                    fill="#DDDDDD" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10 4.375C10.3452 4.375 10.625 4.65482 10.625 5V10H13.75C14.0952 10 14.375 10.2798 14.375 10.625C14.375 10.9702 14.0952 11.25 13.75 11.25H10C9.65482 11.25 9.375 10.9702 9.375 10.625V5C9.375 4.65482 9.65482 4.375 10 4.375Z"
+                    fill="#DDDDDD" />
+                </svg> 6hrs
+              </span> <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.375 6.50391C3.375 3.50906 5.92109 1.125 9 1.125C12.0789 1.125 14.625 3.50906 14.625 6.50391C14.625 8.19227 13.7121 10.2811 12.7122 12.0867C11.6972 13.9192 10.5283 15.5703 9.90146 16.4168C9.79803 16.5582 9.66278 16.6733 9.50663 16.7528C9.34969 16.8326 9.17609 16.8743 9 16.8743C8.82391 16.8743 8.65031 16.8326 8.49337 16.7528C8.3372 16.6733 8.20194 16.5582 8.0985 16.4168C7.47168 15.5699 6.30279 13.9182 5.28782 12.0854C4.28789 10.2798 3.375 8.19107 3.375 6.50391ZM9 2.25C6.48907 2.25 4.5 4.18242 4.5 6.50391C4.5 7.87534 5.27461 9.73939 6.27199 11.5404C7.25166 13.3095 8.38638 14.9145 9 15.7437C9.6136 14.9149 10.7483 13.3104 11.728 11.5416C12.7254 9.74087 13.5 7.8766 13.5 6.50391C13.5 4.18242 11.5109 2.25 9 2.25Z"
+                    fill="#DDDDDD" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
+                    fill="#DDDDDD" />
+                </svg> Dubai,Uae
+              </span>
+            </div>
+            <div class="package_data_price">
+              1200
+            </div>
+            <div>
+              <button type="button" class="btn btn-yellow-gradient">Know More </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center"><img class="carousel-img-items" src="/images/destiantion img/slider_img_one.png"
+            alt="">
+          <div class="card-body-items">
+            <div class="package_title">Package Name</div>
+            <div class="package_price">AED</div>
+            <div class="package_travel">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.875 10C1.875 5.5142 5.5142 1.875 10 1.875C14.4858 1.875 18.125 5.5142 18.125 10C18.125 14.4858 14.4858 18.125 10 18.125C5.5142 18.125 1.875 14.4858 1.875 10ZM10 3.125C6.20455 3.125 3.125 6.20455 3.125 10C3.125 13.7954 6.20455 16.875 10 16.875C13.7954 16.875 16.875 13.7954 16.875 10C16.875 6.20455 13.7954 3.125 10 3.125Z"
+                    fill="#DDDDDD" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10 4.375C10.3452 4.375 10.625 4.65482 10.625 5V10H13.75C14.0952 10 14.375 10.2798 14.375 10.625C14.375 10.9702 14.0952 11.25 13.75 11.25H10C9.65482 11.25 9.375 10.9702 9.375 10.625V5C9.375 4.65482 9.65482 4.375 10 4.375Z"
+                    fill="#DDDDDD" />
+                </svg> 6hrs
+              </span> <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.375 6.50391C3.375 3.50906 5.92109 1.125 9 1.125C12.0789 1.125 14.625 3.50906 14.625 6.50391C14.625 8.19227 13.7121 10.2811 12.7122 12.0867C11.6972 13.9192 10.5283 15.5703 9.90146 16.4168C9.79803 16.5582 9.66278 16.6733 9.50663 16.7528C9.34969 16.8326 9.17609 16.8743 9 16.8743C8.82391 16.8743 8.65031 16.8326 8.49337 16.7528C8.3372 16.6733 8.20194 16.5582 8.0985 16.4168C7.47168 15.5699 6.30279 13.9182 5.28782 12.0854C4.28789 10.2798 3.375 8.19107 3.375 6.50391ZM9 2.25C6.48907 2.25 4.5 4.18242 4.5 6.50391C4.5 7.87534 5.27461 9.73939 6.27199 11.5404C7.25166 13.3095 8.38638 14.9145 9 15.7437C9.6136 14.9149 10.7483 13.3104 11.728 11.5416C12.7254 9.74087 13.5 7.8766 13.5 6.50391C13.5 4.18242 11.5109 2.25 9 2.25Z"
+                    fill="#DDDDDD" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
+                    fill="#DDDDDD" />
+                </svg> Dubai,Uae
+              </span>
+            </div>
+            <div class="package_data_price">
+              1200
+            </div>
+            <div>
+              <button type="button" class="btn btn-yellow-gradient">Know More </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider_button_tour">
+      <div> <button class="slider_button_package" id="prevButton">
+          <img src="/images/destiantion img/arrow_left.svg" alt="">
+        </button></div>
+      <div>
+        <button class="slider_button_package" id="nextButton">
+          <img src="/images/destiantion img/arrow_right.svg" alt="">
+        </button>
+      </div>
+    </div>
+    <div class="about_gradient_topright"></div>
+    <div class="about_gradient_bottomleft"></div>
+  </div>
+  <!-- ========== End package cards ========== -->
+  <!-- ========== End popularSection ========== -->
+
+
+  <!-- ========== Start Section ========== -->
+  <div class="section_activity">
+    <div class="container">
+      <div class="section_activity_box">
+        <div class="section_activity_top">
+          <div class="section_about_head">
+            <span class="section_about_line">
+              <hr class="section_bar_yellow">
+            </span>
+            <span class="section_head_title">FUN & FULFILLING</span>
+          </div>
+          <div class="section_title">Activities</div>
+        </div>
+      </div>
+    </div>
+    <div class="section_activity_gradient"><img src="/images/activity img/yellow gradient.svg" alt=""></div>
+  </div>
+  <!-- ========== End Section ========== -->
+
+
+  <!-- ========== Start travel plan Section ========== -->
+
+  <div class="section_travel">
+    <div class="contianer">
+      <div class="section_travel_box">
+        <img src="/images/travel img/travel men.svg" alt="" class="section_travel_img">
+        <div class="section_travel_items">
+          <h2 class="section_travel_content">Ensure your travel plans align seamlessly with your Schedule!</h2>
+          <h1 class="section_travel_title">Customize your very own travel experience.</h1>
+
+          <div class="section_travel_btn"> <button class=" btn travel_btn">Curate Your Trip</button> <span
+              class="section_travel_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
+                viewBox="0 0 15 16" fill="none">
+                <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727" stroke="white" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========== End travel plan Section ========== -->
+  <!-- ========== Start Section_faq ========== -->
+  <div class="section_faq">
+    <div class="container">
+      <div class="section_faq_box">
+        <div class="section_title">Frequently Asked Questions</div>
+        <div class="accordion_box">
+          <div class="accordion">
+            <div class="at-item">
+              <div class="section-at-title active">
+                <h2>Accordion title 1</h2>
+                <hr>
+              </div>
+              <div class="at-tab" style="display: block;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+              </div>
+            </div>
+            <div class="at-item">
+              <div class="section-at-title">
+                <h2>Accordion title 2</h2>
+                <hr>
+              </div>
+              <div class="at-tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+              </div>
+            </div>
+            <div class="at-item">
+              <div class="section-at-title">
+                <h2>Accordion title 3</h2>
+                <hr>
+              </div>
+              <div class="at-tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+              </div>
+            </div>
+            <div class="at-item">
+              <div class="section-at-title">
+                <h2>Accordion title 3</h2>
+                <hr>
+              </div>
+              <div class="at-tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+              </div>
+            </div>
+            <div class="at-item">
+              <div class="section-at-title">
+                <h2>Accordion title 3</h2>
+                <hr>
+              </div>
+              <div class="at-tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Start footer ========== -->
+  <footer>
+    <div class="section_footer">
+      <div class="section_footer_yellow">
+        <div class="section_footer_top">
+          <h3>Get our regular updates on Travel hacks and stuffs!</h3>
+          <p>By subscribing to our newsletter, you also gain early access to trip discounts. So don’t miss out!!</p>
+          <div class="section_footer_form">
+            <form class="form_action">
+              <button type="button" class="btn_form_submit" onclick="enableInput()">Subscribe!</button>
+              <input type="email" id="emailInput" placeholder="email@example.com" class="disabled-input">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="section_footer_blue">
+        <footer class="footer_bottom_items">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
+                <div class="footer_logo"><img src="/images/logo/logo_svg.svg" alt=""></div>
+                <div class="footer_content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    omnis eum minima blanditiis .
+                    sunt corrupti?</p>
+                </div>
+                <div class="social-links">
+                  <a href="#"><i><img src="/images/footer img/instagram_logo.svg" alt=""></i></a>
+                  <a href="#"><i><img src="/images/footer img/facebook_logo.svg" alt=""></i></a>
+                  <a href="#"><i><img src="/images/footer img/twiiter_logo.svg" alt=""></i></a>
+                  <a href="#"><i><img src="/images/footer img/youtube_logo.svg" alt=""></i></a>
+                  <a href="#"><i><img src="/images/footer img/linkedin_logo.svg" alt=""></i></a>
+                </div>
+              </div>
+              <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Destination</a></li>
+                  <li><a href="#">Packages</a></li>
+                  <li><a href="#">Activities</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
+                <h4>Reach out to us</h4>
+                <ul>
+                  <li><a href="#"><img src="/images/footer img/call_logo.svg" alt=""> <span>+91700000000</span> </a>
+                  </li>
+                  <li><a href="#"><img src="/images/footer img/msg_logo.svg" alt="">
+                      <span>info@arabianhub.com</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
+                <h4>Registered Office</h4>
+                <ul>
+                  <li><a href="#"><img src="/images/footer img/loc_logo.svg" alt=""> <span>Arabian Tour Hub
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 553236</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_line" style="color: #B9B9B9;">
+              <hr>
+            </div>
+            <div class="footer_end_data">
+              <div class="footer_end_link">
+                <p>© 2023 Powered By</p> <span><a href="https://datahex.in/" target="_blank">Datahex</a></span>
+              </div>
+              <div class="footer_end_terms">
+                <p>Terms & Agreements</p>
+                <p>Privacy Policy</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== End footer ========== -->
+  <!-- ========== End Section_faq ========== -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="/javascripts/Navbar.js"></script>
+  <!-- Add jQuery (use a specific version if needed) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Add Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <!-- Add Owl Carousel theme CSS (optional) -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- Add Owl Carousel JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="/javascripts/main.js"></script>
-  <script>
-    const slider = document.querySelector("[data-slider]");
-
-    const track = slider.querySelector("[data-slider-track]");
-    const prev = slider.querySelector("[data-slider-prev]");
-    const next = slider.querySelector("[data-slider-next]");
-
-    if (track) {
-      prev.addEventListener("click", () => {
-        next.removeAttribute("disabled");
-
-        track.scrollTo({
-          left: track.scrollLeft - track.firstElementChild.offsetWidth,
-          behavior: "smooth"
-        });
-      });
-
-      next.addEventListener("click", () => {
-        prev.removeAttribute("disabled");
-
-        track.scrollTo({
-          left: track.scrollLeft + track.firstElementChild.offsetWidth,
-          behavior: "smooth"
-        });
-      });
-
-      track.addEventListener("scroll", () => {
-        const trackScrollWidth = track.scrollWidth;
-        const trackOuterWidth = track.clientWidth;
-
-        prev.removeAttribute("disabled");
-        next.removeAttribute("disabled");
-
-        if (track.scrollLeft <= 0) {
-          prev.setAttribute("disabled", "");
-        }
-
-        if (track.scrollLeft === trackScrollWidth - trackOuterWidth) {
-          next.setAttribute("disabled", "");
-        }
-      });
-    }
-
-  </script>
+  <script src="/javascripts/Navbar.js"></script>
 </body>
 
 </html>
