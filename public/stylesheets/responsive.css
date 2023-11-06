@@ -226,9 +226,14 @@
     grid-template-rows: auto;
     grid-gap: 3.5em;
   }
+
   .section_destination_left {
     width: auto;
     padding-top: 0em;
+  }
+  .section_destination_right {
+    margin: auto;
+    width: 90%;
   }
   .slider {
     margin: 20px;
@@ -254,7 +259,7 @@
   .slider__buttons {
     position: absolute;
     top: 220px;
-    left: 58px;
+    left: 75px;
     margin-top: 1rem;
   }
 
@@ -325,7 +330,7 @@
   }
   .section_travel_items {
     position: absolute;
-    top: 40px !important;
+    top: 45px !important;
     left: 45px;
     z-index: 1;
     top: 0px;
@@ -351,7 +356,7 @@
   .section_travel_arrow {
     position: absolute;
     right: 25px;
-    top: 16px;
+    top: 25px;
   }
 }
 /***** End travel_Section *****/
