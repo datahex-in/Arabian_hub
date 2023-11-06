@@ -325,7 +325,7 @@
   }
   .section_travel_items {
     position: absolute;
-    top: 40px !important;
+    top: 45px !important;
     left: 45px;
     z-index: 1;
     top: 0px;
@@ -351,7 +351,7 @@
   .section_travel_arrow {
     position: absolute;
     right: 25px;
-    top: 16px;
+    top: 30px;
   }
 }
 /***** End travel_Section *****/
