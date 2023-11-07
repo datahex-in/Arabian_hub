@@ -244,38 +244,24 @@
                         </div>
                     </a>
                 </div>
-
             </div>
-
-
-
-
         </div>
+        <!-- ========== Start footer ========== -->
+        <%-include("footer.ejs")%>
+            <!-- ========== End footer ========== -->
 
+            <!-- ========== Dropdown ========== -->
+            <script>
+                function show(value) {
+                    document.querySelector(".text-box").value = value;
+                }
 
-
-
-
-
-
-
-
-
-        <!-- ========== End package cards ========== -->
-        <!-- ========== End popularSection ========== -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!-- Add jQuery (use a specific version if needed) -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- Add Owl Carousel CSS -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <!-- Add Owl Carousel theme CSS (optional) -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-        <!-- Add Owl Carousel JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="/javascripts/main.js"></script>
-        <script src="/javascripts/Navbar.js"></script>
+                let dropdown = document.querySelector(".dropdown");
+                dropdown.onclick = function () {
+                    dropdown.classList.toggle("active");
+                };
+            </script>
+            <!-- =========Dropdown ========== -->
 </body>
 
 </html>
