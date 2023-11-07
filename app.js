@@ -6,9 +6,11 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-var toursRouter = require("./routes/tours");
+var sandtoursRouter = require("./routes/sandtours");
+var atvtoursRouter = require("./routes/atvtours");
 var PackagesRouter = require("./routes/packages");
 var DestinationRouter = require("./routes/destination");
+var DubaiRouter = require("./routes/dubai");
 var ActivitiesRouter = require("./routes/activities");
 var ContactRouter = require("./routes/contact");
 var MessageRouter = require("./routes/message");
@@ -30,10 +32,12 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-app.use("/tours", toursRouter);
+app.use("/sandtours", sandtoursRouter);
+app.use("/atvtours", atvtoursRouter);
 app.use("/packages", PackagesRouter);
 app.use("/packagesname", PackagesNameRouter);
 app.use("/destinations", DestinationRouter);
+app.use("/dubai", DubaiRouter);
 app.use("/activities", ActivitiesRouter);
 app.use("/contact", ContactRouter);
 app.use("/message", MessageRouter);

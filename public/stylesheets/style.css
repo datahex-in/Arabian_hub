@@ -1439,6 +1439,7 @@ ul {
 
 .dropdown {
   position: relative;
+  top: 15px;
   float: right;
   margin-top: 15px;
   width: 250px;
@@ -1605,4 +1606,216 @@ ul {
   75% {
     transform: rotate(90deg) translate(-0.25rem);
   }
+}
+/* destination---- */
+.parent_sort {
+  display: flex;
+  justify-content: end;
+  padding: 40px 0px;
+}
+.sort {
+  width: 249px;
+  height: 64px;
+  border-radius: 4px;
+  border: 1px solid var(--Golden-gradient, #aa790f);
+}
+.sort p {
+  color: #f5cb74;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.27px;
+  padding: 20px 40px;
+}
+/* Style for the dropdown chevron */
+.chevron {
+  font-size: 12px; /* Adjust the size as needed */
+  margin-left: 5px; /* Adjust the margin as needed to control the spacing between the text and the chevron */
+  float: right;
+}
+.destination_card_items {
+  padding-top: 6.5em;
+}
+.adventure_card {
+  margin: 10px;
+  width: 645px;
+  height: 427px;
+  border-radius: 0px 0px 4px 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.09) 0%,
+    rgba(0, 0, 0, 0.98) 100%
+  );
+  position: relative;
+}
+.seven_packages {
+  width: 90px;
+  height: 26px;
+  border-radius: 4px;
+  background: #fff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.seven_packages p {
+  color: var(--button, #c69c41);
+  font-family: Gilroy-SemiBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 6px 17px;
+}
+.Dubai h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.9%; /* 35.594px */
+}
+.Dubai p {
+  color: var(--bg-light-gray, #edeaea);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.4%; /* 19.936px */
+  letter-spacing: -0.21px;
+  width: 90%;
+}
+.explore {
+  width: 107px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid var(--golden-gradient, #aa790f);
+  position: relative;
+}
+.chevron_tl {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.explore button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.225px;
+  padding: 8px 20px;
+}
+.Dubai {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+}
+/* dubai_details page */
+.Dubai_details_top {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 250px;
+}
+.section_title_2 {
+  color: var(--golden-title, #eed66f);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 66px; /* 137.5% */
+  align-items: center;
+}
+.section_content_2 {
+  color: var(--Desc-colour, #d9d9d9);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156.4%; /* 28.152px */
+  letter-spacing: -0.27px;
+}
+.activities_grids_head {
+  padding: 10px 50px;
+}
+.activities_grids {
+  margin-top: 40px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+}
+.activities_box_one {
+  position: relative;
+  width: 660px;
+  height: 300px;
+  border-radius: 4px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.78) 100%
+    ),
+    url("/public/images/sandtours/desert.svg"), lightgray 50% / cover no-repeat;
+}
+.activities_box_two {
+  position: relative;
+  width: 313px;
+  height: 300px;
+  border-radius: 4px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.79) 100%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.boxs_button {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+.boxs_button h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.activities_explore {
+  width: 184px;
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid var(--golden-gradient, #aa790f);
+}
+
+.activities_explore button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.225px;
+  padding: 10px 20px;
+}
+/* avt section------- */
+.atv_details_sections {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.atv_tour_description {
+  padding: 5px 20px;
 }
