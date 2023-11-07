@@ -419,3 +419,13 @@
   }
 }
 /***** End footer *****/
+/* activities section */
+@media (max-width: 600px) {
+  .activities_grids {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    object-fit: cover;
+  }
+}
