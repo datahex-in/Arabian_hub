@@ -891,10 +891,13 @@ input[type="date"]:focus::-webkit-datetime-edit {
   justify-content: start;
   height: auto;
 }
-.section_package_btn {
+.section_explore_btn {
   position: relative;
   justify-content: center;
   display: flex;
+}
+.section_package_btn {
+  position: relative;
   width: auto;
 }
 .section_btn_arrow {
