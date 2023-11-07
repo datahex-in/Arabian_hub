@@ -249,27 +249,40 @@
             </div>
         </div>
         <!-- ========== End Section_faq ========== -->
+
         <!-- ========== Start footer ========== -->
         <%-include("footer.ejs")%>
             <!-- ========== End footer ========== -->
-
 
             <script>
                 function show(value) {
                     document.querySelector(".text-box").value = value;
                 }
 
-                let dropdown = document.querySelector(".dropdown")
+                let dropdown = document.querySelector(".dropdown");
                 dropdown.onclick = function () {
-                    dropdown.classList.toggle("active")
-                }
+                    dropdown.classList.toggle("active");
+                };
             </script>
 
-            <!-- ========== Start footer ========== -->
-            <!-- <%-include("footer.ejs")%> -->
-            <!-- ========== End footer ========== -->
-
-
+            <script>
+                // faq_section
+                $(document).ready(function () {
+                    $(".section-at-title").click(function () {
+                        $(this)
+                            .toggleClass("active")
+                            .next(".at-tab")
+                            .slideToggle()
+                            .parent()
+                            .siblings()
+                            .find(".at-tab")
+                            .slideUp()
+                            .prev()
+                            .removeClass("active");
+                    });
+                });
+                // faq_end_section
+            </script>
 </body>
 
 </html>
