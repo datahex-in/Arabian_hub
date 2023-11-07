@@ -19,7 +19,7 @@
   }
   .section_home_content {
     position: absolute;
-    top: 140px;
+    top: 125px;
     left: 0px;
   }
   .section_head_title {
@@ -58,7 +58,7 @@
   .section_home_data {
     position: absolute;
     left: 0em;
-    top: 15em;
+    top: 18em;
     z-index: 4;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -149,7 +149,7 @@
     width: 60px;
     position: absolute;
     bottom: 20px;
-    left: 30px;
+    left: 22px;
     color: #fff;
     font-family: var(--font-playfair);
     font-size: 13px;
@@ -279,7 +279,29 @@
 }
 
 /***** End Section *****/
+/***** activity_Section *****/
+@media (max-width: 600px) {
+  .activity_bar {
+    margin-top: 20px;
+    width: 11px;
+    height: 200px;
+    background: #fff5cb;
+  }
+  .tab__label,
+  .tab__close {
+    font-size: 16px;
+  }
+  .tab__content p {
+    color: var(--desc-colour, #d9d9d9);
+    font-family: var(--font-Montserrat);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.4%; /* 33.088px */
+  }
+}
 
+/***** End activity_Section *****/
 /***** package_Section *****/
 @media (max-width: 600px) {
   .section_package_box {
@@ -301,7 +323,7 @@
     margin: auto;
     width: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
@@ -312,6 +334,21 @@
     align-items: center;
     width: 70%;
     margin-left: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .card-body-items {
+    margin: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0px;
+  }
+  .section-at-title h2 {
+    font-size: 16px;
   }
 }
 /***** End package_Section *****/
@@ -419,3 +456,33 @@
   }
 }
 /***** End footer *****/
+
+/*****packages_Section *****/
+.package_section {
+  margin-top: 5em;
+}
+.package_cards {
+  width: 424px;
+  height: 533px;
+  background: #072c54;
+  margin: 20px;
+}
+.package_cards_img {
+  width: 100%;
+  height: auto;
+}
+/***** Endpackages_Section *****/
+.package_section {
+  margin-top: 5em;
+}
+.package_cards {
+  width: 100%;
+  height: 533px;
+  background: #072c54;
+  margin: 0px;
+  margin-top: 30px;
+}
+.package_cards_img {
+  width: 100%;
+  height: auto;
+}
