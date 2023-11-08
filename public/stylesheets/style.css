@@ -1666,6 +1666,83 @@ ul {
 /***** End pacakges_Section *****/
 
 /* destination---- */
+
+/***** slide cards Section *****/
+.slider_explore_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide_card_items {
+  width: 200px;
+  height: 50vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide_card_items h3 {
+  color: #fff;
+  font-family: var(--font-Montserrat);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 156.4%; /* 28.152px */
+  letter-spacing: -0.27px;
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.slide_card_items h2 {
+  color: #fff;
+  font-family: var(--font-Montserrat);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 156.4%; /* 28.152px */
+  letter-spacing: -0.27px;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  z-index: 3;
+}
+.slide_card_items button {
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+}
+.slide_card_items.active {
+  flex: 10;
+}
+
+.slide_card_items.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out 0.4s;
+}
+.slide_card_items.active h2 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out 0.4s;
+}
+.slide_card_items.active button {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out 0.4s;
+}
+/***** End slide cards Section *****/
 .parent_sort {
   display: flex;
   justify-content: end;
