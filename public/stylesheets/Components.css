@@ -11,7 +11,10 @@
   /* font */
   --font-Montserrat: "Montserrat", sans-serif;
 }
-
+button {
+  outline: none !important;
+  border: none !important;
+}
 .btn {
   width: 130px;
   height: 40px;
@@ -24,6 +27,7 @@
   line-height: normal;
   border-radius: 6px;
   cursor: pointer;
+  border: none;
   letter-spacing: -0.225px;
 }
 .btn-white {
@@ -32,8 +36,8 @@
   background: transparent !important;
 }
 .btn-white:hover {
-  color: white;
-  background: var(--button, #c69c41);
+  color: white !important;
+  background: var(--button, #c69c41) !important;
 }
 
 .btn-yellow {
@@ -94,7 +98,6 @@
 .btn_form_submit:hover ~ input {
   padding: 16px 0 16px 16px;
 }
-
 @media (max-width: 600px) {
   .travel_btn {
     margin-top: 5px;
