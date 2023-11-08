@@ -15,12 +15,13 @@
   .section_home {
     display: grid;
     grid-template-rows: minmax(100px, auto);
-    grid-template-columns: minmax(auto, 50%) 1fr;
+    grid-template-columns: minmax(auto, 0%) 1fr;
   }
   .section_home_content {
     position: absolute;
     top: 125px;
-    left: 0px;
+    left: 20px;
+    z-index: 1;
   }
   .section_head_title {
     color: var(--desc-colour, #d9d9d9);
@@ -32,8 +33,10 @@
     text-transform: uppercase;
   }
   .section_title {
+    width: auto;
+    min-width: 60vw;
     padding: 0px 0px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px; /* 134.783% */
   }
   .section_title_large {
@@ -44,21 +47,21 @@
   .section_home_content > .section_content {
     width: auto;
     padding: 10px 0px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 140.9%; /* 28.98px */
     letter-spacing: -0.3px;
   }
   .section_content {
     width: auto;
     padding: 10px 0px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 140.9%; /* 28.98px */
     letter-spacing: -0.3px;
   }
   .section_home_data {
     position: absolute;
     left: 0em;
-    top: 18em;
+    top: 14em;
     z-index: 4;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -258,7 +261,7 @@
   /* Additional styling for buttons (adjust as needed) */
   .slider__buttons {
     position: absolute;
-    top: 220px;
+    top: 245px;
     left: 75px;
     margin-top: 1rem;
   }
@@ -333,7 +336,7 @@
     padding: 12px 12px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
   }
   .card-body-items {
     margin: auto;
@@ -418,14 +421,23 @@
 @media (max-width: 600px) {
   .section_footer_yellow {
     padding: 2em;
-    height: 400px;
+    height: auto;
     display: flex;
     position: absolute;
-    top: -130px;
+    top: -95px;
     left: 18px;
     border-radius: 32px;
     background: #c0943a;
     z-index: 1;
+  }
+  .section_footer_blue {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: var(--footer-bg);
+    z-index: 0;
+    top: 50px;
+    padding: 2em;
   }
   .section_footer_top {
     width: 100%;
