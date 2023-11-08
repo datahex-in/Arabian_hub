@@ -474,7 +474,69 @@
               <span class="section_head_title">FUN & FULFILLING</span>
             </div>
             <div class="section_title">Activities</div>
-
+            <div class="section_activity_container">
+              <div class="section_activity_left"><img src="/images/activity img/sand_tours.svg" alt="">
+              </div>
+              <div class="section_activity_center">
+                <div class="section_activity_bar"></div>
+              </div>
+              <div class="section_activity_right">
+                <div class="accordion__list">
+                  <div class="accordion">
+                    <span class="accordion__title">
+                      Dune Bashing
+                      <span class="arrow"></span>
+                    </span>
+                    <div class="accordion__content-wrap">
+                      <div class="accordion__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur facere fuga fugit iusto
+                        libero modi. Consectetur delectus eligendi esse id laboriosam mollitia nam, necessitatibus nihil
+                        nisi quae repellendus reprehenderit veniam?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <span class="accordion__title ">
+                      Camel Riding
+                      <span class="arrow"></span>
+                    </span>
+                    <div class="accordion__content-wrap">
+                      <div class="accordion__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur facere fuga fugit iusto
+                        libero modi. Consectetur delectus eligendi esse id laboriosam mollitia nam, necessitatibus nihil
+                        nisi quae repellendus reprehenderit veniam?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <span class="accordion__title ">
+                      Sky Diving
+                      <span class="arrow"></span>
+                    </span>
+                    <div class="accordion__content-wrap">
+                      <div class="accordion__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur facere fuga fugit iusto
+                        libero modi. Consectetur delectus eligendi esse id laboriosam mollitia nam, necessitatibus nihil
+                        nisi quae repellendus reprehenderit veniam?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <span class="accordion__title ">
+                      Sky View Edge Walk
+                      <span class="arrow"></span>
+                    </span>
+                    <div class="accordion__content-wrap">
+                      <div class="accordion__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur facere fuga fugit iusto
+                        libero modi. Consectetur delectus eligendi esse id laboriosam mollitia nam, necessitatibus nihil
+                        nisi quae repellendus reprehenderit veniam?data
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="section_activity_btn">
@@ -578,6 +640,35 @@
     <!-- ========== Start footer ========== -->
     <%-include("footer.ejs")%>
       <!-- ========== End footer ========== -->
+      <script>
+        function handleClass(node, className, action = "add") {
+          node.classList[action](className);
+        }
+
+        const accordions = document.querySelectorAll(".accordion");
+
+        accordions.forEach(function (accordion) {
+          const heading = accordion.querySelector("span");
+          const accordionContentWrap = accordion.querySelector(
+            ".accordion__content-wrap"
+          );
+          const originalHeight = accordionContentWrap.offsetHeight;
+          accordionContentWrap.style.height = 0;
+
+          let accordionActiveClass = "accordion__active";
+
+          heading.addEventListener("click", function () {
+            if (this.parentNode.classList.contains(accordionActiveClass)) {
+              handleClass(this.parentNode, accordionActiveClass, "remove");
+              accordionContentWrap.style.height = 0 + "px";
+            } else {
+              handleClass(this.parentNode, accordionActiveClass);
+              accordionContentWrap.style.height = originalHeight + "px";
+            }
+          });
+        });
+
+      </script>
 </body>
 
 </html>

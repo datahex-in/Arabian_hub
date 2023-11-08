@@ -281,12 +281,28 @@
 /***** End Section *****/
 /***** activity_Section *****/
 @media (max-width: 600px) {
-  .activity_bar {
-    margin-top: 20px;
+  .section_activity_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20px;
+  }
+  .section_activity_bar {
     width: 11px;
-    height: 200px;
+    height: 350px;
+    min-height: fit-content;
     background: #fff5cb;
   }
+  .section_activity_right {
+    margin-left: 20px;
+  }
+  .accordion__title {
+    padding: 8px 24px;
+    font-size: 16px;
+  }
+  .accordion__content {
+    font-size: 14px;
+  }
+
   .tab__label,
   .tab__close {
     font-size: 16px;
@@ -376,7 +392,7 @@
     width: 50vw;
     color: #fff4bd;
     font-family: var(--font-Montserrat);
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: inherit; /* 146.875% */
@@ -385,7 +401,7 @@
     width: 50vw;
     color: var(--golden-h1, #eed66f);
     font-family: var(--font-playfair);
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: inherit; /* 119.492% */
@@ -393,7 +409,7 @@
   .section_travel_arrow {
     position: absolute;
     right: 25px;
-    top: 25px;
+    top: 10px;
   }
 }
 /***** End travel_Section *****/

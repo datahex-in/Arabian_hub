@@ -3,6 +3,7 @@
   font-family: "Gilory";
   src: url("/assets/fonts/Gilroy-Regular.ttf") format("truetype");
 }
+
 :root {
   /* color */
   --dark-grey: rgba(65, 65, 65, 0.22);
@@ -1071,13 +1072,32 @@ input[type="date"]:focus::-webkit-datetime-edit {
   position: relative;
   overflow: hidden;
   height: 640px;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 /***** Activity_Section *****/
+.section_activity_container {
+  margin-top: 20px;
+  display: grid;
+  justify-content: space-between;
+  width: 100%;
+  grid-template-columns: 1fr 30px 1fr;
+}
+.section_activity_left > img {
+  width: 100%;
+  height: 600px;
+}
+
+.section_activity_bar {
+  width: 11px;
+  height: 600px;
+  flex-shrink: 0;
+  background: #fff5cb;
+}
 .section_activity {
   position: relative;
   padding-top: 5em;
   background-color: var(--about-bg);
+  height: auto;
+  padding-bottom: 50px;
 }
 .section_activity_items img {
   width: 100%;
@@ -1112,6 +1132,61 @@ input[type="date"]:focus::-webkit-datetime-edit {
   width: 11px;
   height: 540px;
   background: #fff5cb;
+}
+
+.accordion__list {
+  overflow: hidden;
+}
+
+.accordion__title {
+  padding: 10px 24px;
+  color: var(--h1-colour, #fff9d9);
+  font-family: var(--font-Montserrat);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 136.9%; /* 35.594px */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: 0.3s all;
+  position: relative;
+  bottom: 40px;
+}
+.accordion:hover .accordion__title,
+.accordion__active .accordion__title {
+  background: var(--button-color);
+}
+.accordion__content-wrap {
+  background: var(--color-base-1);
+  overflow: hidden;
+  transition: 0.2s all ease-in-out;
+}
+.accordion__content {
+  color: var(--desc-colour, #d9d9d9);
+  font-family: var(--font-Montserrat);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.accordion__active .accordion__content-wrap {
+  display: block;
+  height: auto;
+  bottom: 20px;
+}
+.accordion__active .arrow {
+  transform: rotate(-135deg);
+}
+
+.arrow {
+  margin-top: 4px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translateY(0px) rotate(45deg);
+  transition: 0.2s;
 }
 /***** End Activity_Section *****/
 
@@ -1155,6 +1230,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .section_travel_btn {
   width: 180px;
   position: relative;
+  top: 3px;
 }
 .section_travel_arrow {
   position: absolute;
