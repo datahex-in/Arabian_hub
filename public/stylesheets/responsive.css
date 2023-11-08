@@ -421,14 +421,23 @@
 @media (max-width: 600px) {
   .section_footer_yellow {
     padding: 2em;
-    height: 400px;
+    height: auto;
     display: flex;
     position: absolute;
-    top: -130px;
+    top: -95px;
     left: 18px;
     border-radius: 32px;
     background: #c0943a;
     z-index: 1;
+  }
+  .section_footer_blue {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: var(--footer-bg);
+    z-index: 0;
+    top: 50px;
+    padding: 2em;
   }
   .section_footer_top {
     width: 100%;

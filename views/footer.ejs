@@ -5,10 +5,13 @@
                 <h3>Get our regular updates on Travel hacks and stuffs!</h3>
                 <p>By subscribing to our newsletter, you also gain early access to trip discounts. So don’t miss out!!
                 </p>
-                <div class="section_footer_form">
-                    <form class="form_action">
-                        <button type="button" class="btn_form_submit" onclick="enableInput()">Subscribe!</button>
-                        <input type="email" id="emailInput" placeholder="email@example.com" class="disabled-input">
+                <div class="content">
+                    <form class="subscription">
+                        <input class="add-email" type="email" placeholder="Enter Your Email">
+                        <button class="submit-email" type="button">
+                            <span class="before-submit">Subscribe</span>
+                            <span class="after-submit">Thank you for subscribing!</span>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -81,7 +84,12 @@
     </div>
 </footer>
 
-
+<script>
+    document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        document.querySelector('.subscription').classList.add('done');
+    });
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Add jQuery (use a specific version if needed) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
