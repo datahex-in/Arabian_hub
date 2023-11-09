@@ -136,6 +136,7 @@ li {
 }
 
 .nav div.logo {
+  margin-top: 0px;
   float: left;
   width: auto;
   height: auto;
@@ -217,6 +218,7 @@ li {
     display: block;
   }
   .nav div.logo {
+    margin-top: 0px;
     margin-left: 0px;
     padding-left: 15px;
   }
@@ -500,6 +502,7 @@ li {
   letter-spacing: -0.96px;
 }
 .section_content {
+  width: 30vw;
   padding: 5px 0px;
   color: var(--desc-colour, #d9d9d9);
   font-family: var(--font-Montserrat);
@@ -883,8 +886,54 @@ input[type="date"]:focus::-webkit-datetime-edit {
 /***** End Destination Section *****/
 
 /* tours sections___________- */
+.section_package_one {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.section_package_one > img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .tour_section_header {
-  padding: 140px 50px;
+  position: absolute;
+  left: 80px;
+  top: 120px;
+  z-index: 4;
+}
+.section_package_items {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.section_package_book {
+  margin-top: 15px;
+  width: 100%;
+}
+.section_package_book button {
+  width: 384px;
+  height: 56px;
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.section_content_right {
+  margin-right: 20px;
+}
+.section_content_wrong {
+  margin-right: 20px;
+}
+.included_section {
+  margin-top: 3em;
+}
+.feature_title_items {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 180px;
 }
 .desert_safari img {
   width: 587px;
@@ -921,12 +970,12 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .section_package_btn {
   position: relative;
-  width: auto;
+  width: 150px;
 }
 .section_btn_arrow {
   position: absolute;
   right: 30px;
-  top: 5px;
+  top: 10px;
 }
 .section_package_tabs {
   position: relative;
@@ -1360,7 +1409,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   width: 100%;
   height: auto;
   position: relative;
-  top: 200px;
+  top: 180px;
 }
 .section_footer_yellow {
   padding: 2em;
@@ -1430,14 +1479,14 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 .subscription .submit-email {
   position: absolute;
-  top: 0;
-  right: 0px;
-  height: calc(100% - 2px);
+  top: 1px;
+  right: 1px;
+  height: calc(95% - 2px);
   width: 100px;
   border: none;
   outline: none;
   margin: 1px;
-  padding: 0 20px;
+  padding: 12px 20px;
   cursor: pointer;
   border-radius: 24px;
   background: var(--button, #c69c41);
@@ -1943,7 +1992,7 @@ ul {
 }
 .boxs_button h1 {
   color: #fff;
-  font-family: Montserrat;
+  font-family: var(--font-Montserrat);
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -1980,7 +2029,8 @@ ul {
 }
 /* packages details section */
 .section_overview {
-  margin-top: 70px;
+  margin-top: 10px;
+  padding: 10px;
 }
 .included_section {
   width: 424px;
@@ -2045,7 +2095,6 @@ ul {
 .contact_one,
 .contact_two {
   position: relative;
-  margin-left: 15px; /* Adjust the value to set the desired gap */
 }
 .format_head {
   display: flex;
@@ -2062,6 +2111,12 @@ ul {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.section_contact_map {
+  height: 400px;
+  position: relative;
+  top: 100px;
+  z-index: 0;
 }
 .contact_format_btn_head {
   width: 139px;
@@ -2104,7 +2159,7 @@ ul {
 .contact_info p {
   color: var(--Desc-colour, #d9d9d9);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Montserrat;
+  font-family: var(--font-Montserrat);
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
