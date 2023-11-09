@@ -896,7 +896,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .section_mini_title {
   color: var(--h1-colour, #fff9d9);
-  font-family: Montserrat;
+  font-family: var(--font-Montserrat);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -2098,4 +2098,59 @@ ul {
 .float_right {
   float: right;
   margin-top: 15px;
+}
+
+/* contact page two */
+.contact_info p {
+  color: var(--Desc-colour, #d9d9d9);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35.95px; /* 143.8% */
+  letter-spacing: 0.25px;
+  margin-top: 30px;
+}
+.contact_form_head_left {
+  padding: 70px;
+}
+.contact_form_head_left h5 {
+  color: var(--Desc-colour, #d9d9d9);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--font-Montserrat);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25.9px; /* 161.875% */
+  letter-spacing: 1.25px;
+}
+.contact_form_head_left h1 {
+  color: var(--golden-title, #eed66f);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--font-playfair);
+  font-size: 39.06px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48.825px; /* 125% */
+  letter-spacing: 1.25px;
+}
+.adderss_content {
+  color: var(--Desc-colour, #d9d9d9);
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 146.5%; /* 36.625px */
+}
+.contact_table {
+  margin-top: 70px;
+  width: 644px;
+  height: 633px;
+  flex-shrink: 0;
+  fill: var(--dark_form_bg, rgba(59, 72, 86, 0.38));
+  stroke-width: 0.25px;
+  stroke: var(--golden-h1);
+  box-shadow: 1px 1px 4px 0px #304458 inset;
+  backdrop-filter: blur(50px);
 }
