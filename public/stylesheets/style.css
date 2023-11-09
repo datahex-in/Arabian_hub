@@ -70,6 +70,15 @@ li {
   align-items: baseline;
   gap: 12px;
 }
+.mini_sub_title {
+  color: var(--Golden-h1, #fff9d9);
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.33px;
+}
 .small_header_itemTwo {
   display: flex;
   justify-content: space-between;
@@ -471,6 +480,15 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: 62px; /* 134.783% */
+}
+.section_sub_title {
+  color: var(--golden-title, #eed66f);
+  font-family: Playfair Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
 }
 .section_title_large {
   color: var(--golden-h1, #eed66f);
@@ -878,7 +896,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .section_mini_title {
   color: var(--h1-colour, #fff9d9);
-  font-family: Montserrat;
+  font-family: var(--font-Montserrat);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -1128,7 +1146,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   margin-top: 50px;
 }
 .activity_btn_arrow {
-  top: 5px;
+  top: 12px;
   position: absolute;
   left: 175px;
 }
@@ -1239,7 +1257,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .section_travel_arrow {
   position: absolute;
   right: 10px;
-  top: 30px;
+  top: 36px;
 }
 /***** End travel_Section *****/
 
@@ -1669,6 +1687,8 @@ ul {
 
 /***** slide cards Section *****/
 .slider_explore_cards {
+  position: relative;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1831,7 +1851,7 @@ ul {
 .chevron_tl {
   position: absolute;
   right: 10px;
-  bottom: 10px;
+  bottom: 13px;
 }
 .explore button {
   border: none;
@@ -1853,31 +1873,35 @@ ul {
 }
 /* dubai_details page */
 .Dubai_details_top {
+  margin: auto;
+  width: 70%;
+  margin-top: 5em;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
-  padding: 50px 250px;
+  position: relative;
 }
 .section_title_2 {
   color: var(--golden-title, #eed66f);
   text-align: center;
-  font-family: Playfair Display;
+  font-family: var(--font-playfair);
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: 66px; /* 137.5% */
   align-items: center;
+  margin-bottom: 20px;
 }
 .section_content_2 {
   color: var(--Desc-colour, #d9d9d9);
   text-align: center;
-  font-family: Montserrat;
+  font-family: var(--font-Montserrat);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 156.4%; /* 28.152px */
   letter-spacing: -0.27px;
+  margin-bottom: 20px;
 }
 .activities_grids_head {
   padding: 10px 50px;
@@ -1953,4 +1977,180 @@ ul {
 }
 .atv_tour_description {
   padding: 5px 20px;
+}
+/* packages details section */
+.section_overview {
+  margin-top: 70px;
+}
+.included_section {
+  width: 424px;
+  height: 750px;
+  border-radius: 8px;
+  border: 0.25px solid var(--golden-gradient, #aa790f);
+  background: rgba(59, 72, 86, 0.38);
+  /* glass */
+  box-shadow: 1px 1px 4px 0px #304458 inset;
+  backdrop-filter: blur(50px);
+}
+.included_activites {
+  padding-top: 20px;
+  margin-top: 10px;
+}
+.bookvist {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 384px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--button, #c69c41);
+}
+.bookvist button {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.225px;
+  border: none;
+  background-color: transparent;
+}
+
+/* contact page---- */
+.contact_table_head {
+  margin-top: 100px;
+}
+.contact_one {
+  width: 311px;
+  height: 389px;
+  border-radius: 8px;
+  border: 0.5px solid var(--golden-gradient, #aa790f);
+  background: #183659;
+
+  /* glass */
+  box-shadow: 1px 1px 4px 0px #304458 inset;
+  backdrop-filter: blur(50px);
+}
+.contact_two {
+  width: 647px;
+  height: 387px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 0.5px solid var(--golden-gradient, #aa790f);
+  background: #183659;
+}
+.contact_one,
+.contact_two {
+  position: relative;
+  margin-left: 15px; /* Adjust the value to set the desired gap */
+}
+.format_head {
+  display: flex;
+  width: 247px;
+  height: 65px;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 180px;
+}
+.format_head h1 {
+  color: var(--Golden-h1, #fff9d9);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.contact_format_btn_head {
+  width: 139px;
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid var(--golden-gradient, #aa790f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+}
+.contact_format_btn_head button {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.225px;
+  background-color: transparent;
+  border: none;
+}
+.section_mini_para {
+  color: var(--Desc-colour, #d9d9d9);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 149.9%; /* 17.988px */
+  letter-spacing: -0.18px;
+}
+.float_right {
+  float: right;
+  margin-top: 15px;
+}
+
+/* contact page two */
+.contact_info p {
+  color: var(--Desc-colour, #d9d9d9);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35.95px; /* 143.8% */
+  letter-spacing: 0.25px;
+  margin-top: 30px;
+}
+.contact_form_head_left {
+  padding: 70px;
+}
+.contact_form_head_left h5 {
+  color: var(--Desc-colour, #d9d9d9);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--font-Montserrat);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25.9px; /* 161.875% */
+  letter-spacing: 1.25px;
+}
+.contact_form_head_left h1 {
+  color: var(--golden-title, #eed66f);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--font-playfair);
+  font-size: 39.06px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48.825px; /* 125% */
+  letter-spacing: 1.25px;
+}
+.adderss_content {
+  color: var(--Desc-colour, #d9d9d9);
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 146.5%; /* 36.625px */
+}
+.contact_table {
+  margin-top: 70px;
+  width: 644px;
+  height: 633px;
+  flex-shrink: 0;
+  fill: var(--dark_form_bg, rgba(59, 72, 86, 0.38));
+  stroke-width: 0.25px;
+  stroke: var(--golden-h1);
+  box-shadow: 1px 1px 4px 0px #304458 inset;
+  backdrop-filter: blur(50px);
 }
