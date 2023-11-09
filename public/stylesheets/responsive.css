@@ -411,8 +411,8 @@
   }
   .section_travel_arrow {
     position: absolute;
-    right: 25px;
-    top: 10px;
+    right: 28px;
+    top: 16px;
   }
 }
 /***** End travel_Section *****/
@@ -524,3 +524,28 @@
     object-fit: cover;
   }
 }
+
+/***** dubai_Section *****/
+@media (max-width: 600px) {
+  .Dubai_details_top {
+    margin: auto;
+    width: 85%;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .section_title_2 {
+    font-size: 18px;
+    line-height: normal; /* 137.5% */
+  }
+  .section_content_2 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .section_mini_title {
+    font-size: 18px;
+  }
+}
+/***** End dubai_Section *****/

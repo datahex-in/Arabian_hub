@@ -1146,7 +1146,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   margin-top: 50px;
 }
 .activity_btn_arrow {
-  top: 5px;
+  top: 12px;
   position: absolute;
   left: 175px;
 }
@@ -1257,7 +1257,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .section_travel_arrow {
   position: absolute;
   right: 10px;
-  top: 30px;
+  top: 36px;
 }
 /***** End travel_Section *****/
 
@@ -1687,6 +1687,8 @@ ul {
 
 /***** slide cards Section *****/
 .slider_explore_cards {
+  position: relative;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1849,7 +1851,7 @@ ul {
 .chevron_tl {
   position: absolute;
   right: 10px;
-  bottom: 10px;
+  bottom: 13px;
 }
 .explore button {
   border: none;
@@ -1871,31 +1873,35 @@ ul {
 }
 /* dubai_details page */
 .Dubai_details_top {
+  margin: auto;
+  width: 70%;
+  margin-top: 5em;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
-  padding: 50px 250px;
+  position: relative;
 }
 .section_title_2 {
   color: var(--golden-title, #eed66f);
   text-align: center;
-  font-family: Playfair Display;
+  font-family: var(--font-playfair);
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: 66px; /* 137.5% */
   align-items: center;
+  margin-bottom: 20px;
 }
 .section_content_2 {
   color: var(--Desc-colour, #d9d9d9);
   text-align: center;
-  font-family: Montserrat;
+  font-family: var(--font-Montserrat);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 156.4%; /* 28.152px */
   letter-spacing: -0.27px;
+  margin-bottom: 20px;
 }
 .activities_grids_head {
   padding: 10px 50px;
