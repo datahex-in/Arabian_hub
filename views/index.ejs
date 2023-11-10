@@ -161,14 +161,12 @@
               </span>
               <span class="section_head_title">About</span>
             </div>
-            <div class="section_title">What sets us apart?</div>
-            <p class="section_content section_content_left">At Arabian Hub, we are your passport to unforgettable
-              journeys
-              and cherished
-              memories. As a premier travel
-              agency based in the heart of the United Arab Emirates, we specialize in curating exceptional trip packages
-              to
-              some of the world's most famous destinations, all with a touch of the Arabian allure.</p>
+            <div class="section_title">
+              <%= aboutdata.title %>
+            </div>
+            <p class="section_content section_content_left">
+              <%= aboutdata.description %>
+            </p>
             <button type="button" class="btn btn-yellow">Book Visit</button>
           </div>
           <div class="section_about_right">
@@ -284,13 +282,15 @@
               to some.
             </p>
             <div class="section_package_btn"> <a href="/packages"><button type="button" class="btn btn-yellow">View
-                  All</button></a> <span class="section_btn_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="15"
-                  height="16" viewBox="0 0 15 16" fill="none">
+                  All</button></a>
+              <div class="section_btn_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
+                  viewBox="0 0 15 16" fill="none">
                   <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
                     stroke-linejoin="round" />
                   <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727" stroke="white" stroke-linecap="round"
                     stroke-linejoin="round" />
-                </svg></span></div>
+                </svg></div>
+            </div>
           </div>
         </div>
         <div class="section_package_tabs">

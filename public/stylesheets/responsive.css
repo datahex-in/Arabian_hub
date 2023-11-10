@@ -53,9 +53,9 @@
   }
   .section_content {
     width: auto;
-    padding: 10px 0px;
-    font-size: 14px;
-    line-height: 140.9%; /* 28.98px */
+    padding: 0px 0px;
+    font-size: 13px;
+    line-height: normal; /* 28.98px */
     letter-spacing: -0.3px;
   }
   .section_home_data {
@@ -261,7 +261,7 @@
   /* Additional styling for buttons (adjust as needed) */
   .slider__buttons {
     position: absolute;
-    top: 245px;
+    top: 200px;
     left: 75px;
     margin-top: 1rem;
   }
@@ -547,5 +547,44 @@
   .section_mini_title {
     font-size: 18px;
   }
+  .adventure_card {
+    margin: 0px;
+    margin-top: 20px;
+    width: auto;
+  }
 }
 /***** End dubai_Section *****/
+
+/* tours section */
+@media (max-width: 600px) {
+  .slide_card_items {
+    width: auto;
+    height: 30vh;
+    overflow-x: hidden;
+  }
+}
+
+/*****tour package Section *****/
+@media (max-width: 600px) {
+  .tour_section_header {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    z-index: 4;
+  }
+  .section_package_book button {
+    width: 150px;
+    height: 35px;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  .feature_title_items {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 38px;
+  }
+}
+/***** Endtour package Section *****/
