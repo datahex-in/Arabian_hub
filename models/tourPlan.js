@@ -4,7 +4,7 @@ const TourPlanSchema = new mongoose.Schema(
   {
     package: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Package"
+      ref: "Package",
     },
     title: {
       type: String,
