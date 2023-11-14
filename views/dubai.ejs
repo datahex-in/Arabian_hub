@@ -3,7 +3,8 @@
     <%-include("header.ejs")%>
         <!-- ========== End navbar ========== -->
         <div class=" section_sand">
-            <div class="section_row_one" style="background-image: url('/images/sandtours/dubai.svg');">
+            <div class="section_package_one">
+                <img src="/images/sandtours/dubai.svg" alt="">
                 <div class="section_experience_one">
                     <div class="section_experience_bar">
                         <hr class="section_bar">
@@ -27,7 +28,8 @@
                         Seamlessly create and
                         organize your travel plans, leaving no destination uncharted. Discover your next adventure,
                         where
-                        every click leads to a new experience. Seamlessly create and organize your travel plans, leaving
+                        every click leads to a new experience. Seamlessly create and organize your travel plans,
+                        leaving
                         no
                         destination uncharted.</p>
                     <div class="about_gradient_topright"></div>
@@ -37,7 +39,11 @@
                 <div class="slider_explore_cards">
                     <div class="slide_card_items"
                         style="background-image: url('https://images.unsplash.com/photo-1637846959991-18e54d6e2035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1462&q=80');">
-                        <h3>Everest, 8849m</h3>
+                        <h2>04</h2>
+                        <h3>Elbrus, 5462m</h3>
+                        <button type="button" class="btn btn-yellow-gradient">Explore
+                            Packages
+                        </button>
                     </div>
                     <div class="slide_card_items active" style="
             background-image: url('https://images.unsplash.com/photo-1627896157734-4d7d4388f28b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80');
@@ -60,7 +66,7 @@
                         <h2>01</h2>
                         <h3>Elbrus, 5462m</h3>
                         <button type="button" class="btn btn-yellow-gradient">Explore
-                            More
+                            Packages
                         </button>
                     </div>
                     <div class="about_gradient_bottomleft"></div>
@@ -205,7 +211,7 @@
 
             <!-- ========== Start travel plan Section ========== -->
             <div class="section_travel">
-                <div class="contianer">
+                <div class="container">
                     <div class="section_travel_box">
                         <img src="/images/travel img/travel men.svg" alt="" class="section_travel_img">
                         <div class="section_travel_items">
@@ -232,6 +238,13 @@
                 <div class="container">
                     <div class="section_faq_box">
                         <div class="section_title">Frequently Asked Questions</div>
+                        <div class="section_faq_tab">
+                            <button type="button" class="btn btn-yellow-gradient">Section 1</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 2</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 3</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 4</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 5</button>
+                        </div>
                         <div class="accordion_box">
                             <div class="accordion">
                                 <div class="at-item">
@@ -288,6 +301,25 @@
             <!-- ========== Start footer ========== -->
             <%-include("footer.ejs")%>
                 <!-- ========== End footer ========== -->
+                <script>
+                    // faq_section
+                    $(document).ready(function () {
+                        $(".section-at-title").click(function () {
+                            $(this)
+                                .toggleClass("active")
+                                .next(".at-tab")
+                                .slideToggle()
+                                .parent()
+                                .siblings()
+                                .find(".at-tab")
+                                .slideUp()
+                                .prev()
+                                .removeClass("active");
+                        });
+                    });
+                    // faq_end_section
+                </script>
+
                 <script>
                     const slides = document.querySelectorAll('.slide_card_items');
                     let active = document.querySelector('.slide_card_items.active');

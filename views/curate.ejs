@@ -1,420 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arabian Hub</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="/stylesheets/responsive.css">
-    <link rel="stylesheet" href="/stylesheets/Components.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-
 <body>
-    <!-- ========== Start small header ========== -->
-    <div class="small_header">
-        <div class="small_header_itemOne">
-            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path
-                        d="M5.5 14C6.05228 14 6.5 13.5523 6.5 13C6.5 12.4477 6.05228 12 5.5 12C4.94772 12 4.5 12.4477 4.5 13C4.5 13.5523 4.94772 14 5.5 14Z"
-                        fill="#DDDDDD" />
-                    <path
-                        d="M12.5 14C13.0523 14 13.5 13.5523 13.5 13C13.5 12.4477 13.0523 12 12.5 12C11.9477 12 11.5 12.4477 11.5 13C11.5 13.5523 11.9477 14 12.5 14Z"
-                        fill="#DDDDDD" />
-                    <path
-                        d="M14.275 3.77437C14.2048 3.68845 14.1163 3.61925 14.0159 3.57179C13.9156 3.52433 13.806 3.49981 13.695 3.5H4.18406L3.9925 2.41313C3.97207 2.29735 3.91151 2.19248 3.82144 2.11693C3.73137 2.04138 3.61756 1.99998 3.5 2H1.5C1.36739 2 1.24021 2.05268 1.14645 2.14645C1.05268 2.24021 1 2.36739 1 2.5C1 2.63261 1.05268 2.75979 1.14645 2.85355C1.24021 2.94732 1.36739 3 1.5 3H3.08063L4.5075 11.0869C4.52793 11.2026 4.58849 11.3075 4.67856 11.3831C4.76863 11.4586 4.88244 11.5 5 11.5H13C13.1326 11.5 13.2598 11.4473 13.3536 11.3536C13.4473 11.2598 13.5 11.1326 13.5 11C13.5 10.8674 13.4473 10.7402 13.3536 10.6464C13.2598 10.5527 13.1326 10.5 13 10.5H5.41938L5.24313 9.5H12.795C12.9684 9.49978 13.1364 9.43966 13.2706 9.32981C13.4047 9.21996 13.4968 9.06713 13.5313 8.89719L14.4313 4.39719C14.4529 4.28828 14.4502 4.17592 14.4232 4.06821C14.3961 3.96051 14.3455 3.86015 14.275 3.77437Z"
-                        fill="#DDDDDD" />
-                </svg></span>
-            <span>
-                <h5 class="small_header_title">My Cart</h5>
-            </span>
-        </div>
-        <div class="small_header_itemTwo">
-            <span>
-                <h5 class="small_header_title">Follow us</h5>
-            </span>
-            <span class="logo_items"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                    fill="#0000">
-                    <path
-                        d="M8.68539 1.33383C9.17188 1.33196 9.65837 1.33685 10.1447 1.34849L10.2741 1.35316C10.4234 1.35849 10.5707 1.36516 10.7487 1.37316C11.4581 1.40649 11.9421 1.51849 12.3667 1.68316C12.8067 1.85249 13.1774 2.08183 13.5481 2.45249C13.887 2.78557 14.1493 3.18846 14.3167 3.63316C14.4814 4.05783 14.5934 4.54249 14.6267 5.25183C14.6347 5.42916 14.6414 5.57716 14.6467 5.72649L14.6507 5.85583C14.6626 6.34196 14.6677 6.82823 14.6661 7.31449L14.6667 7.81183V8.68516C14.6684 9.17165 14.6633 9.65814 14.6514 10.1445L14.6474 10.2738C14.6421 10.4232 14.6354 10.5705 14.6274 10.7485C14.5941 11.4578 14.4807 11.9418 14.3167 12.3665C14.1498 12.8117 13.8875 13.2149 13.5481 13.5478C13.2147 13.8867 12.8116 14.149 12.3667 14.3165C11.9421 14.4812 11.4581 14.5932 10.7487 14.6265C10.5707 14.6345 10.4234 14.6412 10.2741 14.6465L10.1447 14.6505C9.65838 14.6623 9.17189 14.6675 8.68539 14.6658L8.18806 14.6665H7.31539C6.8289 14.6681 6.34241 14.663 5.85606 14.6512L5.72673 14.6472C5.56847 14.6414 5.41024 14.6348 5.25206 14.6272C4.54273 14.5938 4.05873 14.4805 3.63339 14.3165C3.18852 14.1494 2.78555 13.887 2.45273 13.5478C2.11342 13.2147 1.85088 12.8115 1.68339 12.3665C1.51873 11.9418 1.40673 11.4578 1.37339 10.7485C1.36597 10.5903 1.3593 10.4321 1.35339 10.2738L1.35006 10.1445C1.33777 9.65815 1.33221 9.17166 1.33339 8.68516V7.31449C1.33153 6.82823 1.33642 6.34196 1.34806 5.85583L1.35273 5.72649C1.35806 5.57716 1.36473 5.42916 1.37273 5.25183C1.40606 4.54183 1.51806 4.05849 1.68273 3.63316C1.85031 3.18824 2.11337 2.78546 2.45339 2.45316C2.78599 2.11366 3.1887 1.85088 3.63339 1.68316C4.05873 1.51849 4.54206 1.40649 5.25206 1.37316L5.72673 1.35316L5.85606 1.34983C6.34218 1.33754 6.82845 1.33199 7.31473 1.33316L8.68539 1.33383ZM8.00006 4.66716C7.5584 4.66091 7.1199 4.74251 6.71004 4.90721C6.30019 5.0719 5.92716 5.31641 5.61262 5.62653C5.29809 5.93665 5.04833 6.30619 4.87785 6.71367C4.70738 7.12115 4.61959 7.55845 4.61959 8.00016C4.61959 8.44187 4.70738 8.87917 4.87785 9.28665C5.04833 9.69414 5.29809 10.0637 5.61262 10.3738C5.92716 10.6839 6.30019 10.9284 6.71004 11.0931C7.1199 11.2578 7.5584 11.3394 8.00006 11.3332C8.88412 11.3332 9.73196 10.982 10.3571 10.3569C10.9822 9.73173 11.3334 8.88388 11.3334 7.99983C11.3334 7.11577 10.9822 6.26793 10.3571 5.64281C9.73196 5.01768 8.88412 4.66716 8.00006 4.66716ZM8.00006 6.00049C8.26573 5.9956 8.52972 6.04369 8.77659 6.14197C9.02347 6.24024 9.24828 6.38672 9.43791 6.57286C9.62754 6.75899 9.77818 6.98105 9.88102 7.22606C9.98387 7.47106 10.0369 7.73411 10.0369 7.99982C10.037 8.26554 9.98405 8.5286 9.88128 8.77364C9.77852 9.01868 9.62796 9.24079 9.43839 9.42699C9.24882 9.61318 9.02405 9.75974 8.77721 9.8581C8.53037 9.95645 8.2664 10.0046 8.00073 9.99983C7.47029 9.99983 6.96159 9.78911 6.58651 9.41404C6.21144 9.03897 6.00073 8.53026 6.00073 7.99983C6.00073 7.4694 6.21144 6.96069 6.58651 6.58561C6.96159 6.21054 7.47029 5.99983 8.00073 5.99983L8.00006 6.00049ZM11.5001 3.66716C11.285 3.67577 11.0816 3.76726 10.9325 3.92248C10.7833 4.07769 10.7001 4.28458 10.7001 4.49983C10.7001 4.71507 10.7833 4.92197 10.9325 5.07718C11.0816 5.23239 11.285 5.32389 11.5001 5.33249C11.7211 5.33249 11.933 5.2447 12.0893 5.08842C12.2456 4.93214 12.3334 4.72018 12.3334 4.49916C12.3334 4.27815 12.2456 4.06619 12.0893 3.90991C11.933 3.75363 11.7211 3.66583 11.5001 3.66583V3.66716Z"
-                        fill="#DDDDDD" class="instagram_logo" />
-                </svg></span>
-            <span class="logo_items"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                    fill="none">
-                    <path
-                        d="M1.66667 11.3333C1.20095 9.13551 1.20095 6.86449 1.66667 4.66667C1.72786 4.44347 1.8461 4.24005 2.00974 4.0764C2.17339 3.91276 2.37681 3.79453 2.6 3.73333C6.17564 3.14097 9.82437 3.14097 13.4 3.73333C13.6232 3.79453 13.8266 3.91276 13.9903 4.0764C14.1539 4.24005 14.2721 4.44347 14.3333 4.66667C14.7991 6.86449 14.7991 9.13551 14.3333 11.3333C14.2721 11.5565 14.1539 11.7599 13.9903 11.9236C13.8266 12.0872 13.6232 12.2055 13.4 12.2667C9.82438 12.8591 6.17563 12.8591 2.6 12.2667C2.37681 12.2055 2.17339 12.0872 2.00974 11.9236C1.8461 11.7599 1.72786 11.5565 1.66667 11.3333Z"
-                        fill="#DDDDDD" stroke="#DDDDDD" stroke-linecap="round" stroke-linejoin="round"
-                        class="youtube_logo" />
-                    <path d="M6.6665 10L9.99984 8L6.6665 6V10Z" fill="#0A2440" />
-                </svg></span>
-            <span class="logo_items"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                    fill="none">
-                    <path
-                        d="M14.6668 7.99968C14.6668 4.31968 11.6802 1.33301 8.00016 1.33301C4.32016 1.33301 1.3335 4.31968 1.3335 7.99968C1.3335 11.2263 3.62683 13.913 6.66683 14.533V9.99968H5.33349V7.99968H6.66683V6.33301C6.66683 5.04634 7.71349 3.99968 9.00016 3.99968H10.6668V5.99968H9.33349C8.96683 5.99968 8.66683 6.29968 8.66683 6.66634V7.99968H10.6668V9.99968H8.66683V14.633C12.0335 14.2997 14.6668 11.4597 14.6668 7.99968Z"
-                        fill="#DDDDDD" class="facebook_logo" />
-                </svg></span>
-            <span class="logo_items"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                    fill="none">
-                    <path
-                        d="M14.8081 3.77062C14.2993 3.99568 13.7598 4.14353 13.2074 4.20928C13.7895 3.86071 14.2249 3.31244 14.4328 2.66662C13.8861 2.99195 13.2868 3.21995 12.6628 3.34328C12.2432 2.89434 11.687 2.59659 11.0807 2.49634C10.4745 2.39609 9.85205 2.49895 9.31026 2.78892C8.76848 3.07889 8.33768 3.53974 8.08483 4.09981C7.83198 4.65988 7.77125 5.2878 7.91209 5.88595C6.80338 5.83048 5.71873 5.54243 4.72858 5.04053C3.73843 4.53862 2.86491 3.83406 2.16475 2.97262C1.91694 3.39825 1.78672 3.8821 1.78742 4.37462C1.78742 5.34128 2.28008 6.19528 3.02742 6.69528C2.58476 6.68132 2.15185 6.56178 1.76475 6.34662V6.38062C1.76473 7.02453 1.98744 7.64863 2.3951 8.14706C2.80277 8.6455 3.37029 8.98758 4.00142 9.11528C3.59051 9.22676 3.15961 9.24317 2.74142 9.16328C2.91937 9.71754 3.26623 10.2023 3.73342 10.5495C4.20061 10.8968 4.76472 11.0893 5.34675 11.0999C4.76832 11.5542 4.10601 11.8901 3.39769 12.0882C2.68937 12.2863 1.94894 12.3429 1.21875 12.2546C2.49323 13.0742 3.97682 13.5093 5.49208 13.5079C10.6214 13.5079 13.4254 9.25928 13.4254 5.57462C13.4254 5.45462 13.4228 5.33328 13.4174 5.21395C13.963 4.81952 14.4339 4.33033 14.8081 3.77062Z"
-                        fill="#DDDDDD" class="twitter_logo" />
-                </svg></span>
-        </div>
-    </div>
-    <!-- ========== End small header ========== -->
-
-
     <!-- ========== Start header navbar ========== -->
-    <header>
-        <nav class="nav">
-            <div class="container">
-                <div class="logo">
-                    <a href="#"><img src="/images/logo/logo_svg.svg" alt=""></a>
-                </div>
-                <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="/" class="active">Home</a></li>
-                        <li><a href="/packages">Packages</a></li>
-                        <li><a href="/destinations">Destinations</a></li>
-                        <li><a href="/activities">Activities</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><button type="button" class="btn btn-white">Log in</button></li>
-                        <li><button type="button" class="btn btn-yellow">Book Visit</button></li>
-                    </ul>
-                </div>
-                <span class="navTrigger">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span>
-            </div>
-        </nav>
-    </header>
-    <!-- ========== End navbar ========== -->
+    <%-include("header.ejs")%>
+        <!-- ========== End navbar ========== -->
 
-    <div class=" section_sand">
-        <div class="section_row_one" style="background-image: url('/images/sandtours/curate.svg');">
-            <div class="section_experience_one">
-                <div class="section_experience_bar">
-                    <hr class="section_bar">
-                </div>
-                <div class="tour_section_header">
-
-                    <h1 class="section_title capitilize ">
-                        Curate your Trip
-                    </h1>
-                    <p class="section_content">Discover your next adventure, where every click
-                        leads to a new experience. Seamlessly create and organize your travel plans, leaving no
-                        destination uncharted.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-6  desert_safari">
-                    <img src="/images/sandtours/camel.svg" alt="">
-                </div>
-                <div class="col-6">
-                    <p class="content">Desert Safari</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="similar_package">
-            <h1 class="section_mini_title">Similar Packages</h1>
-        </div>
-    </div>
-
-    <!-- ========== Start Experience Section ========== -->
-    <div class="container section_experience">
-        <div class="section_row_one">
-            <div class="section_experience_one">
-                <div class="section_experience_bar">
-                    <hr class="section_bar_yellow">
-                </div>
-                <div>
-                    <p class="section_content uppercase">Offering you a wide array of activities, each providing a </p>
-                    <h1 class="section_title_large">
-                        Unique & Diverse Experience
-                    </h1>
-                </div>
-            </div>
-            <div class="section_experience_two section_position"><img src="/images/experience img/road trips.png"
-                    alt="Loading" class="section_experience_img">
-                <div class="section_experience_items">
-                    <h3 class="section_experience_title">Road Trips</h3>
-                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left-up">
-                </div>
-            </div>
-            <div class="section_experience_three section_position">
-                <img src="/images/experience img/sand tours.png" alt="loading" class="section_experience_img">
-                <div class="section_experience_items">
-                    <h3 class="section_experience_title">Sand Tours</h3>
-                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
-                </div>
-            </div>
-        </div>
-        <div class="section_row_two">
-            <div class="section_experience_four section_position"><img src="/images/experience img/airplane.png"
-                    alt="loading" class="section_experience_img">
-                <div class="section_experience_items">
-                    <h3 class="section_experience_title">Air Tours</h3>
-                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
-                </div>
-            </div>
-            <div class="section_experience_five  section_position"><img src="/images/experience img/water boats.jpg"
-                    alt="loading" class="section_experience_img">
-                <div class="section_experience_items">
-                    <h3 class="section_experience_title">Water Boats</h3>
-                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
-                </div>
-            </div>
-            <div class="section_experience_six section_position"><img src="/images/experience img/party.png"
-                    alt="loading" class="section_experience_img">
-                <div class="section_experience_items">
-                    <h3 class="section_experience_title">Party Moods</h3>
-                    <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ========== End Experience Section ========== -->
-
-    <!-- ========== Start about_Section ========== -->
-    <div class="section_about">
-        <div class="container">
-            <div class="section_about_box">
-                <div class="section_about_left">
-                    <div class="section_about_head"><span class="section_about_line">
-                            <hr class="section_bar_white">
-                        </span>
-                        <span class="section_head_title">About</span>
+        <div class=" section_sand">
+            <div class="section_package_one">
+                <img src="/images/sandtours/curate.svg" alt="">
+                <div class="section_experience_one">
+                    <div class="section_experience_bar">
+                        <hr class="section_bar">
                     </div>
-                    <div class="section_title">What sets us apart?</div>
-                    <p class="section_content section_content_left">At Arabian Hub, we are your passport to
-                        unforgettable journeys
-                        and cherished
-                        memories. As a premier travel
-                        agency based in the heart of the United Arab Emirates, we specialize in curating exceptional
-                        trip packages
-                        to
-                        some of the world's most famous destinations, all with a touch of the Arabian allure.</p>
-                    <button type="button" class="btn btn-yellow">Book Visit</button>
-                </div>
-                <div class="section_about_right">
-                    <div class="section_about_card card_active">
-                        <h1 class="about_card_title">Feature Title</h2>
-                            <img src="/images/about img/vip.svg" alt="" class="about_card_img">
-                            <p class="about_card_content">lorem data is now shown in below</p>
-                    </div>
-                    <div class="section_about_card">
-                        <h1 class="about_card_title">Feature Title</h2>
-                            <img src="/images/about img/star_box.svg" alt="" class="about_card_img">
-                            <p class="about_card_content">lorem data is now shown in below</p>
-                    </div>
-                    <div class="section_about_card">
-                        <h1 class="about_card_title">Feature Title</h2>
-                            <img src="/images/about img/location.svg" alt="" class="about_card_img">
-                            <p class="about_card_content">lorem data is now shown in below</p>
-                    </div>
-                    <div class="section_about_card">
-                        <h1 class="about_card_title">Feature Title</h2>
-                            <img src="/images/about img/camel.svg" alt="" class="about_card_img">
-                            <p class="about_card_content">lorem data is now shown in below</p>
+                    <div class="tour_section_header">
+                        <h1 class="section_title capitilize ">
+                            Curate your Trip
+                        </h1>
+                        <p class="section_content">Discover your next adventure, where every click
+                            leads to a new experience. Seamlessly create and organize your travel plans, leaving no
+                            destination uncharted.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="about_gradient_topright"></div>
-        <div class="about_gradient_bottomleft"></div>
-    </div>
-    <!-- ========== End about_Section ========== -->
-
-    <!-- ========== Start Destiantion Section ========== -->
-    <div class="section_destination">
-        <div class="container">
-            <div class="section_destination_box">
-                <div class="section_destination_left">
-                    <div class="section_about_head"><span class="section_about_line">
-                            <hr class="section_bar_white">
-                        </span>
-                        <span class="section_head_title">mesmerising places for you</span>
-                    </div>
-                    <div class="section_title">Destinations</div>
-                    <p class="section_content section_content_left">At Arabian Hub, we are your passport to
-                        unforgettable
-                        journeys and cherished
-                        memories. As a premier travel agency based in the heart of the United Arab Emirates, we
-                        specialize in
-                        curating exceptional trip packages to some..</p>
-                </div>
-                <div class="section_destination_right">
-                    <div class="container">
-                        <div class="slider" data-slider>
-                            <ul class="slider__track" data-slider-track>
-                                <li>
-                                    <div class="slide"><img src="/images/destiantion img/slider_img_one.png" alt=""
-                                            class="slider_img_items"></div>
-                                </li>
-                                <li>
-                                    <div class="slide">
-                                        <img src="/images/destiantion img/slider_img_two.svg" alt=""
-                                            class="slider_img_items">
+            <div class="contact_form_head">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="contact_form_head_left">
+                                <div>
+                                    <h5><span><img src="/images/sandtours/Line.svg" alt=""></span> HERE AT YOUR
+                                        SERVICE
+                                    </h5>
+                                </div>
+                                <div>
+                                    <h1>Let’s draw the map to your Dream Trip</h1>
+                                </div>
+                                <div class="contact_info">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+                                    </p>
+                                    <p> <span><img src="/images/sandtours/contact_message.svg" alt=""></span>
+                                        samplemail@hotmail.com</p>
+                                    <p><span><img src="/images/sandtours/phone.svg" alt=""></span> +971 0000 000 00
+                                    </p>
+                                    <div style="width: 380px;
+                                height: 180px;">
+                                        <p class="adderss_content"> <span><img
+                                                    src="/images/sandtours/contactlocation.svg" alt=""></span>Arabian
+                                            Tour
+                                            Hub
+                                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 553236</p>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="slide">
-                                        <img src="/images/destiantion img/slider_img_one.png" alt=""
-                                            class="slider_img_items">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="contact_table">
+                                <div class="gold_splash">
+                                    <div class="about_gradient_topright"></div>
+                                </div>
+                                <div class="contact_table_inner">
+                                    <div class="container">
+                                        <div class="contact_us">
+                                            <h1>Talk to us</h1>
+                                        </div>
+
+                                        <div class="input_block">
+                                            <div class="name">
+                                                <label for="name" class="name">Name*</label>
+                                                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="input_block">
+                                            <div class="email">
+                                                <label for="email" class="name">Email*</label>
+                                                <input type="email" id="email" name="email"
+                                                    placeholder="Enter Email ID">
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="input_block">
+                                            <div class="phone">
+                                                <label for="phone" class="name">Phone*</label>
+                                                <input type="tel" id="phone" name="phone"
+                                                    placeholder="Enter Your Number">
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="input_block">
+                                            <div class="message">
+                                                <label for="message" class="name">Send us a message*</label>
+                                                <textarea id="message" name="message"
+                                                    placeholder="Write Somthing"></textarea>
+                                                <hr>
+                                            </div>
+                                        </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="slide"> <img src="/images/destiantion img/slider_img_one.png" alt=""
-                                            class="slider_img_items"></div>
-                                </li>
-                                <li>
-                                    <div class="slide"> <img src="/images/destiantion img/slider_img_one.png" alt=""
-                                            class="slider_img_items"></div>
-                                </li>
-                                <li>
-                                    <div class="slide"> <img src="/images/destiantion img/slider_img_one.png" alt=""
-                                            class="slider_img_items"></div>
-                                </li>
-                            </ul>
-                            <div class="slider__buttons">
-                                <button class="slider__button" data-slider-prev disabled>
-                                    <img src="/images/destiantion img/arrow_left.svg" alt="">
-                                </button>
-                                <button class="slider__button" data-slider-next>
-                                    <img src="/images/destiantion img/arrow_right.svg" alt="">
-                                </button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- ========== End Destiantion Section ========== -->
 
-
-    <!-- ========== Start popularSection ========== -->
-    <div class="section_package">
-        <div class="container">
-            <div class="section_package_box">
-                <div class="section_package_left">
-                    <div class="section_about_head">
-                        <span class="section_about_line">
-                            <hr class="section_bar_yellow">
-                        </span>
-                        <span class="section_head_title">mesmerising places for you</span>
-                    </div>
-                    <div class="section_title">Popular Packages</div>
-                </div>
-                <div class="section_package_right">
-                    <p class="section_content">
-                        At Arabian Hub, we are your passport to unforgettable journeys and cherished memories. As a
-                        premier travel
-                        agency based in the heart of the United Arab Emirates, we specialize in curating exceptional
-                        trip packages
-                        to some.
-                    </p>
-                    <div class="section_package_btn"> <button type="button" class="btn btn-yellow">View All</button>
-                        <span class="section_btn_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
-                                viewBox="0 0 15 16" fill="none">
-                                <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727" stroke="white"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg></span>
-                    </div>
-                </div>
-            </div>
-            <div class="section_package_tabs">
-                <li><button type="button" class="btn btn-yellow-gradient">Ajman</button></li>
-                <li><button type="button" class="btn btn-yellow-gradient">Ras-al-Khaima</button></li>
-                <li><button type="button" class="btn btn-yellow-gradient current-btn">Dubai</button></li>
-                <li><button type="button" class="btn btn-yellow-gradient">Ajman</button></li>
-                <li><button type="button" class="btn btn-yellow-gradient">Umm Al-Quwain</button></li>
-                <div class="section_tab_btn"> <img src="/images/packages img/arrow-down.png" alt=""></div>
-            </div>
-        </div>
-    </div>
-    <!-- ========== Start package cards ========== -->
-    <div class="gtco-testimonials">
-        <div class="owl-carousel owl-carousel1 owl-theme">
-            <div>
-                <div class="card text-center"><img class="carousel-img-items" src="/images/packages img/waterfall.png"
-                        alt="">
-                    <div class="card-body">
-                        <h5>Ronne Galle <br />
-                            <span> Project Manager </span>
-                        </h5>
-                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                            impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card text-center"><img class="carousel-img-items"
-                        src="/images/destiantion img/slider_img_two.svg" alt="">
-                    <div class="card-body">
-                        <h5>Martha Brown<br />
-                            <span> Project Manager </span>
-                        </h5>
-                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                            impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                </div>
-
-            </div>
-            <div>
-                <div class="card text-center"><img class="carousel-img-items"
-                        src="/images/destiantion img/slider_img_two.svg" alt="">
-                    <div class="card-body">
-                        <h5>Martha Brown<br />
-                            <span> Project Manager </span>
-                        </h5>
-                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                            impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card text-center"><img class="carousel-img-items"
-                        src="/images/destiantion img/slider_img_one.png" alt="">
-                    <div class="card-body">
-                        <h5>Hanna Lisem<br />
-                            <span> Project Manager </span>
-                        </h5>
-                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                            impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="about_gradient_topright"></div>
-        <div class="about_gradient_bottomleft"></div>
-    </div>
-    <!-- ========== End package cards ========== -->
-    <!-- ========== End popularSection ========== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Add jQuery (use a specific version if needed) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Add Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <!-- Add Owl Carousel theme CSS (optional) -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <!-- Add Owl Carousel JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="/javascripts/main.js"></script>
-    <script src="/javascripts/Navbar.js"></script>
+        <!-- ========== End package cards ========== -->
+        <!-- ========== End popularSection ========== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Add jQuery (use a specific version if needed) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Add Owl Carousel CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <!-- Add Owl Carousel theme CSS (optional) -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <!-- Add Owl Carousel JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="/javascripts/main.js"></script>
+        <script src="/javascripts/Navbar.js"></script>
 </body>
 
 </html>
