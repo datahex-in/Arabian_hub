@@ -159,13 +159,15 @@
             <div class="section_about_head"><span class="section_about_line">
                 <hr class="section_bar_white">
               </span>
-              <span class="section_head_title">About</span>
+              <span class="section_head_title">
+                <%= aboutData.title %>
+              </span>
             </div>
             <div class="section_title">
-              <%= aboutdata.title %>
+              About Us
             </div>
             <p class="section_content section_content_left">
-              <%= aboutdata.description %>
+              <%= aboutData.description %>
             </p>
             <button type="button" class="btn btn-yellow">Book Visit</button>
           </div>
@@ -206,13 +208,14 @@
             <div class="section_about_head"><span class="section_about_line">
                 <hr class="section_bar_white">
               </span>
-              <span class="section_head_title">mesmerising places for you</span>
+              <span class="section_head_title">
+                <%= destinationData.title %>
+              </span>
             </div>
             <div class="section_title">Destinations</div>
-            <p class="section_content section_content_left">At Arabian Hub, we are your passport to unforgettable
-              journeys and cherished
-              memories. As a premier travel agency based in the heart of the United Arab Emirates, we specialize in
-              curating exceptional trip packages to some..</p>
+            <p class="section_content section_content_left">
+              <%= destinationData.description %>
+            </p>
           </div>
           <div class="section_destination_right">
             <div class="container">
@@ -271,15 +274,15 @@
               <span class="section_about_line">
                 <hr class="section_bar_yellow">
               </span>
-              <span class="section_head_title">mesmerising places for you</span>
+              <span class="section_head_title">
+                <%= packageData.title %>
+              </span>
             </div>
             <div class="section_title">Popular Packages</div>
           </div>
           <div class="section_package_right">
             <p class="section_content">
-              At Arabian Hub, we are your passport to unforgettable journeys and cherished memories. As a premier travel
-              agency based in the heart of the United Arab Emirates, we specialize in curating exceptional trip packages
-              to some.
+              <%= packageData.description %>
             </p>
             <div class="section_package_btn"> <a href="/packages"><button type="button" class="btn btn-yellow">View
                   All</button></a>
@@ -644,33 +647,5 @@
     <!-- ========== Start footer ========== -->
     <%-include("footer.ejs")%>
       <!-- ========== End footer ========== -->
-      <script>
-        function handleClass(node, className, action = "add") {
-          node.classList[action](className);
-        }
 
-        const accordions = document.querySelectorAll(".accordion");
-
-        accordions.forEach(function (accordion) {
-          const heading = accordion.querySelector("span");
-          const accordionContentWrap = accordion.querySelector(
-            ".accordion__content-wrap"
-          );
-          const originalHeight = accordionContentWrap.offsetHeight;
-          accordionContentWrap.style.height = 0;
-
-          let accordionActiveClass = "accordion__active";
-
-          heading.addEventListener("click", function () {
-            if (this.parentNode.classList.contains(accordionActiveClass)) {
-              handleClass(this.parentNode, accordionActiveClass, "remove");
-              accordionContentWrap.style.height = 0 + "px";
-            } else {
-              handleClass(this.parentNode, accordionActiveClass);
-              accordionContentWrap.style.height = originalHeight + "px";
-            }
-          });
-        });
-
-      </script>
 </body>

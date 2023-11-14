@@ -646,7 +646,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   width: 60px;
   height: 3px;
   background-color: #eed66f;
-  margin-top: 28px;
+  margin-top: 18px;
 }
 .section_experience_one {
   display: flex;
@@ -1453,6 +1453,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 
 .content {
+  background: white;
   width: auto;
   height: 50px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
@@ -1953,7 +1954,7 @@ ul {
   margin-bottom: 20px;
 }
 .activities_grids_head {
-  padding: 10px 50px;
+  /* padding: 10px 50px; */
 }
 .activities_grids {
   margin-top: 40px;
