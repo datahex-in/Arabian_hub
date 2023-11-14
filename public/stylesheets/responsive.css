@@ -602,5 +602,9 @@
     justify-content: flex-start;
     gap: 38px;
   }
+  /* active_Section-- */
+  .activities_grids_head {
+    padding: 10px 50px;
+  }
 }
 /***** Endtour package Section *****/
