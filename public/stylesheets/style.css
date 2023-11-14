@@ -18,6 +18,7 @@
   --h1-colour: #fff9d9;
   --card-colour: #072c54;
   --footer-bg: #081c32;
+  --dark_form_bg: #3b4856;
   --Golden-gradient: linear-gradient(
     180deg,
     #aa790f 0.02%,
@@ -2165,31 +2166,58 @@ ul {
 }
 
 /* contact page---- */
-.contact_table_head {
-  margin-top: 100px;
+.contact_form_head_left {
+  margin-top: 4em;
 }
-.contact_one {
-  width: 311px;
-  height: 389px;
-  border-radius: 8px;
-  border: 0.5px solid var(--golden-gradient, #aa790f);
-  background: #183659;
-
-  /* glass */
+.contact_info_items {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  color: red;
+}
+.contact_info_details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+.contact_info_details p {
+  margin-top: 10px;
+}
+.contact_form_right {
+  margin-top: 4em;
+  padding: 30px;
+  fill: var(--dark_form_bg, rgba(59, 72, 86, 0.38));
+  stroke-width: 0.25px;
+  stroke: var(--golden-gradient, #aa790f);
   box-shadow: 1px 1px 4px 0px #304458 inset;
   backdrop-filter: blur(50px);
 }
-.contact_two {
-  width: 647px;
-  height: 387px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  border: 0.5px solid var(--golden-gradient, #aa790f);
-  background: #183659;
+.section_contact_title {
+  color: var(--golden-title, #eed66f);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--font-Montserrat);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40.45px;
+  letter-spacing: 0.25px;
 }
-.contact_one,
-.contact_two {
-  position: relative;
+
+textarea {
+  margin: 0;
+  min-height: 60px;
+}
+
+.field-text {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.field-text--character-count {
+  text-align: right;
 }
 .format_head {
   display: flex;
@@ -2252,17 +2280,17 @@ ul {
 
 /* contact page two message */
 
-.contact_table {
+.contact_form_right {
   position: relative;
-  margin-top: 70px;
-  width: 644px;
-  height: 633px;
+  margin-top: 60px;
   flex-shrink: 0;
   fill: var(--dark_form_bg, rgba(59, 72, 86, 0.38));
   stroke-width: 0.25px;
   stroke: var(--Golden-gradientn);
-  box-shadow: 1px 1px 4px 0px #304458 inset;
-  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
 }
 .gold_splash {
   position: absolute;
@@ -2272,7 +2300,7 @@ ul {
 .contact_us h1 {
   color: var(--golden-title, #eed66f);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Montserrat;
+  font-family: var(--font-Montserrat);
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -2289,7 +2317,7 @@ ul {
 input,
 textarea,
 label {
-  width: 40vw;
+  width: 38vw;
   display: block;
 }
 
@@ -2324,7 +2352,7 @@ textarea {
 .name {
   color: var(--Golden-h1, #fff9d9);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Montserrat;
+  font-family: var(--font-Montserrat);
   font-size: 12.8px;
   font-style: normal;
   font-weight: 500;
@@ -2332,7 +2360,7 @@ textarea {
 }
 input::placeholder {
   color: var(--placeholder_dark_form, #858585);
-  font-family: Montserrat;
+  font-family: var(--font-Montserrat);
   font-size: 18px;
   font-style: normal;
   font-weight: 300;

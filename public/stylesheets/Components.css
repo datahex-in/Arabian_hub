@@ -105,6 +105,11 @@ button {
 .btn_form_submit:hover ~ input {
   padding: 16px 0 16px 16px;
 }
+.btn_msg {
+  width: 38vw;
+  color: #fff !important;
+  background-color: var(--button) !important;
+}
 @media (max-width: 600px) {
   .travel_btn {
     margin-top: 5px;
