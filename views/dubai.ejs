@@ -39,7 +39,11 @@
                 <div class="slider_explore_cards">
                     <div class="slide_card_items"
                         style="background-image: url('https://images.unsplash.com/photo-1637846959991-18e54d6e2035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1462&q=80');">
-                        <h3>Everest, 8849m</h3>
+                        <h2>04</h2>
+                        <h3>Elbrus, 5462m</h3>
+                        <button type="button" class="btn btn-yellow-gradient">Explore
+                            Packages
+                        </button>
                     </div>
                     <div class="slide_card_items active" style="
             background-image: url('https://images.unsplash.com/photo-1627896157734-4d7d4388f28b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80');
@@ -62,7 +66,7 @@
                         <h2>01</h2>
                         <h3>Elbrus, 5462m</h3>
                         <button type="button" class="btn btn-yellow-gradient">Explore
-                            More
+                            Packages
                         </button>
                     </div>
                     <div class="about_gradient_bottomleft"></div>
@@ -207,15 +211,14 @@
 
             <!-- ========== Start travel plan Section ========== -->
             <div class="section_travel">
-                <div class="contianer">
+                <div class="container">
                     <div class="section_travel_box">
                         <img src="/images/travel img/travel men.svg" alt="" class="section_travel_img">
                         <div class="section_travel_items">
                             <h2 class="section_travel_content">Ensure your travel plans align seamlessly with your
                                 Schedule!</h2>
                             <h1 class="section_travel_title">Customize your very own travel experience.</h1>
-                            <div class="section_travel_btn"> <button class=" btn travel_btn">Curate Your
-                                    Trip</button>
+                            <div class="section_travel_btn"> <button class=" btn travel_btn">Curate Your Trip</button>
                                 <span class="section_travel_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="15"
                                         height="16" viewBox="0 0 15 16" fill="none">
                                         <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
@@ -235,6 +238,13 @@
                 <div class="container">
                     <div class="section_faq_box">
                         <div class="section_title">Frequently Asked Questions</div>
+                        <div class="section_faq_tab">
+                            <button type="button" class="btn btn-yellow-gradient">Section 1</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 2</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 3</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 4</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 5</button>
+                        </div>
                         <div class="accordion_box">
                             <div class="accordion">
                                 <div class="at-item">
@@ -243,8 +253,7 @@
                                         <hr>
                                     </div>
                                     <div class="at-tab" style="display: block;">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                        reprehenderit.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
                                     </div>
                                 </div>
                                 <div class="at-item">
@@ -253,8 +262,7 @@
                                         <hr>
                                     </div>
                                     <div class="at-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                        reprehenderit.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
                                     </div>
                                 </div>
                                 <div class="at-item">
@@ -263,8 +271,7 @@
                                         <hr>
                                     </div>
                                     <div class="at-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                        reprehenderit.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
                                     </div>
                                 </div>
                                 <div class="at-item">
@@ -273,8 +280,7 @@
                                         <hr>
                                     </div>
                                     <div class="at-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                        reprehenderit.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
                                     </div>
                                 </div>
                                 <div class="at-item">
@@ -283,8 +289,7 @@
                                         <hr>
                                     </div>
                                     <div class="at-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                        reprehenderit.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
                                     </div>
                                 </div>
                             </div>
@@ -296,6 +301,25 @@
             <!-- ========== Start footer ========== -->
             <%-include("footer.ejs")%>
                 <!-- ========== End footer ========== -->
+                <script>
+                    // faq_section
+                    $(document).ready(function () {
+                        $(".section-at-title").click(function () {
+                            $(this)
+                                .toggleClass("active")
+                                .next(".at-tab")
+                                .slideToggle()
+                                .parent()
+                                .siblings()
+                                .find(".at-tab")
+                                .slideUp()
+                                .prev()
+                                .removeClass("active");
+                        });
+                    });
+                    // faq_end_section
+                </script>
+
                 <script>
                     const slides = document.querySelectorAll('.slide_card_items');
                     let active = document.querySelector('.slide_card_items.active');
