@@ -35,47 +35,31 @@
                 <div class="row">
                     <div class="col-xl-8 col-12">
                         <h1 class="section_sub_title">Overview</h1>
-                        <p class="section_content">Lorem ipsum dolor sit amet consectetur. Ac nulla sapien dolor
-                            faucibus
-                            ligula
-                            mauris nec. Congue
-                            iaculis volutpat tellus iaculis sed. Morbi cras ac faucibus integer porta sapien varius
-                            lorem
-                            risus.
-                            Netus et mi imperdiet in id nec gravida egestas habitasse. Mi convallis nunc lacinia commodo
-                            nulla
-                            non vulputate. Lorem ipsum dolor sit amet consectetur. Ac nulla sapien dolor faucibus ligula
-                            mauris
-                            nec. Congue iaculis volutpat tellus iaculis sed. Morbi cras ac faucibus integer porta sapien
-                            varius
-                            lorem risus. Netus et.</p>
+                        <p class="section_content">
+                            <%= packageData[0].description %>
+                        </p>
                         <div class="included_excluded-section" style="margin-top: 80px;">
                             <h1 class="section_sub_title">Included/Excluded</h1>
                             <div class="feature_title_items">
                                 <div class="feature_title_tick">
-                                    <p class="section_content"><span class="section_content_right"><img
-                                                src="/images/sandtours/tick.svg" alt=""></span>Feature Title</p>
-                                    <p class="section_content"><span class="section_content_right"><img
-                                                src="/images/sandtours/tick.svg" alt=""></span>Feature Title</p>
-                                    <p class="section_content"><span class="section_content_right"><img
-                                                src="/images/sandtours/tick.svg" alt=""></span>Feature Title</p>
-                                    <p class="section_content"><span class="section_content_right"><img
-                                                src="/images/sandtours/tick.svg" alt=""></span>Feature Title</p>
-                                    <p class="section_content"><span class="section_content_right"><img
-                                                src="/images/sandtours/tick.svg" alt=""></span>Feature Title</p>
+                                    <% packageData.forEach(function(data) { %>
+                                        <p class="section_content">
+                                            <span class="section_content_right">
+                                                <img src="/images/sandtours/tick.svg" alt="">
+                                            </span>
+                                            <%= data.included %>
+                                        </p>
+                                        <% }); %>
                                 </div>
                                 <div class="feature_title_tick">
-                                    <p class="section_content"> <span class="section_content_wrong"><img
-                                                src="/images/sandtours/wrong.svg" alt=""></span>Feature Title</p>
-                                    <p class="section_content"> <span class="section_content_wrong"><img
-                                                src="/images/sandtours/wrong.svg" alt=""></span>Feature Title</p>
-                                    <p class="section_content"><span class="section_content_wrong"><img
-                                                src="/images/sandtours/wrong.svg" alt=""></span>
-                                        Feature Title</p>
-                                    <p class="section_content"> <span class="section_content_wrong"><img
-                                                src="/images/sandtours/wrong.svg" alt=""></span>Feature Title</p>
-                                    <p class="section_content"> <span class="section_content_wrong"><img
-                                                src="images/sandtours/wrong.svg" alt=""></span>Feature Title</p>
+                                    <% packageData.forEach(function(data) { %>
+                                        <p class="section_content">
+                                            <span class="section_content_right">
+                                                <img src="/images/sandtours/wrong.svg" alt="">
+                                            </span>
+                                            <%= data.included %>
+                                        </p>
+                                        <% }); %>
                                 </div>
                             </div>
                         </div>
@@ -114,19 +98,80 @@
                                                 alt=""></span> Mountain Camping</p>
                                 </div>
                                 <div>
-                                    <p class="section_package_book"> <button>Book
-                                            Visit</button>
+                                    <p class="section_package_book"> <a href="/book"><button>Book
+                                                Visit</button></a>
                                     </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_faq">
+                        <div class="container">
+                            <div class="section_faq_box">
+                                <div class="section_title">Frequently Asked Questions</div>
+                                <div class="accordion_box">
+                                    <div class="accordion">
+                                        <div class="at-item">
+                                            <div class="section-at-title active">
+                                                <h2>Accordion title 1</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab" style="display: block;">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 2</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 3</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 3</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 3</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- ========== End package cards ========== -->
-        <!-- ========== End popularSection ========== -->
-        <%-include("footer.ejs")%>
+            <!-- ========== End package cards ========== -->
+            <!-- ========== End popularSection ========== -->
+            <%-include("footer.ejs")%>
 </body>
 
 </html>

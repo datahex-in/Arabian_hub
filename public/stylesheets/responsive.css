@@ -379,6 +379,7 @@
   }
   .section_travel_box {
     position: relative;
+    margin-top: 5em;
   }
   .section_travel_img {
     width: 100%;
@@ -386,8 +387,8 @@
   }
   .section_travel_items {
     position: absolute;
-    top: 45px !important;
-    left: 45px;
+    top: 28px !important;
+    left: 23px;
     z-index: 1;
     top: 0px;
   }
@@ -417,6 +418,21 @@
 }
 /***** End travel_Section *****/
 
+/***** faq_Section *****/
+@media (max-width: 600px) {
+  .section_faq_box {
+    margin-top: 3em;
+  }
+  .section_faq_tab {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+/***** End faq_Section *****/
 /***** Section_footer *****/
 @media (max-width: 600px) {
   .section_footer_yellow {
@@ -517,7 +533,7 @@
 /* activities section */
 @media (max-width: 600px) {
   .activities_grids {
-    margin-top: 40px;
+    margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -585,6 +601,10 @@
     display: flex;
     justify-content: flex-start;
     gap: 38px;
+  }
+  /* active_Section-- */
+  .activities_grids_head {
+    padding: 10px 50px;
   }
 }
 /***** Endtour package Section *****/

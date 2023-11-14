@@ -136,7 +136,7 @@ li {
 }
 
 .nav div.logo {
-  margin-top: 0px;
+  margin-top: 8px;
   float: left;
   width: auto;
   height: auto;
@@ -205,6 +205,84 @@ li {
   transition: all 0.4s ease;
 }
 
+/***** Section_social_icons *****/
+.btn-whatsapp-pulse {
+  background: #25d366;
+  color: white;
+  position: fixed;
+  z-index: 8;
+  bottom: 20px;
+  right: 30px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  padding: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+.btn_instagram_pulse {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  80% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+}
+
+.btn-whatsapp-pulse-border {
+  bottom: 120px;
+  right: 30px;
+  animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  padding: 25px;
+  border: 5px solid #cf34cd;
+  opacity: 0.75;
+  animation-name: pulse-border;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    padding: 25px;
+    opacity: 0.75;
+  }
+  75% {
+    padding: 50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/***** End Section_social_icons *****/
+
 /* Media qurey section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -218,7 +296,7 @@ li {
     display: block;
   }
   .nav div.logo {
-    margin-top: 0px;
+    margin-top: 8px;
     margin-left: 0px;
     padding-left: 15px;
   }
@@ -502,7 +580,7 @@ li {
   letter-spacing: -0.96px;
 }
 .section_content {
-  width: 30vw;
+  width: 40vw;
   padding: 5px 0px;
   color: var(--desc-colour, #d9d9d9);
   font-family: var(--font-Montserrat);
@@ -531,7 +609,7 @@ li {
   max-width: 250px;
 }
 .form__field {
-  width: auto;
+  width: 180px;
   cursor: pointer;
   color: #c2c2c2;
   font-family: var(--font-Montserrat);
@@ -954,6 +1032,9 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 
 /***** package_Section *****/
+.package_section {
+  padding-top: 2em;
+}
 .section_package_box {
   position: relative;
   padding-top: 5em;
@@ -1263,19 +1344,21 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 /***** travel_Section *****/
 .section_travel {
-  height: 900px;
+  height: 800px;
 }
 .section_travel_box {
   position: relative;
+  margin-top: 10em;
 }
 .section_travel_img {
+  margin: auto;
   width: 100%;
   height: auto;
 }
 .section_travel_items {
   position: absolute;
-  top: 200px !important;
-  left: 300px;
+  top: 150px !important;
+  left: 100px;
   z-index: 1;
   top: 0px;
 }
@@ -1289,8 +1372,8 @@ input[type="date"]:focus::-webkit-datetime-edit {
   line-height: 47px; /* 146.875% */
 }
 .section_travel_title {
+  color: #09233f;
   width: 42vw;
-  color: var(--golden-h1, #eed66f);
   font-family: var(--font-playfair);
   font-size: 59px;
   font-style: normal;
@@ -1306,15 +1389,23 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .section_travel_arrow {
   position: absolute;
   right: 10px;
-  top: 36px;
+  top: 40px;
 }
 /***** End travel_Section *****/
 
 /***** Section_faq *****/
+.section_faq_tab {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .accordion_box {
+  border: 1px solid rgba(229, 219, 172, 0.15);
+  background: #081f37;
   margin-top: 3em;
   border-radius: 16px;
-  border: 1px solid #e5dbac;
 }
 .accordion {
   max-width: 1170px;
@@ -1419,7 +1510,9 @@ input[type="date"]:focus::-webkit-datetime-edit {
   top: -100px;
   left: 80px;
   border-radius: 32px;
-  background: #c0943a;
+  background: rgba(21, 67, 118, 0.26);
+  box-shadow: 2px 2px 4px 0px #16385b inset;
+  backdrop-filter: blur(50px);
   z-index: 1;
 }
 .section_footer_top {
@@ -1429,7 +1522,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   margin-bottom: 2em;
 }
 .section_footer_top > h3 {
-  color: #fff;
+  color: #ffef9b;
   text-align: center;
   font-family: var(--font-Montserrat);
   font-size: 32px;
@@ -1455,7 +1548,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .content {
   background: white;
   width: auto;
-  height: 50px;
+  height: 60px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 60px;
   overflow: hidden;
@@ -1469,6 +1562,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 .subscription .add-email {
   position: absolute;
+  background: #fff5ca;
   top: 0;
   left: 0;
   width: 100%;
@@ -1480,14 +1574,14 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 .subscription .submit-email {
   position: absolute;
-  top: 1px;
-  right: 1px;
-  height: calc(95% - 2px);
-  width: 100px;
+  top: 5px;
+  right: 8px;
+  height: calc(80% - 2px);
+  width: 120px;
   border: none;
   outline: none;
   margin: 1px;
-  padding: 12px 20px;
+  padding: 12px 30px;
   cursor: pointer;
   border-radius: 24px;
   background: var(--button, #c69c41);
@@ -1841,7 +1935,7 @@ ul {
   float: right;
 }
 .destination_card_items {
-  padding-top: 6.5em;
+  padding-top: 8.5em;
 }
 .adventure_card {
   margin: 10px;
@@ -1954,7 +2048,7 @@ ul {
   margin-bottom: 20px;
 }
 .activities_grids_head {
-  padding: 10px 50px;
+  /* padding: 10px 50px; */
 }
 .activities_grids {
   margin-top: 40px;
@@ -2156,49 +2250,8 @@ ul {
   margin-top: 15px;
 }
 
-/* contact page two */
-.contact_info p {
-  color: var(--Desc-colour, #d9d9d9);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: var(--font-Montserrat);
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 35.95px; /* 143.8% */
-  letter-spacing: 0.25px;
-  margin-top: 30px;
-}
-.contact_form_head_left {
-  padding: 70px;
-}
-.contact_form_head_left h5 {
-  color: var(--Desc-colour, #d9d9d9);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: var(--font-Montserrat);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 25.9px; /* 161.875% */
-  letter-spacing: 1.25px;
-}
-.contact_form_head_left h1 {
-  color: var(--golden-title, #eed66f);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: var(--font-playfair);
-  font-size: 39.06px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 48.825px; /* 125% */
-  letter-spacing: 1.25px;
-}
-.adderss_content {
-  color: var(--Desc-colour, #d9d9d9);
-  font-family: Montserrat;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 146.5%; /* 36.625px */
-}
+/* contact page two message */
+
 .contact_table {
   position: relative;
   margin-top: 70px;

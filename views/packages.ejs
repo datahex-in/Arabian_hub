@@ -48,7 +48,9 @@
                             <div><img src="/images/packages img/sand_girl.svg" alt="" class="package_cards_img">
                             </div>
                             <div class="card-body-items">
-                                <div class="package_title">Package Name</div>
+                                <div class="package_title">
+                                    <%= packageData[0].packageName%>
+                                </div>
                                 <div class="package_price">AED</div>
                                 <div class="package_travel">
                                     <span>
@@ -70,11 +72,12 @@
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
                                                 fill="#DDDDDD" />
-                                        </svg> Dubai,Uae
+                                        </svg>
+                                        <%= packageData[0].destination%>
                                     </span>
                                 </div>
                                 <div class="package_data_price">
-                                    1200
+                                    <%= packageData[0].price%>
                                 </div>
                                 <div>
                                     <a href="/packagesname"> <button type="button" class="btn btn-yellow-gradient">Know
@@ -88,7 +91,10 @@
                             <div><img src="/images/packages img/sand_girl.svg" alt="" class="package_cards_img">
                             </div>
                             <div class="card-body-items">
-                                <div class="package_title">Package Name</div>
+                                <div class="package_title">
+                                    <%= packageData[1].packageName %>
+
+                                </div>
                                 <div class="package_price">AED</div>
                                 <div class="package_travel">
                                     <span>
@@ -110,11 +116,12 @@
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
                                                 fill="#DDDDDD" />
-                                        </svg> Dubai,Uae
+                                        </svg>
+                                        <%= packageData[1].destination%>
                                     </span>
                                 </div>
                                 <div class="package_data_price">
-                                    1200
+                                    <%= packageData[1].price%>
                                 </div>
                                 <div>
                                     <a href="/packagesname"> <button type="button" class="btn btn-yellow-gradient">Know
@@ -128,7 +135,9 @@
                             <div><img src="/images/packages img/sand_girl.svg" alt="" class="package_cards_img">
                             </div>
                             <div class="card-body-items">
-                                <div class="package_title">Package Name</div>
+                                <div class="package_title">
+                                    <%= packageData[2].packageName %>
+                                </div>
                                 <div class="package_price">AED</div>
                                 <div class="package_travel">
                                     <span>
@@ -150,11 +159,12 @@
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
                                                 fill="#DDDDDD" />
-                                        </svg> Dubai,Uae
+                                        </svg>
+                                        <%= packageData[2].destination%>
                                     </span>
                                 </div>
                                 <div class="package_data_price">
-                                    1200
+                                    <%= packageData[2].price%>
                                 </div>
                                 <div>
                                     <a href="/packagesname"> <button type="button" class="btn btn-yellow-gradient">Know
@@ -168,18 +178,15 @@
         </div>
         <!-- ========== End dropdown_Section ========== -->
 
-
-
         <!-- ========== Start travel plan Section ========== -->
         <div class="section_travel">
-            <div class="contianer">
+            <div class="container">
                 <div class="section_travel_box">
                     <img src="/images/travel img/travel men.svg" alt="" class="section_travel_img">
                     <div class="section_travel_items">
                         <h2 class="section_travel_content">Ensure your travel plans align seamlessly with your Schedule!
                         </h2>
                         <h1 class="section_travel_title">Customize your very own travel experience.</h1>
-
                         <div class="section_travel_btn"> <button class=" btn travel_btn">Curate Your Trip</button> <span
                                 class="section_travel_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="15"
                                     height="16" viewBox="0 0 15 16" fill="none">
@@ -201,52 +208,21 @@
                     <div class="section_title">Frequently Asked Questions</div>
                     <div class="accordion_box">
                         <div class="accordion">
-                            <div class="at-item">
-                                <div class="section-at-title active">
-                                    <h2>Accordion title 1</h2>
-                                    <hr>
+                            <% faqData.forEach(function(faq, index) { %>
+                                <div class="at-item">
+                                    <div class="section-at-title <%= index === 0 ? 'active' : '' %>">
+                                        <h2>
+                                            <%= faq.question %>
+                                        </h2>
+                                        <hr>
+                                    </div>
+                                    <div class="at-tab" style="<%= index === 0 ? 'display: block;' : '' %>">
+                                        <%= faq.answer %>
+                                    </div>
                                 </div>
-                                <div class="at-tab" style="display: block;">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                </div>
-                            </div>
-                            <div class="at-item">
-                                <div class="section-at-title">
-                                    <h2>Accordion title 2</h2>
-                                    <hr>
-                                </div>
-                                <div class="at-tab">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                </div>
-                            </div>
-                            <div class="at-item">
-                                <div class="section-at-title">
-                                    <h2>Accordion title 3</h2>
-                                    <hr>
-                                </div>
-                                <div class="at-tab">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                </div>
-                            </div>
-                            <div class="at-item">
-                                <div class="section-at-title">
-                                    <h2>Accordion title 3</h2>
-                                    <hr>
-                                </div>
-                                <div class="at-tab">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                </div>
-                            </div>
-                            <div class="at-item">
-                                <div class="section-at-title">
-                                    <h2>Accordion title 3</h2>
-                                    <hr>
-                                </div>
-                                <div class="at-tab">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                </div>
-                            </div>
+                                <% }); %>
                         </div>
+
                     </div>
                 </div>
             </div>
