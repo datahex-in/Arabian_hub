@@ -1,0 +1,177 @@
+<body>
+    <!-- ========== Start header navbar ========== -->
+    <%-include("header.ejs")%>
+        <!-- ========== End navbar ========== -->
+        <div class=" section_packageName_items">
+            <div class="section_package_one">
+                <img src="/images/sandtours/packagename.svg" alt="">
+                <div class="section_experience_one">
+                    <div class="section_experience_bar">
+                        <hr class="section_bar">
+                    </div>
+                    <div class="tour_section_header">
+                        <h1 class="section_title capitilize ">
+                            Package Name
+                        </h1>
+                        <div class="section_package_items">
+                            <div> <img src="/images/sandtours/time.svg" alt=""> <span class="package_time">24 hrs</span>
+                            </div>
+                            <div> <img src="images/sandtours/location.svg" alt=""> <span class="package_time">Dubai,
+                                    UAE</span>
+                            </div>
+                            <div> <img src="/images/sandtours/sound.svg" alt=""> <span
+                                    class="package_time">English</span>
+                            </div>
+                        </div>
+                        <p class="section_package_book"> <button>Book
+                                Visit</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_overview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-12">
+                        <h1 class="section_sub_title">Overview</h1>
+                        <p class="section_content">
+                            <%= packageData[0].description %>
+                        </p>
+                        <div class="included_excluded-section" style="margin-top: 80px;">
+                            <h1 class="section_sub_title">Included/Excluded</h1>
+                            <div class="feature_title_items">
+                                <div class="feature_title_tick">
+                                    <% packageData.forEach(function(data) { %>
+                                        <p class="section_content">
+                                            <span class="section_content_right">
+                                                <img src="/images/sandtours/tick.svg" alt="">
+                                            </span>
+                                            <%= data.included %>
+                                        </p>
+                                        <% }); %>
+                                </div>
+                                <div class="feature_title_tick">
+                                    <% packageData.forEach(function(data) { %>
+                                        <p class="section_content">
+                                            <span class="section_content_right">
+                                                <img src="/images/sandtours/wrong.svg" alt="">
+                                            </span>
+                                            <%= data.included %>
+                                        </p>
+                                        <% }); %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12 included_section" style="margin-top: 20px;">
+                        <div class="included_activites">
+                            <div class="container mt-3">
+                                <h1 class="mini_sub_title">Included Activities</h1>
+                                <div class="include_activities_list">
+                                    <p class="section_content"><span><img src="/images/sandtours/safari.svg"
+                                                alt=""></span>
+                                        Desert Safari</p>
+                                    <p class="section_content"><span><img src="/images/sandtours/trecking.svg"
+                                                alt=""></span>
+                                        Mountain Trekking</p>
+                                    <p class="section_content"><span><img src="/images/sandtours/riding.svg"
+                                                alt=""></span>
+                                        Camel Riding</p>
+                                    <p class="section_content"><span><img src="/images/sandtours/boarding.svg"
+                                                alt=""></span>
+                                        Sand Boarding</p>
+                                    <p class="section_content"> <span><img src="/images/sandtours/hot_baloons.svg"
+                                                alt=""></span>Hot Air Balloon</p>
+                                    <p class="section_content"><span><img src="/images/sandtours/sky.svg" alt=""></span>
+                                        Sky Diving</p>
+                                </div>
+
+                            </div>
+                            <div class="container" style="margin-top: 50px;">
+                                <h1 class="mini_sub_title">Add-on Activities</h1>
+
+                                <div class="include_activities_list">
+                                    <p class="section_content"><span><img src="/images/sandtours/boarding.svg"
+                                                alt=""></span> Ziplining</p>
+                                    <p class="section_content"><span><img src="/images/sandtours/hot_baloons.svg"
+                                                alt=""></span> Mountain Camping</p>
+                                </div>
+                                <div>
+                                    <p class="section_package_book"> <a href="/book"><button>Book
+                                                Visit</button></a>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_faq">
+                        <div class="container">
+                            <div class="section_faq_box">
+                                <div class="section_title">Frequently Asked Questions</div>
+                                <div class="accordion_box">
+                                    <div class="accordion">
+                                        <div class="at-item">
+                                            <div class="section-at-title active">
+                                                <h2>Accordion title 1</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab" style="display: block;">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 2</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 3</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 3</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 3</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End package cards ========== -->
+            <!-- ========== End popularSection ========== -->
+            <!-- ========== Start footer ========== -->
+            <%-include("footer.ejs")%>
+                <!-- ========== End footer ========== -->
+</body>

@@ -1,0 +1,110 @@
+<body>
+    <!-- ========== Start header navbar ========== -->
+    <%-include("header.ejs")%>
+        <!-- ========== End navbar ========== -->
+        <div class=" section_sand">
+            <div class="section_package_one">
+                <img src="/images/sandtours/question.svg" alt="">
+                <div class="section_experience_one">
+                    <div class="section_experience_bar">
+                        <hr class="section_bar">
+                    </div>
+                    <div class="tour_section_header">
+
+                        <h1 class="section_title capitilize ">
+                            Have a Question?
+                        </h1>
+                        <p class="section_content">Discover your next adventure, where every click
+                            leads to a new experience. Seamlessly create and organize your travel plans, leaving no
+                            destination uncharted.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== Start Section_faq ========== -->
+            <div class="section_faq">
+                <div class="container">
+                    <div class="section_faq_box">
+                        <div class="section_title">Frequently Asked Questions</div>
+                        <div class="section_faq_tab">
+                            <button type="button" class="btn btn-yellow-gradient">Section 1</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 2</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 3</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 4</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 5</button>
+                        </div>
+                        <div class="accordion_box">
+                            <div class="accordion">
+                                <div class="at-item">
+                                    <div class="section-at-title active">
+                                        <h2>Accordion title 1</h2>
+                                        <hr>
+                                    </div>
+                                    <div class="at-tab" style="display: block;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+                                    </div>
+                                </div>
+                                <div class="at-item">
+                                    <div class="section-at-title">
+                                        <h2>Accordion title 2</h2>
+                                        <hr>
+                                    </div>
+                                    <div class="at-tab">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+                                    </div>
+                                </div>
+                                <div class="at-item">
+                                    <div class="section-at-title">
+                                        <h2>Accordion title 3</h2>
+                                        <hr>
+                                    </div>
+                                    <div class="at-tab">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+                                    </div>
+                                </div>
+                                <div class="at-item">
+                                    <div class="section-at-title">
+                                        <h2>Accordion title 3</h2>
+                                        <hr>
+                                    </div>
+                                    <div class="at-tab">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+                                    </div>
+                                </div>
+                                <div class="at-item">
+                                    <div class="section-at-title">
+                                        <h2>Accordion title 3</h2>
+                                        <hr>
+                                    </div>
+                                    <div class="at-tab">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End Section_faq ========== -->
+            <!-- ========== Start footer Section ========== -->
+            <%-include("footer.ejs")%>
+                <!-- ========== End footer Section ========== -->
+                <script>
+                    // faq_section
+                    $(document).ready(function () {
+                        $(".section-at-title").click(function () {
+                            $(this)
+                                .toggleClass("active")
+                                .next(".at-tab")
+                                .slideToggle()
+                                .parent()
+                                .siblings()
+                                .find(".at-tab")
+                                .slideUp()
+                                .prev()
+                                .removeClass("active");
+                        });
+                    });
+                    // faq_end_section
+                </script>
+</body>

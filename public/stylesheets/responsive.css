@@ -15,12 +15,13 @@
   .section_home {
     display: grid;
     grid-template-rows: minmax(100px, auto);
-    grid-template-columns: minmax(auto, 50%) 1fr;
+    grid-template-columns: minmax(auto, 0%) 1fr;
   }
   .section_home_content {
     position: absolute;
-    top: 140px;
-    left: 0px;
+    top: 125px;
+    left: 20px;
+    z-index: 1;
   }
   .section_head_title {
     color: var(--desc-colour, #d9d9d9);
@@ -32,8 +33,10 @@
     text-transform: uppercase;
   }
   .section_title {
+    width: auto;
+    min-width: 60vw;
     padding: 0px 0px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px; /* 134.783% */
   }
   .section_title_large {
@@ -44,21 +47,21 @@
   .section_home_content > .section_content {
     width: auto;
     padding: 10px 0px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 140.9%; /* 28.98px */
     letter-spacing: -0.3px;
   }
   .section_content {
-    width: 80vw;
-    padding: 10px 0px;
+    width: auto;
+    padding: 0px 0px;
     font-size: 13px;
-    line-height: 140.9%; /* 28.98px */
+    line-height: normal; /* 28.98px */
     letter-spacing: -0.3px;
   }
   .section_home_data {
     position: absolute;
     left: 0em;
-    top: 15em;
+    top: 14em;
     z-index: 4;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -149,7 +152,7 @@
     width: 60px;
     position: absolute;
     bottom: 20px;
-    left: 30px;
+    left: 22px;
     color: #fff;
     font-family: var(--font-playfair);
     font-size: 13px;
@@ -158,7 +161,7 @@
     line-height: 120.8%; /* 53.152px */
   }
   .section_experience_img {
-    width: 95%;
+    width: 100%;
     object-fit: cover;
     height: 120px;
     position: relative;
@@ -167,7 +170,7 @@
     position: absolute;
     top: 10px;
     width: 20px;
-    right: 40px;
+    right: 10px;
     z-index: 1;
   }
   .arrow-down-left {
@@ -226,9 +229,14 @@
     grid-template-rows: auto;
     grid-gap: 3.5em;
   }
+
   .section_destination_left {
-    width: 400px;
+    width: auto;
     padding-top: 0em;
+  }
+  .section_destination_right {
+    margin: auto;
+    width: 90%;
   }
   .slider {
     margin: 20px;
@@ -253,8 +261,8 @@
   /* Additional styling for buttons (adjust as needed) */
   .slider__buttons {
     position: absolute;
-    bottom: 365px;
-    left: 58px;
+    top: 200px;
+    left: 75px;
     margin-top: 1rem;
   }
 
@@ -274,7 +282,45 @@
 }
 
 /***** End Section *****/
+/***** activity_Section *****/
+@media (max-width: 600px) {
+  .section_activity_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20px;
+  }
+  .section_activity_bar {
+    width: 11px;
+    height: 350px;
+    min-height: fit-content;
+    background: #fff5cb;
+  }
+  .section_activity_right {
+    margin-left: 20px;
+  }
+  .accordion__title {
+    padding: 8px 24px;
+    font-size: 16px;
+  }
+  .accordion__content {
+    font-size: 14px;
+  }
 
+  .tab__label,
+  .tab__close {
+    font-size: 16px;
+  }
+  .tab__content p {
+    color: var(--desc-colour, #d9d9d9);
+    font-family: var(--font-Montserrat);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.4%; /* 33.088px */
+  }
+}
+
+/***** End activity_Section *****/
 /***** package_Section *****/
 @media (max-width: 600px) {
   .section_package_box {
@@ -290,13 +336,13 @@
     padding: 12px 12px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
   }
   .card-body-items {
     margin: auto;
     width: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
@@ -309,6 +355,21 @@
     margin-left: 10px;
   }
 }
+@media (max-width: 768px) {
+  .card-body-items {
+    margin: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0px;
+  }
+  .section-at-title h2 {
+    font-size: 16px;
+  }
+}
 /***** End package_Section *****/
 
 /***** travel_Section *****/
@@ -318,6 +379,7 @@
   }
   .section_travel_box {
     position: relative;
+    margin-top: 5em;
   }
   .section_travel_img {
     width: 100%;
@@ -325,49 +387,73 @@
   }
   .section_travel_items {
     position: absolute;
-    top: 45px !important;
-    left: 45px;
+    top: 28px !important;
+    left: 23px;
     z-index: 1;
     top: 0px;
   }
   .section_travel_content {
-    width: 60vw;
+    width: 50vw;
     color: #fff4bd;
     font-family: var(--font-Montserrat);
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: inherit; /* 146.875% */
   }
   .section_travel_title {
-    width: auto;
+    width: 50vw;
     color: var(--golden-h1, #eed66f);
     font-family: var(--font-playfair);
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: inherit; /* 119.492% */
   }
   .section_travel_arrow {
     position: absolute;
-    right: 25px;
+    right: 28px;
     top: 16px;
   }
 }
 /***** End travel_Section *****/
 
+/***** faq_Section *****/
+@media (max-width: 600px) {
+  .section_faq_box {
+    margin-top: 3em;
+  }
+  .section_faq_tab {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+/***** End faq_Section *****/
 /***** Section_footer *****/
 @media (max-width: 600px) {
   .section_footer_yellow {
     padding: 2em;
-    height: 400px;
+    height: auto;
     display: flex;
     position: absolute;
-    top: -130px;
+    top: -95px;
     left: 18px;
     border-radius: 32px;
     background: #c0943a;
     z-index: 1;
+  }
+  .section_footer_blue {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: var(--footer-bg);
+    z-index: 0;
+    top: 50px;
+    padding: 2em;
   }
   .section_footer_top {
     width: 100%;
@@ -393,10 +479,9 @@
   }
   form {
     width: 100%;
-    height: 105px;
+    height: auto;
     font-size: 12pt;
-    border: 2px solid white;
-    border-radius: 30px;
+    border-radius: 5px;
     overflow: hidden;
   }
   .footer-col h4 {
@@ -408,5 +493,144 @@
     position: relative;
     left: 0px;
   }
+  .footer-col ol,
+  ul {
+    padding-left: 0em !important;
+  }
 }
 /***** End footer *****/
+
+/*****packages_Section *****/
+.package_section {
+  margin-top: 5em;
+}
+.package_cards {
+  width: 424px;
+  height: 533px;
+  background: #072c54;
+  margin: 20px;
+}
+.package_cards_img {
+  width: 100%;
+  height: auto;
+}
+/***** Endpackages_Section *****/
+.package_section {
+  margin-top: 5em;
+}
+.package_cards {
+  width: 100%;
+  height: auto;
+  background: #072c54;
+  margin: 0px;
+  margin-top: 30px;
+}
+.package_cards_img {
+  width: 100%;
+  height: auto;
+}
+/* activities section */
+@media (max-width: 600px) {
+  .activities_grids {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    object-fit: cover;
+  }
+}
+
+/***** dubai_Section *****/
+@media (max-width: 600px) {
+  .Dubai_details_top {
+    margin: auto;
+    width: 85%;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .section_title_2 {
+    font-size: 18px;
+    line-height: normal; /* 137.5% */
+  }
+  .section_content_2 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .section_mini_title {
+    font-size: 18px;
+  }
+  .adventure_card {
+    margin: 0px;
+    margin-top: 20px;
+    width: auto;
+  }
+}
+/***** End dubai_Section *****/
+
+/* tours section */
+@media (max-width: 600px) {
+  .slide_card_items {
+    width: auto;
+    height: 30vh;
+    overflow-x: hidden;
+  }
+}
+
+/*****tour package Section *****/
+@media (max-width: 600px) {
+  .tour_section_header {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    z-index: 4;
+  }
+  .section_package_book button {
+    width: 150px;
+    height: 35px;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  .feature_title_items {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 38px;
+  }
+  /* active_Section-- */
+  .activities_grids_head {
+    padding: 10px 10px;
+  }
+}
+/***** Endtour package Section *****/
+
+/* contact form */
+@media (max-width: 600px) {
+  .contact_form_head_left {
+    margin-top: 2em;
+  }
+  label,
+  textarea {
+    width: 73vw;
+  }
+}
+
+/* avt section */
+@media (max-width: 600px) {
+  .atv_details_sections {
+    margin-top: 30px;
+  }
+}
+
+/* book_visit */
+@media (max-width: 600px) {
+  .book_vist_rectangle {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+}

@@ -11,7 +11,10 @@
   /* font */
   --font-Montserrat: "Montserrat", sans-serif;
 }
-
+button {
+  outline: none !important;
+  border: none !important;
+}
 .btn {
   width: 130px;
   height: 40px;
@@ -24,6 +27,7 @@
   line-height: normal;
   border-radius: 6px;
   cursor: pointer;
+  border: none;
   letter-spacing: -0.225px;
 }
 .btn-white {
@@ -32,11 +36,12 @@
   background: transparent !important;
 }
 .btn-white:hover {
-  color: white;
-  background: var(--button, #c69c41);
+  color: white !important;
+  background: var(--button, #c69c41) !important;
 }
 
 .btn-yellow {
+  margin-bottom: 0px;
   color: #fff !important;
   background: var(--button, #c69c41) !important;
   border: none !important;
@@ -70,10 +75,17 @@
   margin-top: 2em;
   margin-left: 3px;
   width: 180px;
+  height: 50px;
   position: relative;
   padding: 20px;
   border-radius: 4px;
-  border: 1px solid var(--Golden-gradient, #dd9a0a) !important ;
+  background: rgb(5, 0, 98);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 0, 98, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(2, 88, 166, 1) 100%
+  );
   color: white !important;
   font-size: 12px !important;
 }
@@ -94,17 +106,30 @@
 .btn_form_submit:hover ~ input {
   padding: 16px 0 16px 16px;
 }
-
+.btn_msg {
+  width: 38vw;
+  height: 50px;
+  color: #fff !important;
+  background-color: var(--button) !important;
+}
 @media (max-width: 600px) {
   .travel_btn {
-    margin-top: 1em;
-    margin-left: 3px;
+    margin-top: 5px;
+    margin-left: 0px;
     width: 160px;
+    height: 40px;
     position: relative;
     padding: 20px;
     border-radius: 4px;
     border: 1px solid var(--Golden-gradient, #dd9a0a) !important ;
     color: white !important;
     font-size: 12px !important;
+  }
+  .btn_msg {
+    width: 60vw;
+    height: 50px;
+  }
+  .btn-yellow {
+    margin-bottom: 10px;
   }
 }

@@ -1,0 +1,127 @@
+<footer>
+    <div class="section_footer">
+        <div class="section_footer_yellow">
+            <div class="section_footer_top">
+                <h3>Get our regular updates on Travel hacks and stuffs!</h3>
+                <p>By subscribing to our newsletter, you also gain early access to trip discounts. So don’t miss out!!
+                </p>
+                <div class="content">
+                    <form class="subscription">
+                        <input class="add-email" type="email" placeholder="Enter Your Email">
+                        <button class="submit-email" type="button">
+                            <span class="before-submit">Subscribe</span>
+                            <span class="after-submit">Thank you for subscribing!</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="section_footer_blue">
+            <footer class="footer_bottom_items">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
+                            <div class="footer_logo"><img src="/images/logo/logo_svg.svg" alt=""></div>
+                            <div class="footer_content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    omnis eum minima blanditiis .
+                                    sunt corrupti?</p>
+                            </div>
+                            <div class="social-links">
+                                <a href="#"><i><img src="/images/footer img/instagram_logo.svg" alt=""></i></a>
+                                <a href="#"><i><img src="/images/footer img/facebook_logo.svg" alt=""></i></a>
+                                <a href="#"><i><img src="/images/footer img/twiiter_logo.svg" alt=""></i></a>
+                                <a href="#"><i><img src="/images/footer img/youtube_logo.svg" alt=""></i></a>
+                                <a href="#"><i><img src="/images/footer img/linkedin_logo.svg" alt=""></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Destination</a></li>
+                                <li><a href="#">Packages</a></li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
+                            <h4>Reach out to us</h4>
+                            <ul>
+                                <li><a href="#"><img src="/images/footer img/call_logo.svg" alt="">
+                                        <span>+91700000000</span> </a>
+                                </li>
+                                <li><a href="#"><img src="/images/footer img/msg_logo.svg" alt="">
+                                        <span>info@arabianhub.com</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
+                            <h4>Registered Office</h4>
+                            <ul>
+                                <li><a href="#"><img src="/images/footer img/loc_logo.svg" alt=""> <span>Arabian Tour
+                                            Hub
+                                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 553236</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_line" style="color: #B9B9B9;">
+                        <hr>
+                    </div>
+                    <div class="footer_end_data">
+                        <div class="footer_end_link">
+                            <p>© 2023 Powered By</p> <span><a href="https://metahue.co/"
+                                    target="_blank">Metahue</a></span>
+                        </div>
+                        <div class="footer_end_terms">
+                            <p>Terms & Agreements</p>
+                            <p>Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Add jQuery (use a specific version if needed) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Add Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<!-- Add Owl Carousel theme CSS (optional) -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<!-- Add Owl Carousel JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="/javascripts/main.js"></script>
+<script src="/javascripts/Navbar.js"></script>
+<script>
+    function handleClass(node, className, action = "add") {
+        node.classList[action](className);
+    }
+
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach(function (accordion) {
+        const heading = accordion.querySelector("span");
+        const accordionContentWrap = accordion.querySelector(
+            ".accordion__content-wrap"
+        );
+        const originalHeight = accordionContentWrap.offsetHeight;
+        accordionContentWrap.style.height = 0;
+
+        let accordionActiveClass = "accordion__active";
+
+        heading.addEventListener("click", function () {
+            if (this.parentNode.classList.contains(accordionActiveClass)) {
+                handleClass(this.parentNode, accordionActiveClass, "remove");
+                accordionContentWrap.style.height = 0 + "px";
+            } else {
+                handleClass(this.parentNode, accordionActiveClass);
+                accordionContentWrap.style.height = originalHeight + "px";
+            }
+        });
+    });
+
+</script>

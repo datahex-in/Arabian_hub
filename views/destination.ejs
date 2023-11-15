@@ -1,0 +1,196 @@
+<body>
+
+    <!-- ========== Start header navbar ========== -->
+    <%-include("header.ejs")%>
+        <!-- ========== End navbar ========== -->
+
+        <div class="section_sand">
+            <div class="section_package_one">
+                <img src="/images/sandtours/destination.svg" alt="">
+                <div class="section_experience_one">
+                    <div class="section_experience_bar">
+                        <hr class="section_bar">
+                    </div>
+                    <div class="tour_section_header">
+                        <h1 class="section_title capitilize ">
+                            Destinations
+                        </h1>
+                        <p class="section_content">Discover your next adventure, where every click
+                            leads to a new experience. Seamlessly create and organize your travel plans, leaving no
+                            destination uncharted.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="dropdown">
+                    <input class="text-box" type="text" placeholder="Sort by Popularity" readonly>
+                    <div class="options">
+                        <div onclick="show('HTML')">HTML</div>
+                        <div onclick="show('CSS')">CSS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container destination_card_items">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="/dubai">
+                            <div class="adventure_card"
+                                style="background-image: url(/images/sandtours/adventure.svg); background-repeat: no-repeat;">
+                                <div class="seven_packages">
+                                    <p>7 Packages</p>
+                                </div>
+                                <div class="Dubai">
+                                    <h1>
+                                        <%= destinationData[0].destination %>
+                                    </h1>
+                                    <p>
+                                        <%= destinationData[0].shortDescription%>
+                                    </p>
+                                    <div class="explore">
+                                        <button>Explore </button>
+                                        <div class="chevron_tl"><img src="/images/sandtours/arrow-down-left.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="/dubai">
+                            <div class="adventure_card"
+                                style="background-image: url(/images/sandtours/adventure.svg); background-repeat: no-repeat;">
+                                <div class="seven_packages">
+                                    <p>7 Packages</p>
+                                </div>
+                                <div class="Dubai">
+                                    <h1>
+                                        <%= destinationData[1].destination %>
+                                    </h1>
+                                    <p>
+                                        <%= destinationData[1].shortDescription%>
+                                    </p>
+                                    <div class="explore">
+                                        <button>Explore </button>
+                                        <div class="chevron_tl"><img src="/images/sandtours/arrow-down-left.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="/dubai">
+                            <div class="adventure_card"
+                                style="background-image: url(/images/sandtours/adventure.svg); background-repeat: no-repeat;">
+                                <div class="seven_packages">
+                                    <p>7 Packages</p>
+                                </div>
+                                <div class="Dubai">
+                                    <h1>
+                                        <%= destinationData[2].destination %>
+                                    </h1>
+                                    <p>
+                                        <%= destinationData[2].shortDescription%>
+                                    </p>
+                                    <div class="explore">
+                                        <button>Explore </button>
+                                        <div class="chevron_tl"><img src="/images/sandtours/arrow-down-left.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="/dubai">
+                            <div class="adventure_card"
+                                style="background-image: url(/images/sandtours/adventure.svg); background-repeat: no-repeat;">
+                                <div class="seven_packages">
+                                    <p>7 Packages</p>
+                                </div>
+                                <div class="Dubai">
+                                    <h1>
+                                        <%= destinationData[3].destination %>
+                                    </h1>
+                                    <p>
+                                        <%= destinationData[3].shortDescription%>
+                                    </p>
+                                    <div class="explore">
+                                        <button>Explore </button>
+                                        <div class="chevron_tl"><img src="/images/sandtours/arrow-down-left.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="/dubai">
+                            <div class="adventure_card"
+                                style="background-image: url(/images/sandtours/adventure.svg); background-repeat: no-repeat;">
+                                <div class="seven_packages">
+                                    <p>7 Packages</p>
+                                </div>
+                                <div class="Dubai">
+                                    <h1>
+                                        <%= destinationData[4].destination %>
+                                    </h1>
+                                    <p>
+                                        <%= destinationData[4].shortDescription%>
+                                    </p>
+                                    <div class="explore">
+                                        <button>Explore </button>
+                                        <div class="chevron_tl"><img src="/images/sandtours/arrow-down-left.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="/dubai">
+                            <div class="adventure_card"
+                                style="background-image: url(/images/sandtours/adventure.svg); background-repeat: no-repeat;">
+                                <div class="seven_packages">
+                                    <p>7 Packages</p>
+                                </div>
+                                <div class="Dubai">
+                                    <h1>
+                                        <%= destinationData[5].destination %>
+                                    </h1>
+                                    <p>
+                                        <%= destinationData[5].shortDescription%>
+                                    </p>
+                                    <div class="explore">
+                                        <button>Explore </button>
+                                        <div class="chevron_tl"><img src="/images/sandtours/arrow-down-left.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="about_gradient_topright"></div>
+            <div class="about_gradient_bottomleft"></div>
+            <!-- ========== Start footer ========== -->
+            <%-include("footer.ejs")%>
+                <!-- ========== End footer ========== -->
+
+                <!-- ========== Dropdown ========== -->
+                <script>
+                    function show(value) {
+                        document.querySelector(".text-box").value = value;
+                    }
+
+                    let dropdown = document.querySelector(".dropdown");
+                    dropdown.onclick = function () {
+                        dropdown.classList.toggle("active");
+                    };
+                </script>
+                <!-- =========Dropdown ========== -->
+</body>
+
+</html>
