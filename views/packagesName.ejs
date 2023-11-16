@@ -1,4 +1,5 @@
 <body>
+
     <!-- ========== Start header navbar ========== -->
     <%-include("header.ejs")%>
         <!-- ========== End navbar ========== -->
@@ -30,177 +31,122 @@
                 </div>
             </div>
         </div>
-        <div class="section_overview">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-12">
-                        <h1 class="section_sub_title">Overview</h1>
-                        <p class="section_content">
-                            <%= packageData[0].description %>
-                        </p>
-                        <div class="included_excluded-section" style="margin-top: 80px;">
-                            <h1 class="section_sub_title">Included/Excluded</h1>
-                            <div class="feature_title_items">
-                                <div class="feature_title_tick">
-                                    <% packageData.forEach(function(data) { %>
-                                        <p class="section_included_content">
-                                            <span class="section_content_right">
-                                                <img src="/images/sandtours/tick.svg" alt="">
-                                            </span>
-                                            <%= data.included %>
-                                        </p>
-                                        <% }); %>
-                                </div>
-                                <div class="feature_title_tick">
-                                    <% packageData.forEach(function(data) { %>
-                                        <p class="section_included_content">
-                                            <span class="section_content_right">
-                                                <img src="/images/sandtours/wrong.svg" alt="">
-                                            </span>
-                                            <%= data.included %>
-                                        </p>
-                                        <% }); %>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-12 included_section" style="margin-top: 20px;">
-                        <div class="included_activites">
-                            <div class="container mt-3">
-                                <h1 class="mini_sub_title">Included Activities</h1>
-                                <hr style="border: 1px solid grey;">
-                                <div class="include_activities_list_one">
-                                    <p class="section_content"><span><img src="/images/sandtours/safari.svg"
-                                                alt=""></span>
-                                        Desert Safari</p>
-                                    <p class="section_content"><span><img src="/images/sandtours/trecking.svg"
-                                                alt=""></span>
-                                        Mountain Trekking</p>
-                                    <p class="section_content"><span><img src="/images/sandtours/riding.svg"
-                                                alt=""></span>
-                                        Camel Riding</p>
-                                    <p class="section_content"><span><img src="/images/sandtours/boarding.svg"
-                                                alt=""></span>
-                                        Sand Boarding</p>
-                                    <p class="section_content"> <span><img src="/images/sandtours/hot_baloons.svg"
-                                                alt=""></span>Hot Air Balloon</p>
-                                    <p class="section_content"><span><img src="/images/sandtours/sky.svg" alt=""></span>
-                                        Sky Diving</p>
-                                </div>
-
-                            </div>
-                            <div class="container" style="margin-top: 50px;">
-                                <h1 class="mini_sub_title">Add-on Activities</h1>
-                                <hr style="border: 1px solid grey;">
-                                <div class="include_activities_list_two">
-                                    <div class="include_activities_one">
-                                        <div><img src="/images/sandtours/boarding.svg" alt=""></div>
-                                        <div>
-                                            <p class="section_content"> Ziplining</p>
-                                            <h3>AED 150</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="include_activities_two"><button> + ADD</button></div>
-                                <div class="include_activities_list_two">
-                                    <div class="include_activities_one">
-                                        <div><img src="/images/sandtours/boarding.svg" alt=""></div>
-                                        <div>
-                                            <p class="section_content"> Mountain Camping</p>
-                                            <h3>AED 150</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="include_activities_two"><button> + ADD</button></div>
-                                <div>
-                                    <p class="section_package_book"> <a href="/book"><button>Book
-                                                Visit</button></a>
+        <!-- ========== Start overview_Section ========== -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-12">
+                    <h1 class="section_sub_title">Overview</h1>
+                    <p class="section_content">
+                        <%= packageData[0].description %>
+                    </p>
+                    <div class="included_excluded-section" style="margin-top: 80px;">
+                        <h1 class="section_sub_title">Included/Excluded</h1>
+                        <div class="feature_title_items">
+                            <div class="feature_title_tick">
+                                <% packageData.forEach(function(data) { %>
+                                    <p class="section_included_content">
+                                        <span class="section_content_right">
+                                            <img src="/images/sandtours/tick.svg" alt="">
+                                        </span>
+                                        <%= data.included %>
                                     </p>
-                                </div>
+                                    <% }); %>
+                            </div>
+                            <div class="feature_title_tick">
+                                <% packageData.forEach(function(data) { %>
+                                    <p class="section_included_content">
+                                        <span class="section_content_right">
+                                            <img src="/images/sandtours/wrong.svg" alt="">
+                                        </span>
+                                        <%= data.included %>
+                                    </p>
+                                    <% }); %>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- ========== Start faq_Section ========== -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-12">
+                    <!-- ========== Start faq_Section ========== -->
+                    <div class="section_packageName_faq">
                         <div class="section_faq">
-                            <div class="container">
-                                <div class="section_faq_box">
-                                    <div class="section_sub_title">Tour Plan</div>
-                                    <div class="accordion_box">
-                                        <div class="accordion">
-                                            <div class="at-item">
-                                                <div class="section-at-title active">
-                                                    <h2>Arrive at Airport</h2>
-                                                    <hr>
+                            <div class="section_faq_box">
+                                <h1 class="section_sub_title">Tour Plan</h1>
+                                <div class="accordion_box">
+                                    <div class="accordion">
+                                        <div class="at-item">
+                                            <div class="section-at-title active">
+                                                <h2>Arrive at Airport</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab" style="display: block;">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Quod,
+                                                reprehenderit. Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit.
+                                                Quia nulla doloribus ut excepturi inventore molestiae ipsum
+                                                tempore
+                                                voluptatem sequi eligendi ex, aliquam, saepe fugit corporis
+                                                placeat
+                                                optio sit labore a.
+                                                <div class="section_included_title mt-2">
+                                                    <p class="section_included_content">
+                                                        <span class="section_content_right">
+                                                            <img src="/images/sandtours/tick.svg" alt="">
+                                                        </span>
+                                                        Featured Title
+                                                    </p>
                                                 </div>
-                                                <div class="at-tab" style="display: block;">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                    reprehenderit. Lorem, ipsum dolor sit amet consectetur adipisicing
-                                                    elit.
-                                                    Quia nulla doloribus ut excepturi inventore molestiae ipsum tempore
-                                                    voluptatem sequi eligendi ex, aliquam, saepe fugit corporis placeat
-                                                    optio sit labore a.
-                                                    <div class="section_included_title mt-2">
-                                                        <p class="section_included_content">
-                                                            <span class="section_content_right">
-                                                                <img src="/images/sandtours/tick.svg" alt="">
-                                                            </span>
-                                                            Featured Title
-                                                        </p>
-                                                    </div>
-                                                    <div class="section_included_title mt-2">
-                                                        <p class="section_included_content">
-                                                            <span class="section_content_right">
-                                                                <img src="/images/sandtours/tick.svg" alt="">
-                                                            </span>
-                                                            Featured Title
-                                                        </p>
-                                                    </div>
+                                                <div class="section_included_title mt-2">
+                                                    <p class="section_included_content">
+                                                        <span class="section_content_right">
+                                                            <img src="/images/sandtours/tick.svg" alt="">
+                                                        </span>
+                                                        Featured Title
+                                                    </p>
                                                 </div>
                                             </div>
-                                            <div class="at-item">
-                                                <div class="section-at-title">
-                                                    <h2>Accordion title 2</h2>
-                                                    <hr>
-                                                </div>
-                                                <div class="at-tab">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                    reprehenderit.
-                                                </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 2</h2>
+                                                <hr>
                                             </div>
-                                            <div class="at-item">
-                                                <div class="section-at-title">
-                                                    <h2>Accordion title 3</h2>
-                                                    <hr>
-                                                </div>
-                                                <div class="at-tab">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                    reprehenderit.
-                                                </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Quod,
+                                                reprehenderit.
                                             </div>
-                                            <div class="at-item">
-                                                <div class="section-at-title">
-                                                    <h2>Accordion title 3</h2>
-                                                    <hr>
-                                                </div>
-                                                <div class="at-tab">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                    reprehenderit.
-                                                </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 3</h2>
+                                                <hr>
                                             </div>
-                                            <div class="at-item">
-                                                <div class="section-at-title">
-                                                    <h2>Accordion title 3</h2>
-                                                    <hr>
-                                                </div>
-                                                <div class="at-tab">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                    reprehenderit.
-                                                </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 3</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Quod,
+                                                reprehenderit.
+                                            </div>
+                                        </div>
+                                        <div class="at-item">
+                                            <div class="section-at-title">
+                                                <h2>Accordion title 3</h2>
+                                                <hr>
+                                            </div>
+                                            <div class="at-tab">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Quod,
+                                                reprehenderit.
                                             </div>
                                         </div>
                                     </div>
@@ -208,30 +154,18 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- ========== End faq_Section ========== -->
-
-            <!-- ========== Start location_Section ========== -->
-            <div class="section_packagename_location">
-                <div class="container">
-                    <div class="section_sub_title">Location</div>
-                    <div class="row">
-                        <div class="col-12 col-xl-8 mt-3">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.600473273236!2d-122.42695442458076!3d37.77596521209215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a2095575d9%3A0xbc85b6412cf68b83!2sPatricia%E2%80%99s%20Green%20In%20Hayes%20Valley!5e0!3m2!1sen!2sin!4v1699521966419!5m2!1sen!2sin"
-                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                    <!-- ========== End faq_Section ========== -->
+                    <!-- ========== Start location_Section ========== -->
+                    <div class="section_packagename_location">
+                        <h1 class="section_sub_title">Location</h1>
+                        <iframe class="mt-5"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.600473273236!2d-122.42695442458076!3d37.77596521209215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a2095575d9%3A0xbc85b6412cf68b83!2sPatricia%E2%80%99s%20Green%20In%20Hayes%20Valley!5e0!3m2!1sen!2sin!4v1699521966419!5m2!1sen!2sin"
+                            width="850" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>
-            </div>
-            <!-- ========== End location_Section ========== -->
-
-            <!-- ========== Start tour_Amenties_Section ========== -->
-            <div class="section_tour_amenties">
-                <div class="container">
-                    <div class="row">
+                    <!-- ========== End location_Section ========== -->
+                    <!-- ========== Start tour_Amenties_Section ========== -->
+                    <div class="section_tour_amenties">
                         <div class="included_excluded-section" style="margin-top: 80px;">
                             <h1 class="section_sub_title">Tour Amenties</h1>
                             <div class="feature_title_items">
@@ -258,12 +192,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- ========== End tour_Amenties_Section ========== -->
-            <!-- ========== Start Quick_tops_Section ========== -->
-            <div class="container">
-                <div class="row">
+                    <!-- ========== End tour_Amenties_Section ========== -->
+                    <!-- ========== Start quick_tips_Section ========== -->
                     <div class="section_quick_tips">
                         <h1 class="section_sub_title">Quick Tips</h1>
                         <div class="section_tips_one">
@@ -274,270 +204,321 @@
                                 </span>
                             </div>
                             <div class="section_weather_details">
-                                <p class="section_content">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
+                                <p class="section_content">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit.
                                     Ullam
                                     animi, quidem ex itaque
-                                    corrupti ab debitis et assumenda maiores, illo repellendus tempore cum, amet
+                                    corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
+                                    amet
                                     delectus
                                     harum dolor voluptas aspernatur quisquam.</p>
                             </div>
-                            <div class="section_tips_two">
-                                <div class="section_weather_data">
-                                    <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
+                        </div>
+                        <div class="section_tips_one">
+                            <div class="section_weather_data">
+                                <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
+                                <span>
+                                    <p class="section_content">Weather at Ras-al-Khaimah</p>
+                                </span>
+                            </div>
+                            <div class="section_weather_details">
+                                <p class="section_content">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit.
+                                    Ullam
+                                    animi, quidem ex itaque
+                                    corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
+                                    amet
+                                    delectus
+                                    harum dolor voluptas aspernatur quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="section_tips_one">
+                            <div class="section_weather_data">
+                                <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
+                                <span>
+                                    <p class="section_content">Weather at Ras-al-Khaimah</p>
+                                </span>
+                            </div>
+                            <div class="section_weather_details">
+                                <p class="section_content">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit.
+                                    Ullam
+                                    animi, quidem ex itaque
+                                    corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
+                                    amet
+                                    delectus
+                                    harum dolor voluptas aspernatur quisquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== End quick_tips_Section ========== -->
+                </div>
+                <div class="col-12 col-xl-4 ">
+                    <div class="included_section">
+                        <div class="included_activites ">
+                            <h1 class="mini_sub_title">Included Activities</h1>
+                            <hr style="border: 1px solid grey;">
+                            <div class="include_activities_list_one">
+                                <p class="section_content"><span><img src="/images/sandtours/safari.svg" alt=""></span>
+                                    Desert Safari</p>
+                                <p class="section_content"><span><img src="/images/sandtours/trecking.svg"
+                                            alt=""></span>
+                                    Mountain Trekking</p>
+                                <p class="section_content"><span><img src="/images/sandtours/riding.svg" alt=""></span>
+                                    Camel Riding</p>
+                                <p class="section_content"><span><img src="/images/sandtours/boarding.svg"
+                                            alt=""></span>
+                                    Sand Boarding</p>
+                                <p class="section_content"> <span><img src="/images/sandtours/hot_baloons.svg"
+                                            alt=""></span>Hot
+                                    Air Balloon</p>
+                                <p class="section_content"><span><img src="/images/sandtours/sky.svg" alt=""></span>
+                                    Sky Diving</p>
+                            </div>
+                            <h1 class="mini_sub_title">Add-on Activities</h1>
+                            <hr style="border: 1px solid grey;">
+                            <div class="include_activities_list_two">
+                                <div class="include_activities_one">
+                                    <div><img src="/images/sandtours/boarding.svg" alt=""></div>
+                                    <div>
+                                        <p class="section_content"> Ziplining</p>
+                                        <h3>AED 150</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="include_activities_two"><button> + ADD</button></div>
+                            <div class="include_activities_list_two">
+                                <div class="include_activities_one">
+                                    <div><img src="/images/sandtours/boarding.svg" alt=""></div>
+                                    <div>
+                                        <p class="section_content"> Mountain Camping</p>
+                                        <h3>AED 150</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="include_activities_two"><button> + ADD</button></div>
+                            <div>
+                                <p class="section_package_book"> <a href="/book"><button>Book
+                                            Visit</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== Start similar_Section ========== -->
+        <div class="section_similar_package">
+            <div class="container">
+                <h1 class="section_sub_title">Similar Packages</h1>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="package_cards">
+                            <div><img src="/images/packages img/sand_girl.svg" alt="" class="package_cards_img">
+                            </div>
+                            <div class="card-body-items">
+                                <div class="package_title">
+                                    <%= packageData[0].packageName%>
+                                </div>
+                                <div class="package_price">AED</div>
+                                <div class="package_travel">
                                     <span>
-                                        <p class="section_content">Weather at Ras-al-Khaimah</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.875 10C1.875 5.5142 5.5142 1.875 10 1.875C14.4858 1.875 18.125 5.5142 18.125 10C18.125 14.4858 14.4858 18.125 10 18.125C5.5142 18.125 1.875 14.4858 1.875 10ZM10 3.125C6.20455 3.125 3.125 6.20455 3.125 10C3.125 13.7954 6.20455 16.875 10 16.875C13.7954 16.875 16.875 13.7954 16.875 10C16.875 6.20455 13.7954 3.125 10 3.125Z"
+                                                fill="#DDDDDD" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10 4.375C10.3452 4.375 10.625 4.65482 10.625 5V10H13.75C14.0952 10 14.375 10.2798 14.375 10.625C14.375 10.9702 14.0952 11.25 13.75 11.25H10C9.65482 11.25 9.375 10.9702 9.375 10.625V5C9.375 4.65482 9.65482 4.375 10 4.375Z"
+                                                fill="#DDDDDD" />
+                                        </svg> 6hrs
+                                    </span> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.375 6.50391C3.375 3.50906 5.92109 1.125 9 1.125C12.0789 1.125 14.625 3.50906 14.625 6.50391C14.625 8.19227 13.7121 10.2811 12.7122 12.0867C11.6972 13.9192 10.5283 15.5703 9.90146 16.4168C9.79803 16.5582 9.66278 16.6733 9.50663 16.7528C9.34969 16.8326 9.17609 16.8743 9 16.8743C8.82391 16.8743 8.65031 16.8326 8.49337 16.7528C8.3372 16.6733 8.20194 16.5582 8.0985 16.4168C7.47168 15.5699 6.30279 13.9182 5.28782 12.0854C4.28789 10.2798 3.375 8.19107 3.375 6.50391ZM9 2.25C6.48907 2.25 4.5 4.18242 4.5 6.50391C4.5 7.87534 5.27461 9.73939 6.27199 11.5404C7.25166 13.3095 8.38638 14.9145 9 15.7437C9.6136 14.9149 10.7483 13.3104 11.728 11.5416C12.7254 9.74087 13.5 7.8766 13.5 6.50391C13.5 4.18242 11.5109 2.25 9 2.25Z"
+                                                fill="#DDDDDD" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
+                                                fill="#DDDDDD" />
+                                        </svg>
+                                        <%= packageData[0].destination%>
                                     </span>
                                 </div>
-                                <div class="section_weather_details">
-                                    <p class="section_content">Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit.
-                                        Ullam
-                                        animi, quidem ex itaque
-                                        corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
-                                        amet
-                                        delectus
-                                        harum dolor voluptas aspernatur quisquam.</p>
+                                <div class="package_data_price">
+                                    <%= packageData[0].price%>
+                                </div>
+                                <div>
+                                    <a href="/packagesname"> <button type="button" class="btn btn-yellow-gradient">Know
+                                            More </button></a>
                                 </div>
                             </div>
-                            <div class="section_tips_three">
-                                <div class="section_weather_data">
-                                    <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="package_cards">
+                            <div><img src="/images/packages img/sand_girl.svg" alt="" class="package_cards_img">
+                            </div>
+                            <div class="card-body-items">
+                                <div class="package_title">
+                                    <%= packageData[0].packageName%>
+                                </div>
+                                <div class="package_price">AED</div>
+                                <div class="package_travel">
                                     <span>
-                                        <p class="section_content">Weather at Ras-al-Khaimah</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.875 10C1.875 5.5142 5.5142 1.875 10 1.875C14.4858 1.875 18.125 5.5142 18.125 10C18.125 14.4858 14.4858 18.125 10 18.125C5.5142 18.125 1.875 14.4858 1.875 10ZM10 3.125C6.20455 3.125 3.125 6.20455 3.125 10C3.125 13.7954 6.20455 16.875 10 16.875C13.7954 16.875 16.875 13.7954 16.875 10C16.875 6.20455 13.7954 3.125 10 3.125Z"
+                                                fill="#DDDDDD" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10 4.375C10.3452 4.375 10.625 4.65482 10.625 5V10H13.75C14.0952 10 14.375 10.2798 14.375 10.625C14.375 10.9702 14.0952 11.25 13.75 11.25H10C9.65482 11.25 9.375 10.9702 9.375 10.625V5C9.375 4.65482 9.65482 4.375 10 4.375Z"
+                                                fill="#DDDDDD" />
+                                        </svg> 6hrs
+                                    </span> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.375 6.50391C3.375 3.50906 5.92109 1.125 9 1.125C12.0789 1.125 14.625 3.50906 14.625 6.50391C14.625 8.19227 13.7121 10.2811 12.7122 12.0867C11.6972 13.9192 10.5283 15.5703 9.90146 16.4168C9.79803 16.5582 9.66278 16.6733 9.50663 16.7528C9.34969 16.8326 9.17609 16.8743 9 16.8743C8.82391 16.8743 8.65031 16.8326 8.49337 16.7528C8.3372 16.6733 8.20194 16.5582 8.0985 16.4168C7.47168 15.5699 6.30279 13.9182 5.28782 12.0854C4.28789 10.2798 3.375 8.19107 3.375 6.50391ZM9 2.25C6.48907 2.25 4.5 4.18242 4.5 6.50391C4.5 7.87534 5.27461 9.73939 6.27199 11.5404C7.25166 13.3095 8.38638 14.9145 9 15.7437C9.6136 14.9149 10.7483 13.3104 11.728 11.5416C12.7254 9.74087 13.5 7.8766 13.5 6.50391C13.5 4.18242 11.5109 2.25 9 2.25Z"
+                                                fill="#DDDDDD" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
+                                                fill="#DDDDDD" />
+                                        </svg>
+                                        <%= packageData[0].destination%>
                                     </span>
                                 </div>
-                                <div class="section_weather_details">
-                                    <p class="section_content">Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit.
-                                        Ullam
-                                        animi, quidem ex itaque
-                                        corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
-                                        amet
-                                        delectus
-                                        harum dolor voluptas aspernatur quisquam.</p>
+                                <div class="package_data_price">
+                                    <%= packageData[0].price%>
+                                </div>
+                                <div>
+                                    <a href="/packagesname"> <button type="button" class="btn btn-yellow-gradient">Know
+                                            More </button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- ========== End Quick_tops_Section ========== -->
-
-                    <!-- ========== Start similar_Section ========== -->
-                    <div class="section_similar_package">
-                        <h1 class="section_sub_title">Similar Packages</h1>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 col-xl-4">
-                                    <div class="package_cards">
-                                        <div><img src="/images/packages img/sand_girl.svg" alt=""
-                                                class="package_cards_img">
-                                        </div>
-                                        <div class="card-body-items">
-                                            <div class="package_title">
-                                                <%= packageData[0].packageName%>
-                                            </div>
-                                            <div class="package_price">AED</div>
-                                            <div class="package_travel">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        viewBox="0 0 20 20" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M1.875 10C1.875 5.5142 5.5142 1.875 10 1.875C14.4858 1.875 18.125 5.5142 18.125 10C18.125 14.4858 14.4858 18.125 10 18.125C5.5142 18.125 1.875 14.4858 1.875 10ZM10 3.125C6.20455 3.125 3.125 6.20455 3.125 10C3.125 13.7954 6.20455 16.875 10 16.875C13.7954 16.875 16.875 13.7954 16.875 10C16.875 6.20455 13.7954 3.125 10 3.125Z"
-                                                            fill="#DDDDDD" />
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M10 4.375C10.3452 4.375 10.625 4.65482 10.625 5V10H13.75C14.0952 10 14.375 10.2798 14.375 10.625C14.375 10.9702 14.0952 11.25 13.75 11.25H10C9.65482 11.25 9.375 10.9702 9.375 10.625V5C9.375 4.65482 9.65482 4.375 10 4.375Z"
-                                                            fill="#DDDDDD" />
-                                                    </svg> 6hrs
-                                                </span> <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                        viewBox="0 0 18 18" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M3.375 6.50391C3.375 3.50906 5.92109 1.125 9 1.125C12.0789 1.125 14.625 3.50906 14.625 6.50391C14.625 8.19227 13.7121 10.2811 12.7122 12.0867C11.6972 13.9192 10.5283 15.5703 9.90146 16.4168C9.79803 16.5582 9.66278 16.6733 9.50663 16.7528C9.34969 16.8326 9.17609 16.8743 9 16.8743C8.82391 16.8743 8.65031 16.8326 8.49337 16.7528C8.3372 16.6733 8.20194 16.5582 8.0985 16.4168C7.47168 15.5699 6.30279 13.9182 5.28782 12.0854C4.28789 10.2798 3.375 8.19107 3.375 6.50391ZM9 2.25C6.48907 2.25 4.5 4.18242 4.5 6.50391C4.5 7.87534 5.27461 9.73939 6.27199 11.5404C7.25166 13.3095 8.38638 14.9145 9 15.7437C9.6136 14.9149 10.7483 13.3104 11.728 11.5416C12.7254 9.74087 13.5 7.8766 13.5 6.50391C13.5 4.18242 11.5109 2.25 9 2.25Z"
-                                                            fill="#DDDDDD" />
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
-                                                            fill="#DDDDDD" />
-                                                    </svg>
-                                                    <%= packageData[0].destination%>
-                                                </span>
-                                            </div>
-                                            <div class="package_data_price">
-                                                <%= packageData[0].price%>
-                                            </div>
-                                            <div>
-                                                <a href="/packagesname"> <button type="button"
-                                                        class="btn btn-yellow-gradient">Know
-                                                        More </button></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========== End similar_Section ========== -->
+        <!-- ========== Start travel plan Section ========== -->
+        <div class="section_travel">
+            <div class="container">
+                <div class="section_travel_box">
+                    <img src="/images/travel img/travel men.svg" alt="" class="section_travel_img">
+                    <div class="section_travel_items">
+                        <h2 class="section_travel_content">Ensure your travel plans align seamlessly
+                            with
+                            your Schedule!</h2>
+                        <h1 class="section_travel_title">Customize your very own travel experience.
+                        </h1>
+                        <div class="section_travel_btn"> <button class=" btn travel_btn">Curate Your
+                                Trip</button> <span class="section_travel_arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                    <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727" stroke="white"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========== End travel plan Section ========== -->
+        <!-- ========== Start Section_faq ========== -->
+        <div class="section_faq">
+            <div class="container">
+                <div class="section_faq_box">
+                    <div class="section_title">Frequently Asked Questions</div>
+                    <div class="section_faq_tab">
+                        <button type="button" class="btn btn-yellow-gradient">Section 1</button>
+                        <button type="button" class="btn btn-yellow-gradient">Section 2</button>
+                        <button type="button" class="btn btn-yellow-gradient">Section 3</button>
+                        <button type="button" class="btn btn-yellow-gradient">Section 4</button>
+                        <button type="button" class="btn btn-yellow-gradient">Section 5</button>
+                    </div>
+                    <div class="accordion_box">
+                        <div class="accordion">
+                            <div class="at-item">
+                                <div class="section-at-title active">
+                                    <h2>Accordion title 1</h2>
+                                    <hr>
                                 </div>
-                                <div class="col-12 col-sm-6 col-xl-4">
-                                    <div class="package_cards">
-                                        <div><img src="/images/packages img/sand_girl.svg" alt=""
-                                                class="package_cards_img">
-                                        </div>
-                                        <div class="card-body-items">
-                                            <div class="package_title">
-                                                <%= packageData[0].packageName%>
-                                            </div>
-                                            <div class="package_price">AED</div>
-                                            <div class="package_travel">
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        viewBox="0 0 20 20" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M1.875 10C1.875 5.5142 5.5142 1.875 10 1.875C14.4858 1.875 18.125 5.5142 18.125 10C18.125 14.4858 14.4858 18.125 10 18.125C5.5142 18.125 1.875 14.4858 1.875 10ZM10 3.125C6.20455 3.125 3.125 6.20455 3.125 10C3.125 13.7954 6.20455 16.875 10 16.875C13.7954 16.875 16.875 13.7954 16.875 10C16.875 6.20455 13.7954 3.125 10 3.125Z"
-                                                            fill="#DDDDDD" />
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M10 4.375C10.3452 4.375 10.625 4.65482 10.625 5V10H13.75C14.0952 10 14.375 10.2798 14.375 10.625C14.375 10.9702 14.0952 11.25 13.75 11.25H10C9.65482 11.25 9.375 10.9702 9.375 10.625V5C9.375 4.65482 9.65482 4.375 10 4.375Z"
-                                                            fill="#DDDDDD" />
-                                                    </svg> 6hrs
-                                                </span> <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                        viewBox="0 0 18 18" fill="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M3.375 6.50391C3.375 3.50906 5.92109 1.125 9 1.125C12.0789 1.125 14.625 3.50906 14.625 6.50391C14.625 8.19227 13.7121 10.2811 12.7122 12.0867C11.6972 13.9192 10.5283 15.5703 9.90146 16.4168C9.79803 16.5582 9.66278 16.6733 9.50663 16.7528C9.34969 16.8326 9.17609 16.8743 9 16.8743C8.82391 16.8743 8.65031 16.8326 8.49337 16.7528C8.3372 16.6733 8.20194 16.5582 8.0985 16.4168C7.47168 15.5699 6.30279 13.9182 5.28782 12.0854C4.28789 10.2798 3.375 8.19107 3.375 6.50391ZM9 2.25C6.48907 2.25 4.5 4.18242 4.5 6.50391C4.5 7.87534 5.27461 9.73939 6.27199 11.5404C7.25166 13.3095 8.38638 14.9145 9 15.7437C9.6136 14.9149 10.7483 13.3104 11.728 11.5416C12.7254 9.74087 13.5 7.8766 13.5 6.50391C13.5 4.18242 11.5109 2.25 9 2.25Z"
-                                                            fill="#DDDDDD" />
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M9 5.625C8.37868 5.625 7.875 6.12868 7.875 6.75C7.875 7.37132 8.37868 7.875 9 7.875C9.62132 7.875 10.125 7.37132 10.125 6.75C10.125 6.12868 9.62132 5.625 9 5.625ZM6.75 6.75C6.75 5.50736 7.75736 4.5 9 4.5C10.2426 4.5 11.25 5.50736 11.25 6.75C11.25 7.99264 10.2426 9 9 9C7.75736 9 6.75 7.99264 6.75 6.75Z"
-                                                            fill="#DDDDDD" />
-                                                    </svg>
-                                                    <%= packageData[0].destination%>
-                                                </span>
-                                            </div>
-                                            <div class="package_data_price">
-                                                <%= packageData[0].price%>
-                                            </div>
-                                            <div>
-                                                <a href="/packagesname"> <button type="button"
-                                                        class="btn btn-yellow-gradient">Know
-                                                        More </button></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="at-tab" style="display: block;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    reprehenderit.
+                                </div>
+                            </div>
+                            <div class="at-item">
+                                <div class="section-at-title">
+                                    <h2>Accordion title 2</h2>
+                                    <hr>
+                                </div>
+                                <div class="at-tab">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    reprehenderit.
+                                </div>
+                            </div>
+                            <div class="at-item">
+                                <div class="section-at-title">
+                                    <h2>Accordion title 3</h2>
+                                    <hr>
+                                </div>
+                                <div class="at-tab">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    reprehenderit.
+                                </div>
+                            </div>
+                            <div class="at-item">
+                                <div class="section-at-title">
+                                    <h2>Accordion title 3</h2>
+                                    <hr>
+                                </div>
+                                <div class="at-tab">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    reprehenderit.
+                                </div>
+                            </div>
+                            <div class="at-item">
+                                <div class="section-at-title">
+                                    <h2>Accordion title 3</h2>
+                                    <hr>
+                                </div>
+                                <div class="at-tab">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    reprehenderit.
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- ========== End similar_Section ========== -->
-                    <!-- ========== Start travel plan Section ========== -->
-                    <div class="section_travel">
-                        <div class="container">
-                            <div class="section_travel_box">
-                                <img src="/images/travel img/travel men.svg" alt="" class="section_travel_img">
-                                <div class="section_travel_items">
-                                    <h2 class="section_travel_content">Ensure your travel plans align seamlessly
-                                        with
-                                        your Schedule!</h2>
-                                    <h1 class="section_travel_title">Customize your very own travel experience.
-                                    </h1>
-                                    <div class="section_travel_btn"> <button class=" btn travel_btn">Curate Your
-                                            Trip</button> <span class="section_travel_arrow"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="15" height="16"
-                                                viewBox="0 0 15 16" fill="none">
-                                                <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727"
-                                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg></span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ========== End travel plan Section ========== -->
-
-                    <!-- ========== Start Section_faq ========== -->
-                    <div class="section_faq">
-                        <div class="container">
-                            <div class="section_faq_box">
-                                <div class="section_title">Frequently Asked Questions</div>
-                                <div class="section_faq_tab">
-                                    <button type="button" class="btn btn-yellow-gradient">Section 1</button>
-                                    <button type="button" class="btn btn-yellow-gradient">Section 2</button>
-                                    <button type="button" class="btn btn-yellow-gradient">Section 3</button>
-                                    <button type="button" class="btn btn-yellow-gradient">Section 4</button>
-                                    <button type="button" class="btn btn-yellow-gradient">Section 5</button>
-                                </div>
-                                <div class="accordion_box">
-                                    <div class="accordion">
-                                        <div class="at-item">
-                                            <div class="section-at-title active">
-                                                <h2>Accordion title 1</h2>
-                                                <hr>
-                                            </div>
-                                            <div class="at-tab" style="display: block;">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                reprehenderit.
-                                            </div>
-                                        </div>
-                                        <div class="at-item">
-                                            <div class="section-at-title">
-                                                <h2>Accordion title 2</h2>
-                                                <hr>
-                                            </div>
-                                            <div class="at-tab">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                reprehenderit.
-                                            </div>
-                                        </div>
-                                        <div class="at-item">
-                                            <div class="section-at-title">
-                                                <h2>Accordion title 3</h2>
-                                                <hr>
-                                            </div>
-                                            <div class="at-tab">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                reprehenderit.
-                                            </div>
-                                        </div>
-                                        <div class="at-item">
-                                            <div class="section-at-title">
-                                                <h2>Accordion title 3</h2>
-                                                <hr>
-                                            </div>
-                                            <div class="at-tab">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                reprehenderit.
-                                            </div>
-                                        </div>
-                                        <div class="at-item">
-                                            <div class="section-at-title">
-                                                <h2>Accordion title 3</h2>
-                                                <hr>
-                                            </div>
-                                            <div class="at-tab">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                                reprehenderit.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ========== End Section_faq ========== -->
-                    <!-- ========== Start footer ========== -->
-                    <div class="bg_blue_footer">
-                        <%-include("footer.ejs")%>
-                    </div>
-                    <!-- ========== End footer ========== -->
-                    <script>
-                        // faq_section
-                        $(document).ready(function () {
-                            $(".section-at-title").click(function () {
-                                $(this)
-                                    .toggleClass("active")
-                                    .next(".at-tab")
-                                    .slideToggle()
-                                    .parent()
-                                    .siblings()
-                                    .find(".at-tab")
-                                    .slideUp()
-                                    .prev()
-                                    .removeClass("active");
-                            });
-                        });
-                        // faq_end_section
-                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- ========== End Section_faq ========== -->
+        <!-- ========== Start footer ========== -->
+        <div class="bg_blue_footer">
+            <%-include("footer.ejs")%>
+        </div>
+        <!-- ========== End footer ========== -->
+        <script>
+            // faq_section
+            $(document).ready(function () {
+                $(".section-at-title").click(function () {
+                    $(this)
+                        .toggleClass("active")
+                        .next(".at-tab")
+                        .slideToggle()
+                        .parent()
+                        .siblings()
+                        .find(".at-tab")
+                        .slideUp()
+                        .prev()
+                        .removeClass("active");
+                });
+            });
+            // faq_end_section
+        </script>
+        <!-- ========== End overview_Section ========== -->
 </body>
