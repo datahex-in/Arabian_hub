@@ -591,6 +591,17 @@ li {
   line-height: 144.9%; /* 28.98px */
   letter-spacing: -0.3px;
 }
+.section_included_content {
+  width: auto;
+  padding: 5px 0px;
+  color: var(--desc-colour, #d9d9d9);
+  font-family: var(--font-Montserrat);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 144.9%; /* 28.98px */
+  letter-spacing: -0.3px;
+}
 .section_home_data {
   position: absolute;
   left: 0em;
@@ -1012,7 +1023,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   margin-top: 30px;
   display: flex;
   justify-content: flex-start;
-  gap: 180px;
+  gap: 100px;
 }
 .desert_safari img {
   width: 587px;
@@ -1414,13 +1425,12 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 
 .at-tab {
-  color: black;
+  color: white;
   display: none;
-  background-color: white;
-  padding: 15px;
-  border: 1px solid #dddddd;
+  background-color: transparent;
+  border: none;
   border-top: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
 .section-at-title {
@@ -1497,6 +1507,9 @@ input[type="date"]:focus::-webkit-datetime-edit {
 /***** End section_faq *****/
 
 /***** Section_footer *****/
+.bg_blue_footer {
+  background: rgba(21, 67, 118, 0.26);
+}
 .section_footer {
   width: 100%;
   height: auto;
@@ -1727,6 +1740,9 @@ ul {
   font-weight: 600;
 }
 /***** pacakges_Section *****/
+.section_packagename_location {
+  margin-top: 2em;
+}
 .package_time {
   color: var(--Desc-colour, #d9d9d9);
   font-family: var(--font-Montserrat);
@@ -2133,9 +2149,46 @@ ul {
   margin-top: 10px;
   padding: 10px;
 }
+.include_activities_list_two {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.include_activities_one {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.include_activities_two {
+  float: right;
+  position: relative;
+  bottom: 45px;
+}
+.include_activities_two button {
+  border: none;
+  outline: none;
+  background: none;
+  color: #c69c41;
+  font-family: var(--font-Montserrat);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.27px;
+}
+.include_activities_one h3 {
+  width: 100%;
+  color: var(--button, #c69c41);
+  font-family: var(--font-Montserrat);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.21px;
+}
 .included_section {
   width: 424px;
-  height: 750px;
+  height: auto;
   border-radius: 8px;
   border: 0.25px solid var(--golden-gradient, #aa790f);
   background: rgba(59, 72, 86, 0.38);
@@ -2469,3 +2522,25 @@ input::placeholder {
 .book_vist_rectangle > .form__group {
   margin-top: 20px;
 }
+
+/***** Section quick_tips*****/
+.section_quick_tips {
+  padding-top: 3em;
+}
+.section_weather_data {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.section_weather_details p {
+  margin-top: 10px;
+  width: 75%;
+}
+/***** End Section *****/
+
+/***** similar_Section *****/
+.section_similar_package {
+  padding-top: 20px;
+}
+/***** End similar_Section *****/
