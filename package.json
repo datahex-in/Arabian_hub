@@ -2,6 +2,9 @@
   "name": "arabianhub",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "nodemon app.js",
     "dev": "nodemon ./bin/www"
