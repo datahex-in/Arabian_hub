@@ -294,11 +294,15 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+    height: 85px;
+  }
   .navTrigger {
     display: block;
   }
   .nav div.logo {
-    margin-top: 8px;
+    margin-top: 10px;
     margin-left: 0px;
     padding-left: 15px;
   }
@@ -975,6 +979,35 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 /***** End Destination Section *****/
 
+/*****packages_Section *****/
+.package_section {
+  margin-top: 5em;
+}
+.package_cards {
+  width: 424px;
+  height: 533px;
+  background: #072c54;
+  margin: 20px;
+}
+.package_cards_img {
+  width: 100%;
+  height: auto;
+}
+/***** Endpackages_Section *****/
+.package_section {
+  margin-top: 5em;
+}
+.package_cards {
+  width: 100%;
+  height: auto;
+  background: #072c54;
+  margin: 0px;
+  margin-top: 30px;
+}
+.package_cards_img {
+  width: 100%;
+  height: auto;
+}
 /* tours sections___________- */
 .section_package_one {
   width: 100%;
@@ -1064,8 +1097,8 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .section_btn_arrow {
   position: absolute;
-  right: 30px;
-  top: 10px;
+  right: 36px;
+  top: 11px;
 }
 .section_package_tabs {
   position: relative;
@@ -1522,7 +1555,9 @@ input[type="date"]:focus::-webkit-datetime-edit {
   left: 80px;
   border-radius: 32px;
   background: rgba(21, 67, 118, 0.26);
+
   box-shadow: 2px 2px 4px 0px #16385b inset;
+  backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   z-index: 1;
 }
