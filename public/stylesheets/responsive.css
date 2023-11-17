@@ -599,7 +599,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: flex-start;
-    gap: 38px;
+    gap: 30px;
   }
   /* active_Section-- */
   .activities_grids_head {
@@ -634,3 +634,29 @@
     border-radius: 16px;
   }
 }
+
+/***** Section quick_tips*****/
+@media (max-width: 600px) {
+  .included_section {
+    margin-top: 3em;
+    width: 100%;
+    height: auto;
+  }
+  .section_quick_tips {
+    padding-top: 3em;
+  }
+  .section_weather_data {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  .section_weather_details p {
+    margin-top: 10px;
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+/***** End Section *****/
