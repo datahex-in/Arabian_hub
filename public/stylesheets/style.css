@@ -995,6 +995,11 @@ input[type="date"]:focus::-webkit-datetime-edit {
   margin: 0px;
   margin-top: 30px;
 }
+.package_cards {
+  background: #072c54;
+  width: 100%;
+  height: auto;
+}
 .package_cards_img {
   width: 100%;
   height: auto;

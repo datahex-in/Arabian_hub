@@ -600,8 +600,8 @@
 @media (max-width: 600px) {
   .tour_section_header {
     position: absolute;
-    left: 50px;
-    top: 5px;
+    left: 30px;
+    top: 70px;
     z-index: 4;
   }
   .section_package_book button {
