@@ -988,7 +988,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .package_section {
   margin-top: 5em;
 }
-.package_cards {
+.included_section {
   width: 100%;
   height: auto;
   background: #072c54;
@@ -2207,12 +2207,38 @@ ul {
 .included_section {
   margin-top: 3em;
   width: 424px;
-  height: 800px;
+  height: auto;
   border-radius: 8px;
   border: 0.25px solid var(--golden-gradient, #aa790f);
   background: rgba(59, 72, 86, 0.38);
   box-shadow: 1px 1px 4px 0px #304458 inset;
   backdrop-filter: blur(50px);
+}
+.included_section_headtitle {
+  padding: 20px;
+  color: var(--Golden-h1, #fff9d9);
+  text-align: center;
+  font-family: var(--font-Montserrat);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 157.895% */
+  letter-spacing: -0.285px;
+  text-transform: uppercase;
+}
+.included_section_headcontent {
+  padding: 0px 20px;
+  color: var(--Desc-colour, #d9d9d9);
+  text-align: center;
+  font-family: var(--font-Montserrat);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  letter-spacing: -0.24px;
+}
+.included_section_headbtn {
+  padding: 0px 20px;
 }
 .included_activites {
   padding: 20px;
