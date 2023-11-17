@@ -41,6 +41,7 @@ button {
 }
 
 .btn-yellow {
+  width: 160px !important;
   margin-bottom: 0px;
   color: #fff !important;
   background: var(--button, #c69c41) !important;

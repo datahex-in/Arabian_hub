@@ -26,7 +26,6 @@ function closebar() {
 // image slider
 
 const slider = document.querySelector("[data-slider]");
-
 const track = slider.querySelector("[data-slider-track]");
 const prev = slider.querySelector("[data-slider-prev]");
 const next = slider.querySelector("[data-slider-next]");
@@ -131,35 +130,6 @@ $(document).ready(function () {
   });
 });
 // faq_end_section
-
-//accordian
-function handleClass(node, className, action = "add") {
-  node.classList[action](className);
-}
-
-const accordions = document.querySelectorAll(".accordion");
-accordions.forEach(function (accordion) {
-  const heading = accordion.querySelector("span");
-  const accordionContentWrap = accordion.querySelector(
-    ".accordion__content-wrap"
-  );
-  const originalHeight = accordionContentWrap.offsetHeight;
-  accordionContentWrap.style.height = 0;
-
-  let accordionActiveClass = "accordion__active";
-
-  heading.addEventListener("click", function () {
-    if (this.parentNode.classList.contains(accordionActiveClass)) {
-      handleClass(this.parentNode, accordionActiveClass, "remove");
-      accordionContentWrap.style.height = 0 + "px";
-    } else {
-      handleClass(this.parentNode, accordionActiveClass);
-      accordionContentWrap.style.height = originalHeight + "px";
-    }
-  });
-});
-
-//accordian end
 
 //news letter
 document.querySelector(".submit-email").addEventListener("mousedown", (e) => {

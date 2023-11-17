@@ -568,7 +568,7 @@ li {
 }
 .section_sub_title {
   color: var(--golden-title, #eed66f);
-  font-family: Playfair Display;
+  font-family: var(--font-playfair);
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -983,16 +983,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .package_section {
   margin-top: 5em;
 }
-.package_cards {
-  width: 424px;
-  height: 533px;
-  background: #072c54;
-  margin: 20px;
-}
-.package_cards_img {
-  width: 100%;
-  height: auto;
-}
+
 /***** Endpackages_Section *****/
 .package_section {
   margin-top: 5em;
@@ -1069,6 +1060,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
+  margin-left: 18px;
   line-height: normal;
   letter-spacing: -0.48px;
 }
@@ -1876,16 +1868,7 @@ ul {
   line-height: 156.4%; /* 23.46px */
   letter-spacing: -0.225px;
 }
-.package_cards {
-  width: 424px;
-  height: auto;
-  background: #072c54;
-  margin: 20px;
-}
-.package_cards_img {
-  width: 100%;
-  height: auto;
-}
+
 /***** End pacakges_Section *****/
 
 /* destination---- */

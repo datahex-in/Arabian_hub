@@ -158,7 +158,7 @@
     </div>
     <!-- ========== End about_Section ========== -->
 
-    <!-- ========== Start Destiantion Section ========== -->
+    <!-- ========== Start Destination Section ========== -->
     <div class="section_destination">
       <div class="container">
         <div class="section_destination_box">
@@ -167,12 +167,12 @@
                 <hr class="section_bar_white">
               </span>
               <span class="section_head_title">
-                <%= destinationData.title %>
+                <%= destinationData.destination %>
               </span>
             </div>
             <div class="section_title">Destinations</div>
             <p class="section_content section_content_left">
-              <%= destinationData.description %>
+              <%= destinationData.shortDescription %>
             </p>
           </div>
           <div class="section_destination_right">
@@ -220,7 +220,8 @@
         </div>
       </div>
     </div>
-    <!-- ========== End Destiantion Section ========== -->
+    <!-- ========== End Destina
+      tion Section ========== -->
 
 
     <!-- ========== Start popularSection ========== -->
@@ -239,18 +240,11 @@
             <div class="section_title">Popular Packages</div>
           </div>
           <div class="section_package_right">
-            <p class="section_content">
+            <p class="section_content w-100">
               <%= packageData.description %>
             </p>
             <div class="section_package_btn"> <a href="/packages"><button type="button" class="btn btn-yellow">View
                   All</button></a>
-              <div class="section_btn_arrow"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
-                  viewBox="0 0 15 16" fill="none">
-                  <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727" stroke="white" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg></div>
             </div>
           </div>
         </div>
@@ -299,7 +293,6 @@
             </div>
           </div>
         </div>
-
         <div>
           <div class="card text-center"><img class="carousel-img-items" src="/images/destiantion img/slider_img_two.svg"
               alt="">
@@ -607,4 +600,36 @@
     <!-- ========== Start footer ========== -->
     <%-include("footer.ejs")%>
       <!-- ========== End footer ========== -->
+
+      <script>
+        //accordian
+        function handleClass(node, className, action = "add") {
+          node.classList[action](className);
+        }
+
+        const accordions = document.querySelectorAll(".accordion");
+        accordions.forEach(function (accordion) {
+          const heading = accordion.querySelector("span");
+          const accordionContentWrap = accordion.querySelector(
+            ".accordion__content-wrap"
+          );
+          const originalHeight = accordionContentWrap.offsetHeight;
+          accordionContentWrap.style.height = 0;
+
+          let accordionActiveClass = "accordion__active";
+
+          heading.addEventListener("click", function () {
+            if (this.parentNode.classList.contains(accordionActiveClass)) {
+              handleClass(this.parentNode, accordionActiveClass, "remove");
+              accordionContentWrap.style.height = 0 + "px";
+            } else {
+              handleClass(this.parentNode, accordionActiveClass);
+              accordionContentWrap.style.height = originalHeight + "px";
+            }
+          });
+        });
+
+        //accordian end
+
+      </script>
 </body>
