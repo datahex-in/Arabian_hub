@@ -2,7 +2,6 @@
     <!-- ========== Start header navbar ========== -->
     <%-include("header.ejs")%>
         <!-- ========== End navbar ========== -->
-
         <div class=" section_sand">
             <div class="section_package_one">
                 <img src="/images/sandtours/curate.svg" alt="">
@@ -23,84 +22,121 @@
             </div>
             <div class="contact_form_head">
                 <div class="container">
-                    <div class="row">
+                    <div class="row section_msg_box">
                         <div class="col-xl-6">
                             <div class="contact_form_head_left">
                                 <div>
-                                    <h5><span><img src="/images/sandtours/Line.svg" alt=""></span> HERE AT YOUR
-                                        SERVICE
-                                    </h5>
+                                    <h5 class="section_head_title"><span><img src="/images/sandtours/Line.svg"
+                                                alt=""></span> HERE AT YOUR SERVICE</h5>
                                 </div>
                                 <div>
-                                    <h1>Let’s draw the map to your Dream Trip</h1>
+                                    <h1 class="section_title"> Let’s draw the map to your Dream Trip</h1>
                                 </div>
                                 <div class="contact_info">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+                                    <p class="section_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Vitae
                                     </p>
-                                    <p> <span><img src="/images/sandtours/contact_message.svg" alt=""></span>
-                                        samplemail@hotmail.com</p>
-                                    <p><span><img src="/images/sandtours/phone.svg" alt=""></span> +971 0000 000 00
-                                    </p>
-                                    <div style="width: 380px;
-                                height: 180px;">
-                                        <p class="adderss_content"> <span><img
-                                                    src="/images/sandtours/contactlocation.svg" alt=""></span>Arabian
-                                            Tour
-                                            Hub
-                                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 553236</p>
-                                    </div>
+
+                                </div>
+
+                                <div class="contact_info_items">
+                                    <div class="contact_info_details"> <span><img
+                                                src="/images/sandtours/contact_message.svg" alt=""></span><span>
+                                            <p class="section_content"> samplemail@hotmail.com</p>
+                                        </span></div>
+                                    <div class="contact_info_details"> <span><img src="/images/sandtours/phone.svg"
+                                                alt=""></span><span>
+                                            <p class="section_content">+971 0000 000 00</p>
+                                        </span></div>
+                                    <div class="contact_info_details"> <span><img
+                                                src="/images/sandtours/contactlocation.svg" alt=""></span><span>
+                                            <p class="section_content">Arabian
+                                                Tour
+                                                Hub
+                                                Lorem Ipsum Lorem Ipsum
+                                                Lorem Ipsum Lorem Ipsum
+                                                Lorem 553236</p>
+                                        </span></div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="col-xl-6">
-                            <div class="contact_table">
-                                <div class="gold_splash">
-                                    <div class="about_gradient_topright"></div>
+                            <div class="contact_form_right">
+                                <div class="contact_form_head">
+                                    <h3 class="section_contact_title">Talk to us</h3>
                                 </div>
-                                <div class="contact_table_inner">
-                                    <div class="container">
-                                        <div class="contact_us">
-                                            <h1>Talk to us</h1>
-                                        </div>
-
-                                        <div class="input_block">
-                                            <div class="name">
-                                                <label for="name" class="name">Name*</label>
-                                                <input type="text" id="name" name="name" placeholder="Enter Your Name">
-                                                <hr>
-                                            </div>
-                                        </div>
-
-                                        <div class="input_block">
-                                            <div class="email">
-                                                <label for="email" class="name">Email*</label>
-                                                <input type="email" id="email" name="email"
-                                                    placeholder="Enter Email ID">
-                                                <hr>
-                                            </div>
-                                        </div>
-
-                                        <div class="input_block">
-                                            <div class="phone">
-                                                <label for="phone" class="name">Phone*</label>
-                                                <input type="tel" id="phone" name="phone"
-                                                    placeholder="Enter Your Number">
-                                                <hr>
-                                            </div>
-                                        </div>
-
-                                        <div class="input_block">
-                                            <div class="message">
-                                                <label for="message" class="name">Send us a message*</label>
-                                                <textarea id="message" name="message"
-                                                    placeholder="Write Somthing"></textarea>
-                                                <hr>
-                                            </div>
+                                <form action="">
+                                    <div class="input_block">
+                                        <div class="name">
+                                            <label for="name" class="name">Name*</label>
+                                            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                                            <hr>
                                         </div>
                                     </div>
-                                </div>
-
+                                    <div class="input_block">
+                                        <div class="email">
+                                            <label for="email" class="name">Email*</label>
+                                            <input type="email" id="email" name="email" placeholder="Enter Email ID">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="input_block">
+                                        <div class="name">
+                                            <label for="name" class="name">Phone Number*</label>
+                                            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="input_block">
+                                        <div class="name">Preferred Language*</div>
+                                        <select id="wa_select" class="w-100"
+                                            style="border: none; background-color: transparent;outline: none;color: white;cursor: pointer;padding-top: .5em;">
+                                            <option hidden='hidden' selected='selected' value='default'>Select Preferred
+                                                Language
+                                            </option>
+                                            <option value="1">English</option>
+                                            <option value="2">Malayalam</option>
+                                            <option value="3">Arabic</option>
+                                        </select>
+                                        <hr>
+                                    </div>
+                                    <div class="input_block" style="display: flex;flex-direction: row; width: 130px;">
+                                        <div class="w-100">
+                                            <input type="radio" id="trip1" name="gender">
+                                            <label for="trip1" class="radio_btn">1 day Trip</label>
+                                        </div>
+                                        <div class="w-100">
+                                            <input type="radio" id="trip2" name="gender">
+                                            <label for="trip2" class="radio_btn">1+ days</label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="input_block">
+                                        <select id="wa_select" class="w-100"
+                                            style="border: none; background-color: transparent;outline: none;color: white;cursor: pointer;padding-top: .5em;">
+                                            <option hidden='hidden' selected='selected' value='default'>No of Persons
+                                            </option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <hr>
+                                    </div>
+                                    <div class="input_block">
+                                        <div class="name">
+                                            <label for="textarea-1">Send Us a Your Query</label>
+                                            <textarea id="textarea-1" class="js-character-count" maxlength="10"
+                                                aria-describedby="textarea-info-1"
+                                                placeholder="Write Your Query here"></textarea>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="input_block">
+                                        <div class="name">
+                                            <button class="btn btn_msg">Send Us a Message</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -110,19 +146,9 @@
 
         <!-- ========== End package cards ========== -->
         <!-- ========== End popularSection ========== -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!-- Add jQuery (use a specific version if needed) -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- Add Owl Carousel CSS -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <!-- Add Owl Carousel theme CSS (optional) -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-        <!-- Add Owl Carousel JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="/javascripts/main.js"></script>
-        <script src="/javascripts/Navbar.js"></script>
+        <!-- ========== Start footer ========== -->
+        <%-include("footer.ejs")%>
+            <!-- ========== End footer ========== -->
 </body>
 
 </html>

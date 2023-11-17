@@ -41,6 +41,7 @@ button {
 }
 
 .btn-yellow {
+  margin-bottom: 0px;
   color: #fff !important;
   background: var(--button, #c69c41) !important;
   border: none !important;
@@ -105,6 +106,12 @@ button {
 .btn_form_submit:hover ~ input {
   padding: 16px 0 16px 16px;
 }
+.btn_msg {
+  width: 38vw;
+  height: 50px;
+  color: #fff !important;
+  background-color: var(--button) !important;
+}
 @media (max-width: 600px) {
   .travel_btn {
     margin-top: 5px;
@@ -117,5 +124,12 @@ button {
     border: 1px solid var(--Golden-gradient, #dd9a0a) !important ;
     color: white !important;
     font-size: 12px !important;
+  }
+  .btn_msg {
+    width: 60vw;
+    height: 50px;
+  }
+  .btn-yellow {
+    margin-bottom: 10px;
   }
 }
