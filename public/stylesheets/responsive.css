@@ -36,8 +36,8 @@
     width: auto;
     min-width: 80vw;
     padding: 0px 0px;
-    font-size: 28px;
-    line-height: 32px; /* 134.783% */
+    font-size: 32px;
+    line-height: 35px; /* 134.783% */
   }
   .section_title_large {
     font-size: 32px;
@@ -53,9 +53,9 @@
   }
   .section_content {
     width: auto;
-    padding: 0px 0px;
+    padding: 10px 0px;
     font-size: 13px;
-    line-height: normal; /* 28.98px */
+    line-height: 25px; /* 28.98px */
     letter-spacing: -0.3px;
   }
   .section_home_data {
@@ -262,8 +262,8 @@
   /* Additional styling for buttons (adjust as needed) */
   .slider__buttons {
     position: absolute;
-    top: 200px;
-    left: 75px;
+    top: 260px;
+    left: 20%;
     margin-top: 1rem;
   }
 
@@ -332,7 +332,7 @@
     margin-top: 20px;
   }
   .section_package_box {
-    padding-top: 3em;
+    padding-top: 8em;
     grid-template-columns: repeat(1, 1fr);
   }
   .section_package_tabs {
@@ -375,7 +375,7 @@
     padding: 20px 0px;
   }
   .section-at-title h2 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 /***** End package_Section *****/
@@ -600,7 +600,7 @@
 @media (max-width: 600px) {
   .tour_section_header {
     position: absolute;
-    left: 30px;
+    left: 25px;
     top: 70px;
     z-index: 4;
   }

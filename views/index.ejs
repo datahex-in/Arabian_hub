@@ -11,7 +11,8 @@
             <div class="section_home_content">
               <h2 class="section_title">Explore. Plan. Book.
                 Your Journey, Your Way.</h2>
-              <p class="section_content">Discover your next adventure, where every click leads to a new experience.
+              <p class="section_content w-100">Discover your next adventure, where every click leads to a new
+                experience.
                 Seamlessly
                 create and organize your travel plans, leaving no destination uncharted.</p>
               <div class="section_home_data">
@@ -27,15 +28,17 @@
                         fill="#F4E07A" />
                     </svg>
                   </div>
-                  <label for="name" class="form__label"></label>
                 </div>
+
                 <div class="form__group">
-                  <input type="date" class="form__field" required="true" placeholder="Start Date">
-                  <label for="name" class="form__label">Start Date</label>
+                  <label for="startDate" class="form__label" id="startDateLabel">Start Date</label>
+                  <input type="date" class="form__field " id="startDate" required="true"
+                    onchange="hideLabel('startDate')">
                 </div>
+
                 <div class="form__group">
-                  <input type="date" class="form__field" required="true" placeholder="End Date">
-                  <label for="name" class="form__label">End Date</label>
+                  <label for="endDate" class="form__label" id="endDateLabel">End Date</label>
+                  <input type="date" class="form__field" id="endDate" required="true" onchange="hideLabel('endDate')">
                 </div>
                 <div class="form__group">
                   <button type="button" class="btn btn-yellow">Search</button>
@@ -171,7 +174,7 @@
               </span>
             </div>
             <div class="section_title">Destinations</div>
-            <p class="section_content section_content_left">
+            <p class="section_content section_content_left w-100">
               <%= destinationData.shortDescription %>
             </p>
           </div>
@@ -630,6 +633,12 @@
         });
 
         //accordian end
-
       </script>
+      <script>
+        function hideLabel(inputId) {
+          var label = document.getElementById(inputId + 'Label');
+          label.style.visibility = "hidden";
+        }
+      </script>
+
 </body>
