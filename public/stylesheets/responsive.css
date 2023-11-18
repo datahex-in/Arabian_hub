@@ -3,6 +3,9 @@
   .small_header_itemTwo {
     margin-right: 20px;
   }
+  .small_center {
+    text-align: center;
+  }
 }
 /***** End small_header *****/
 
@@ -55,7 +58,7 @@
     width: auto;
     padding: 10px 0px;
     font-size: 13px;
-    line-height: 25px; /* 28.98px */
+    line-height: 22px; /* 28.98px */
     letter-spacing: -0.3px;
   }
   .section_home_data {
@@ -262,7 +265,7 @@
   /* Additional styling for buttons (adjust as needed) */
   .slider__buttons {
     position: absolute;
-    top: 260px;
+    top: 263px;
     left: 20%;
     margin-top: 1rem;
   }
@@ -285,6 +288,13 @@
 /***** End Section *****/
 /***** activity_Section *****/
 @media (max-width: 600px) {
+  .section_activity_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
   .section_activity_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -372,7 +382,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    padding: 20px 0px;
+    padding: 20px 10px;
   }
   .section-at-title h2 {
     font-size: 12px;
@@ -600,7 +610,7 @@
 @media (max-width: 600px) {
   .tour_section_header {
     position: absolute;
-    left: 25px;
+    left: 5px;
     top: 70px;
     z-index: 4;
   }
