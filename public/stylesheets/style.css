@@ -294,11 +294,15 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+    height: 85px;
+  }
   .navTrigger {
     display: block;
   }
   .nav div.logo {
-    margin-top: 8px;
+    margin-top: 10px;
     margin-left: 0px;
     padding-left: 15px;
   }
@@ -564,7 +568,7 @@ li {
 }
 .section_sub_title {
   color: var(--golden-title, #eed66f);
-  font-family: Playfair Display;
+  font-family: var(--font-playfair);
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -975,6 +979,31 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 /***** End Destination Section *****/
 
+/*****packages_Section *****/
+.package_section {
+  margin-top: 5em;
+}
+
+/***** Endpackages_Section *****/
+.package_section {
+  margin-top: 5em;
+}
+.included_section {
+  width: 100%;
+  height: auto;
+  background: #072c54;
+  margin: 0px;
+  margin-top: 30px;
+}
+.package_cards {
+  background: #072c54;
+  width: 100%;
+  height: auto;
+}
+.package_cards_img {
+  width: 100%;
+  height: auto;
+}
 /* tours sections___________- */
 .section_package_one {
   width: 100%;
@@ -1036,6 +1065,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
+  margin-left: 18px;
   line-height: normal;
   letter-spacing: -0.48px;
 }
@@ -1064,8 +1094,8 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .section_btn_arrow {
   position: absolute;
-  right: 30px;
-  top: 10px;
+  right: 36px;
+  top: 11px;
 }
 .section_package_tabs {
   position: relative;
@@ -1522,7 +1552,9 @@ input[type="date"]:focus::-webkit-datetime-edit {
   left: 80px;
   border-radius: 32px;
   background: rgba(21, 67, 118, 0.26);
+
   box-shadow: 2px 2px 4px 0px #16385b inset;
+  backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   z-index: 1;
 }
@@ -1841,16 +1873,7 @@ ul {
   line-height: 156.4%; /* 23.46px */
   letter-spacing: -0.225px;
 }
-.package_cards {
-  width: 424px;
-  height: auto;
-  background: #072c54;
-  margin: 20px;
-}
-.package_cards_img {
-  width: 100%;
-  height: auto;
-}
+
 /***** End pacakges_Section *****/
 
 /* destination---- */
@@ -2189,12 +2212,38 @@ ul {
 .included_section {
   margin-top: 3em;
   width: 424px;
-  height: 800px;
+  height: auto;
   border-radius: 8px;
   border: 0.25px solid var(--golden-gradient, #aa790f);
   background: rgba(59, 72, 86, 0.38);
   box-shadow: 1px 1px 4px 0px #304458 inset;
   backdrop-filter: blur(50px);
+}
+.included_section_headtitle {
+  padding: 20px;
+  color: var(--Golden-h1, #fff9d9);
+  text-align: center;
+  font-family: var(--font-Montserrat);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 157.895% */
+  letter-spacing: -0.285px;
+  text-transform: uppercase;
+}
+.included_section_headcontent {
+  padding: 0px 20px;
+  color: var(--Desc-colour, #d9d9d9);
+  text-align: center;
+  font-family: var(--font-Montserrat);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  letter-spacing: -0.24px;
+}
+.included_section_headbtn {
+  padding: 0px 20px;
 }
 .included_activites {
   padding: 20px;
