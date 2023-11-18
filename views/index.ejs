@@ -9,13 +9,15 @@
         <div class="section_home">
           <div class="section_home_left">
             <div class="section_home_content">
-              <h2 class="section_title" data-aos="fade-right">Explore. Plan. Book.
+              <h2 class="section_title" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                Explore. Plan. Book.
                 Your Journey, Your Way.</h2>
-              <p class="section_content w-100">Discover your next adventure, where every click leads to a new
+              <p class="section_content w-100" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
+                Discover your next adventure, where every click leads to a new
                 experience.
                 Seamlessly
                 create and organize your travel plans, leaving no destination uncharted.</p>
-              <div class="section_home_data">
+              <div class=" section_home_data">
                 <div class="form__group" style="display: flex;justify-content: space-between;">
                   <input type="input" class="form__field" required="true" placeholder="Destinations">
                   <div style="margin-left: -20px;">
@@ -71,14 +73,16 @@
             </h1>
           </div>
         </div>
-        <div class="section_experience_two section_position"><img src="/images/experience img/road trips.png"
-            alt="Loading" class="section_experience_img">
+        <div class="section_experience_two section_position" data-aos="flip-down" data-aos-duration="2000"
+          data-aos-easing="ease-in-out"><img src="/images/experience img/road trips.png" alt="Loading"
+            class="section_experience_img">
           <div class="section_experience_items">
             <h3 class="section_experience_title">Road Trips</h3>
             <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left-up">
           </div>
         </div>
-        <div class="section_experience_three section_position">
+        <div class="section_experience_three section_position" data-aos="flip-up" data-aos-duration="2000"
+          data-aos-easing="ease-out-back">
           <img src="/images/experience img/sand tours.png" alt="loading" class="section_experience_img">
           <div class="section_experience_items">
             <h3 class="section_experience_title">Sand Tours</h3>
@@ -87,21 +91,24 @@
         </div>
       </div>
       <div class="section_row_two">
-        <div class="section_experience_four section_position"><img src="/images/experience img/airplane.png"
-            alt="loading" class="section_experience_img">
+        <div class="section_experience_four section_position" data-aos="flip-right" data-aos-duration="1000"
+          data-aos-easing="ease-in-back"><img src="/images/experience img/airplane.png" alt="loading"
+            class="section_experience_img">
           <div class="section_experience_items">
             <h3 class="section_experience_title">Air Tours</h3>
             <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
           </div>
         </div>
-        <div class="section_experience_five  section_position"><img src="/images/experience img/water boats.jpg"
-            alt="loading" class="section_experience_img">
+        <div class="section_experience_five  section_position" data-aos="flip-up" data-aos-duration="1500"
+          data-aos-easing="ease-in-back"><img src="/images/experience img/water boats.jpg" alt="loading"
+            class="section_experience_img">
           <div class="section_experience_items">
             <h3 class="section_experience_title">Water Boats</h3>
             <img src="/images/experience img/arrow-down-left.svg" alt="" class="arrow-down-left">
           </div>
         </div>
-        <div class="section_experience_six section_position"><img src="/images/experience img/party.png" alt="loading"
+        <div class="section_experience_six section_position" data-aos="flip-left" data-aos-duration="1000"
+          data-aos-easing="ease-in-back"><img src="/images/experience img/party.png" alt="loading"
             class="section_experience_img">
           <div class="section_experience_items">
             <h3 class="section_experience_title">Party Moods</h3>
@@ -127,28 +134,29 @@
             <div class="section_title">
               About Us
             </div>
-            <p class="section_content section_content_left">
+            <p class="section_content section_content_left" data-aos="fade-right" data-aos-offset="300"
+              data-aos-duration="1000" data-aos-easing="ease-in-sine">
               <%= aboutData.description %>
             </p>
             <button type="button" class="btn btn-yellow">Book Visit</button>
           </div>
           <div class="section_about_right">
-            <div class="section_about_card card_active">
+            <div class="section_about_card card_active" data-aos="zoom-in-up">
               <h1 class="about_card_title">Feature Title</h2>
                 <img src="/images/about img/vip.svg" alt="" class="about_card_img">
                 <p class="about_card_content">lorem data is now shown in below</p>
             </div>
-            <div class="section_about_card">
+            <div class="section_about_card" data-aos="zoom-in-up">
               <h1 class="about_card_title">Feature Title</h2>
                 <img src="/images/about img/star_box.svg" alt="" class="about_card_img">
                 <p class="about_card_content">lorem data is now shown in below</p>
             </div>
-            <div class="section_about_card">
+            <div class="section_about_card" data-aos="zoom-in-up">
               <h1 class="about_card_title">Feature Title</h2>
                 <img src="/images/about img/location.svg" alt="" class="about_card_img">
                 <p class="about_card_content">lorem data is now shown in below</p>
             </div>
-            <div class="section_about_card">
+            <div class="section_about_card" data-aos="zoom-in-up">
               <h1 class="about_card_title">Feature Title</h2>
                 <img src="/images/about img/camel.svg" alt="" class="about_card_img">
                 <p class="about_card_content">lorem data is now shown in below</p>
@@ -174,7 +182,8 @@
               </span>
             </div>
             <div class="section_title">Destinations</div>
-            <p class="section_content section_content_left w-100">
+            <p class="section_content section_content_left w-100" data-aos="fade-right" data-aos-offset="300"
+              data-aos-duration="1000" data-aos-easing="ease-in-sine">
               <%= destinationData.shortDescription %>
             </p>
           </div>
@@ -243,7 +252,8 @@
             <div class="section_title">Popular Packages</div>
           </div>
           <div class="section_package_right">
-            <p class="section_content w-100">
+            <p class="section_content w-100" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000"
+              data-aos-easing="ease-in-sine">
               <%= packageData.description %>
             </p>
             <div class="section_package_btn"> <a href="/packages"><button type="button" class="btn btn-yellow">View

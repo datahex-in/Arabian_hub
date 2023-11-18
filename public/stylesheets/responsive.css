@@ -64,7 +64,7 @@
   .section_home_data {
     position: absolute;
     left: 0em;
-    top: 14em;
+    top: 15em;
     z-index: 4;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
