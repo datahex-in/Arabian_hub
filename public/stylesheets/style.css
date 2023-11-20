@@ -19,6 +19,7 @@
   --card-colour: #072c54;
   --footer-bg: #081c32;
   --dark_form_bg: #3b4856;
+  --section-content-color: #09233f;
   --golden-title: #eed66f;
   --Golden-gradient: linear-gradient(
     180deg,
@@ -837,7 +838,8 @@ input[type="date"]:focus::-webkit-datetime-edit {
   padding: 30px;
   border-radius: 10px;
 }
-.card_active {
+.card_active:hover {
+  cursor: pointer;
   background: #08203b;
 }
 .about_card_title {
@@ -1385,7 +1387,12 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 /***** travel_Section *****/
 .section_travel {
+  display: block;
   height: 800px;
+}
+.section_travel_mobile {
+  height: auto;
+  display: none;
 }
 .section_travel_box {
   position: relative;
