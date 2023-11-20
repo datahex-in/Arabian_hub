@@ -7,7 +7,7 @@ router.get("/", async function (req, res, next) {
   const packageData = await package.find();
   const faqData = await faq.find();
   res.render("packages", { title: "Express", packageData, faqData });
-  console.log(packageData);
+  console.log("faqqqs", packageData);
 });
 
 module.exports = router;

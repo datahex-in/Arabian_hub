@@ -247,51 +247,20 @@
                         </div>
                         <div class="accordion_box">
                             <div class="accordion">
-                                <div class="at-item">
-                                    <div class="section-at-title active">
-                                        <h2>Accordion title 1</h2>
-                                        <hr>
+                                <% faqData.forEach((faq, index)=> { %>
+                                    <div class="at-item">
+                                        <div class="section-at-title active">
+                                            <h2>
+                                                <%= faq.question %>
+                                            </h2>
+                                            <hr>
+                                        </div>
+                                        <div class="at-tab" style="display: block;">
+                                            <%= faq.answer %>
+                                        </div>
                                     </div>
-                                    <div class="at-tab" style="display: block;">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                    </div>
-                                </div>
-                                <div class="at-item">
-                                    <div class="section-at-title">
-                                        <h2>Accordion title 2</h2>
-                                        <hr>
-                                    </div>
-                                    <div class="at-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                    </div>
-                                </div>
-                                <div class="at-item">
-                                    <div class="section-at-title">
-                                        <h2>Accordion title 3</h2>
-                                        <hr>
-                                    </div>
-                                    <div class="at-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                    </div>
-                                </div>
-                                <div class="at-item">
-                                    <div class="section-at-title">
-                                        <h2>Accordion title 3</h2>
-                                        <hr>
-                                    </div>
-                                    <div class="at-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                    </div>
-                                </div>
-                                <div class="at-item">
-                                    <div class="section-at-title">
-                                        <h2>Accordion title 3</h2>
-                                        <hr>
-                                    </div>
-                                    <div class="at-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reprehenderit.
-                                    </div>
-                                </div>
+                                    <% }) %>
+
                             </div>
                         </div>
                     </div>

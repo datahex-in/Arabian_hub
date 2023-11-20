@@ -29,10 +29,23 @@
                   </div>
                   <label for="name" class="form__label"></label>
                 </div>
-                <div class="form__group">
-                  <input type="date" class="form__field" required="true" placeholder="Start Date">
-                  <label for="name" class="form__label">Start Date</label>
+                <div class="form__group" id="dateFormGroup">
+                  <input type="date" class="form__field" required="true" placeholder="Start date">
+                  <label for="name" class="form__label" oninput="toggleVisibility(this)">Start Date</label>
                 </div>
+
+                <script>
+                  function toggleVisibility(input) {
+                    var formGroup = input.parentElement; // Get the parent element, which is the form group
+
+                    if (input.value) {
+                      formGroup.style.display = 'none'; // Hide the entire form group if there is a value in the input
+                    } else {
+                      formGroup.style.display = 'block'; // Show the form group if the input is empty
+                    }
+                  }
+                </script>
+
                 <div class="form__group">
                   <input type="date" class="form__field" required="true" placeholder="End Date">
                   <label for="name" class="form__label">End Date</label>
