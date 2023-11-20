@@ -39,39 +39,30 @@
             </div>
             <div class="container">
                 <div class="slider_explore_cards">
-                    <div class="slide_card_items"
+                    <div class="slide_card_items active"
                         style="background-image: url('https://images.unsplash.com/photo-1637846959991-18e54d6e2035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1462&q=80');">
                         <h2>04</h2>
                         <h3>Elbrus, 5462m</h3>
-                        <button type="button" class="btn btn-yellow-gradient">Explore
-                            Packages
-                        </button>
+                        <button type="button" class="btn btn-yellow-gradient">Explore Packages</button>
                     </div>
-                    <div class="slide_card_items active" style="
-            background-image: url('https://images.unsplash.com/photo-1627896157734-4d7d4388f28b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80');
-          ">
+                    <div class="slide_card_items"
+                        style="background-image: url('https://images.unsplash.com/photo-1627896157734-4d7d4388f28b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80');">
                         <h3>K2, 8611m</h3>
                     </div>
-                    <div class="slide_card_items" style="
-            background-image: url('https://images.unsplash.com/photo-1627119703136-3964f14b7325?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80');
-          ">
-                        <h3>Kanchenjunga, 8586m</h3>
+                    <div class="slide_card_items"
+                        style="background-image: url('https://images.unsplash.com/photo-1627896157734-4d7d4388f28b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80');">
+                        <h3>K2, 8611m</h3>
                     </div>
-                    <div class="slide_card_items" style="
-            background-image: url('https://images.unsplash.com/photo-1538279288577-f2551fb138ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
-          ">
+                    <div class="slide_card_items"
+                        style="background-image: url('https://images.unsplash.com/photo-1538279288577-f2551fb138ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');">
                         <h3>Annapurna, 8091m</h3>
                     </div>
-                    <div class="slide_card_items" style="
-            background-image: url('https://images.unsplash.com/photo-1521311587563-6a3fb9fbaff7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-          ">
+                    <div class="slide_card_items"
+                        style="background-image: url('https://images.unsplash.com/photo-1521311587563-6a3fb9fbaff7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
                         <h2>01</h2>
                         <h3>Elbrus, 5462m</h3>
-                        <button type="button" class="btn btn-yellow-gradient">Explore
-                            Packages
-                        </button>
+                        <button type="button" class="btn btn-yellow-gradient">Explore Packages</button>
                     </div>
-                    <div class="about_gradient_bottomleft"></div>
                 </div>
             </div>
             <!-- ========== End package cards ========== -->
@@ -287,16 +278,16 @@
                     // faq_end_section
                 </script>
 
+                <!-- slider_cards -->
                 <script>
-                    const slides = document.querySelectorAll('.slide_card_items');
-                    let active = document.querySelector('.slide_card_items.active');
-
-                    slides.forEach((slide_card_items) => {
-                        slide_card_items.onclick = () => {
-                            active.classList.remove('active');
-                            active = slide_card_items;
-                            slide_card_items.classList.add('active');
-                        }
-                    })
+                    var cardItems = document.querySelectorAll('.slide_card_items');
+                    cardItems.forEach(function (card) {
+                        card.addEventListener('click', function () {
+                            cardItems.forEach(function (innerCard) {
+                                innerCard.classList.remove('active');
+                            });
+                            card.classList.add('active');
+                        });
+                    });
                 </script>
 </body>
