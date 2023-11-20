@@ -608,6 +608,13 @@
     height: 30vh;
     overflow-x: hidden;
   }
+  .section_package_one > img {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /*****tour package Section *****/
