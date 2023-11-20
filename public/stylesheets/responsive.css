@@ -334,6 +334,9 @@
 /***** End activity_Section *****/
 /***** package_Section *****/
 @media (max-width: 600px) {
+  .package_section {
+    margin-top: 3em;
+  }
   .package_cards {
     width: 100%;
     height: auto;
@@ -591,6 +594,7 @@
     font-size: 16px;
   }
   .section_mini_title {
+    margin-bottom: 10px;
     font-size: 18px;
   }
   .adventure_card {
