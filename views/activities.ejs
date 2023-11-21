@@ -123,7 +123,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="activities_box_two" style="background-image:url(/images/sandtours/camelride.svg)">
                             <div class="boxs_button">
                                 <h1>Camel Riding</h1>
@@ -137,7 +136,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- ========== Start travel plan Section ========== -->
             <div class="section_travel">
                 <div class="container">
@@ -169,6 +167,40 @@
             </div>
             <!-- ========== End travel plan Section ========== -->
 
+            <!-- ========== Start Section_faq ========== -->
+            <div class="section_faq">
+                <div class="container">
+                    <div class="section_faq_box">
+                        <div class="section_title">Frequently Asked Questions</div>
+                        <div class="section_faq_tab">
+                            <button type="button" class="btn btn-yellow-gradient">Section 1</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 2</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 3</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 4</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 5</button>
+                        </div>
+                        <div class="accordion_box">
+                            <div class="accordion">
+                                <% faqData.forEach((faq, index)=> { %>
+                                    <div class="at-item">
+                                        <div class="section-at-title active">
+                                            <h2>
+                                                <%= faq.question %>
+                                            </h2>
+                                            <hr>
+                                        </div>
+                                        <div class="at-tab" style="display: block;">
+                                            <%= faq.answer %>
+                                        </div>
+                                    </div>
+                                    <% }) %>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End Section_faq ========== -->
             <!-- ========== Start footer_Section ========== -->
             <%-include("footer.ejs")%>
                 <!-- ========== End footer_Section ========== -->
