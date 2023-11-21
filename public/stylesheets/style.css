@@ -793,6 +793,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .section_about {
   position: relative;
   background-color: var(--about-bg);
+  padding-bottom: 25px;
 }
 .section_about_box {
   width: 100%;

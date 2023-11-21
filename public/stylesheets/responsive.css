@@ -492,6 +492,15 @@
 /***** End faq_Section *****/
 /***** Section_footer *****/
 @media (max-width: 600px) {
+  .content {
+    background: white;
+    width: auto;
+    height: 50px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 60px;
+    overflow: hidden;
+  }
+
   .section_footer_yellow {
     padding: 2em;
     height: auto;
@@ -532,9 +541,9 @@
   }
   .subscription .submit-email {
     position: absolute;
-    top: 9px;
+    top: 6px;
     right: 8px;
-    height: calc(70% - 2px);
+    height: calc(78% - 2px);
     width: 80px;
     border: none;
     outline: none;
@@ -561,7 +570,7 @@
   .subscription .submit-email .before-submit,
   .subscription .submit-email .after-submit {
     position: absolute;
-    top: 0px;
+    top: -1px;
     color: white;
     font-family: var(--font-Montserrat);
     left: 0;
