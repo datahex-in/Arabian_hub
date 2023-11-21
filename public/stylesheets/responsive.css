@@ -247,7 +247,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-gap: 3.5em;
+    grid-gap: 0em;
   }
 
   .section_destination_left {
@@ -259,7 +259,7 @@
     width: 100%;
   }
   .slider {
-    margin: 20px;
+    margin: 0px;
     overflow: hidden;
   }
 
@@ -362,7 +362,7 @@
     margin-top: 20px;
   }
   .section_package_box {
-    padding-top: 8em;
+    padding-top: 6em;
     grid-template-columns: repeat(1, 1fr);
   }
   .section_package_tabs {
@@ -436,6 +436,7 @@
   }
   .section_travel_box {
     position: relative;
+    left: 8px;
     margin-top: 5em;
   }
   .section_travel_img {
@@ -570,7 +571,7 @@
   .subscription .submit-email .before-submit,
   .subscription .submit-email .after-submit {
     position: absolute;
-    top: -1px;
+    top: -px;
     color: white;
     font-family: var(--font-Montserrat);
     left: 0;
