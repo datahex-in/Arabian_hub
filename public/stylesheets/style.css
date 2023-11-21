@@ -1374,6 +1374,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 
 .arrow {
+  display: none;
   margin-top: 4px;
   width: 10px;
   height: 10px;
