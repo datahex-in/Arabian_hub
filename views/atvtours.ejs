@@ -258,12 +258,12 @@
                                         </h2>
                                         <hr>
                                     </div>
-                                    <div class="at-tab" style="display: block;">
+                                    <div class="at-tab" style="display: none;">
+                                        <!-- Set display to none initially -->
                                         <%= faq.answer %>
                                     </div>
                                 </div>
                                 <% }) %>
-
                         </div>
                     </div>
                 </div>
@@ -273,6 +273,25 @@
         <!-- ========== Start footer_Section ========== -->
         <%-include("footer.ejs")%>
             <!-- ========== End footer_Section ========== -->
+            <script>
+                // faq_section
+                $(document).ready(function () {
+                    $(".section-at-title").click(function () {
+                        $(this)
+                            .toggleClass("active")
+                            .next(".at-tab")
+                            .slideToggle()
+                            .parent()
+                            .siblings()
+                            .find(".at-tab")
+                            .slideUp()
+                            .prev()
+                            .removeClass("active");
+                    });
+                });
+                // faq_end_section
+            </script>
+
 </body>
 
 </html>

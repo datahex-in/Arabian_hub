@@ -220,6 +220,28 @@
     width: auto;
     font-size: 12.4px;
   }
+  .about_gradient_topright {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 265.894px;
+    background: #a87403;
+    filter: blur(200px);
+    width: 160.81px;
+    height: 160.894px;
+    z-index: 1;
+  }
+  .about_gradient_bottomleft {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 265.894px;
+    background: #a87403;
+    filter: blur(200px);
+    width: 160.81px;
+    height: 160.894px;
+    z-index: 1;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .section_about_box {
@@ -716,6 +738,7 @@
     width: 100%;
     height: auto;
     border-radius: 16px;
+    gap: 20px;
   }
 }
 
