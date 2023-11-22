@@ -213,45 +213,40 @@
 
         <!-- ========== End travel plan Section ========== -->
 
-        <!-- ========== Start faq_Section ========== -->
+        <!-- ========== Start Section_faq ========== -->
         <div class="section_faq">
             <div class="container">
-                <div class="section_faq">
-                    <div class="container">
-                        <div class="section_faq_box">
-                            <div class="section_title">Frequently Asked Questions</div>
-                            <div class="section_faq_tab">
-                                <button type="button" class="btn btn-yellow-gradient">Section 1</button>
-                                <button type="button" class="btn btn-yellow-gradient">Section 2</button>
-                                <button type="button" class="btn btn-yellow-gradient">Section 3</button>
-                                <button type="button" class="btn btn-yellow-gradient">Section 4</button>
-                                <button type="button" class="btn btn-yellow-gradient">Section 5</button>
-                            </div>
-                            <div class="accordion_box">
-                                <div class="accordion">
-                                    <% faqData.forEach((faq, index)=> { %>
-                                        <div class="at-item">
-                                            <div class="section-at-title active">
-                                                <h2>
-                                                    <%= faq.question %>
-                                                </h2>
-                                                <hr>
-                                            </div>
-                                            <div class="at-tab" style="display: block;">
-                                                <%= faq.answer %>
-                                            </div>
-                                        </div>
-                                        <% }) %>
-
+                <div class="section_faq_box">
+                    <div class="section_title">Frequently Asked Questions</div>
+                    <div class="section_faq_tab">
+                        <button type="button" class="btn btn-yellow-gradient">Section 1</button>
+                        <button type="button" class="btn btn-yellow-gradient">Section 2</button>
+                        <button type="button" class="btn btn-yellow-gradient">Section 3</button>
+                        <button type="button" class="btn btn-yellow-gradient">Section 4</button>
+                        <button type="button" class="btn btn-yellow-gradient">Section 5</button>
+                    </div>
+                    <div class="accordion_box">
+                        <div class="accordion">
+                            <% faqData.forEach((faq, index)=> { %>
+                                <div class="at-item">
+                                    <div class="section-at-title active">
+                                        <h2>
+                                            <%= faq.question %>
+                                        </h2>
+                                        <hr>
+                                    </div>
+                                    <div class="at-tab" style="display: none;">
+                                        <!-- Set display to none initially -->
+                                        <%= faq.answer %>
+                                    </div>
                                 </div>
-                            </div>
+                                <% }) %>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ========== End faq_Section ========== -->
-
+        <!-- ========== End Section_faq ========== -->
         <!-- ========== Start footer ========== -->
         <%-include("footer.ejs")%>
             <!-- ========== End footer ========== -->

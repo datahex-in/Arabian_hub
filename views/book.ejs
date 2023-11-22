@@ -26,12 +26,15 @@
                 <div class="container">
                     <div class="book_vist_rectangle">
                         <div class="form__group">
-                            <input type="date" class="form__field" required="true" placeholder="Start Date">
-                            <label for="name" class="form__label">Start Date</label>
+                            <label for="startDate" class="form__label" id="startDateLabel">Start Date</label>
+                            <input type="date" class="form__field " id="startDate" required="true"
+                                onchange="hideLabel('startDate')">
                         </div>
+
                         <div class="form__group">
-                            <input type="date" class="form__field" required="true" placeholder="End Date">
-                            <label for="name" class="form__label">End Date</label>
+                            <label for="endDate" class="form__label" id="endDateLabel">End Date</label>
+                            <input type="date" class="form__field" id="endDate" required="true"
+                                onchange="hideLabel('endDate')">
                         </div>
                         <div class="form__group">
                             <input type="text" class="form__field" required="true" placeholder="Select Destinations">
@@ -52,5 +55,11 @@
         <!-- ========== Start footer ========== -->
         <%-include("footer.ejs")%>
             <!-- ========== End footer ========== -->
+            <script>
+                function hideLabel(inputId) {
+                    var label = document.getElementById(inputId + 'Label');
+                    label.style.visibility = "hidden";
+                }
+            </script>
 
 </body>
