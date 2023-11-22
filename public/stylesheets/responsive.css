@@ -577,7 +577,7 @@
   .subscription .submit-email .before-submit,
   .subscription .submit-email .after-submit {
     position: absolute;
-    top: -px;
+    top: -1px;
     color: white;
     font-family: var(--font-Montserrat);
     left: 0;
@@ -909,10 +909,6 @@
     display: none;
     height: 800px;
   }
-  .section_travel_mobile {
-    height: auto;
-    display: block;
-  }
   .section_travel_content {
     width: 50vw;
     color: #fff4bd;
@@ -938,6 +934,11 @@
     left: 70px;
     z-index: 1;
     top: 0px;
+  }
+  .section_travel_mobile {
+    height: auto;
+    margin-left: 25px;
+    display: block;
   }
   .section_faq_box {
     margin-top: 40px;
