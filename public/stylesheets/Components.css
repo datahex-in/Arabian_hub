@@ -41,7 +41,7 @@ button {
 }
 
 .btn-yellow {
-  width: 160px !important;
+  width: 180px !important;
   margin-bottom: 0px;
   color: #fff !important;
   background: var(--button, #c69c41) !important;
@@ -72,12 +72,11 @@ button {
 .btn-yellow-gradient:hover {
   background-color: var(--button, #c69c41) !important;
 }
-.travel_btn {
+.btn-darkblue {
   margin-top: 2em;
   margin-left: 3px;
-  width: 180px;
+  width: 160px !important;
   height: 50px;
-  position: relative;
   padding: 20px;
   border-radius: 8px !important;
   background: linear-gradient(to right, #122e50, #1b3963, #27487c);
@@ -111,7 +110,7 @@ button {
   .btn {
     width: 120px;
     height: 40px;
-    font-size: 12px !important;
+    font-size: 14px !important;
     padding: 0em !important;
   }
   .travel_btn {
@@ -125,6 +124,7 @@ button {
     height: 50px;
   }
   .btn-yellow {
+    width: 160px !important;
     margin-bottom: 10px;
   }
 }

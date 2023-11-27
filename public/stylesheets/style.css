@@ -1093,12 +1093,23 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .section_package_btn {
   position: relative;
-  width: 150px;
+  top: 30px;
+  width: 190px !important;
 }
-.section_btn_arrow {
+.section_view_arrow {
   position: absolute;
-  right: 36px;
-  top: 11px;
+  top: 12px;
+  right: 40px;
+}
+.section_explore_arrow {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+.section_curate_arrow {
+  position: absolute;
+  right: 30px;
+  top: 40px;
 }
 .section_package_tabs {
   position: relative;
@@ -1292,7 +1303,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   padding-top: 5em;
   background-color: var(--about-bg);
   height: auto;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .section_activity_items img {
   width: 100%;
@@ -1430,16 +1441,6 @@ input[type="date"]:focus::-webkit-datetime-edit {
   line-height: 70.5px; /* 119.492% */
 }
 
-.section_travel_btn {
-  width: 180px;
-  position: relative;
-  top: 3px;
-}
-.section_travel_arrow {
-  position: absolute;
-  right: 10px;
-  top: 40px;
-}
 /***** End travel_Section *****/
 
 /***** Section_faq *****/
