@@ -1108,7 +1108,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .section_curate_arrow {
   position: absolute;
-  right: 30px;
+  right: 40px;
   top: 40px;
 }
 .section_package_tabs {
@@ -1372,9 +1372,10 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .accordion__content {
   color: var(--desc-colour, #d9d9d9);
   font-family: var(--font-Montserrat);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  margin-bottom: 30px;
 }
 .accordion__active .accordion__content-wrap {
   display: block;
@@ -1458,8 +1459,8 @@ input[type="date"]:focus::-webkit-datetime-edit {
   border-radius: 16px;
 }
 .accordion {
+  margin: 20px auto;
   max-width: 1170px;
-  margin: 40px auto 0;
 }
 
 .at-tab {
