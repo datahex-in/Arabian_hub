@@ -58,7 +58,7 @@
     width: auto;
     padding: 10px 0px;
     font-size: 13px;
-    line-height: 22px; /* 28.98px */
+    line-height: 23px; /* 28.98px */
     letter-spacing: -0.3px;
   }
   .section_home_data {
@@ -359,6 +359,21 @@
 @media (max-width: 600px) {
   .package_section {
     margin-top: 3em;
+  }
+  .section_package_btn {
+    position: relative;
+    top: 15px;
+    width: 190px !important;
+  }
+  .section_view_arrow {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+  }
+  .section_explore_arrow {
+    position: absolute;
+    top: 12px;
+    right: 34px;
   }
   .package_cards {
     width: 100%;

@@ -1093,12 +1093,23 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .section_package_btn {
   position: relative;
-  width: 150px;
+  top: 30px;
+  width: 190px !important;
 }
-.section_btn_arrow {
+.section_view_arrow {
   position: absolute;
-  right: 36px;
-  top: 11px;
+  top: 12px;
+  right: 40px;
+}
+.section_explore_arrow {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+.section_curate_arrow {
+  position: absolute;
+  right: 40px;
+  top: 40px;
 }
 .section_package_tabs {
   position: relative;
@@ -1292,7 +1303,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   padding-top: 5em;
   background-color: var(--about-bg);
   height: auto;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .section_activity_items img {
   width: 100%;
@@ -1361,9 +1372,10 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .accordion__content {
   color: var(--desc-colour, #d9d9d9);
   font-family: var(--font-Montserrat);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  margin-bottom: 30px;
 }
 .accordion__active .accordion__content-wrap {
   display: block;
@@ -1430,16 +1442,6 @@ input[type="date"]:focus::-webkit-datetime-edit {
   line-height: 70.5px; /* 119.492% */
 }
 
-.section_travel_btn {
-  width: 180px;
-  position: relative;
-  top: 3px;
-}
-.section_travel_arrow {
-  position: absolute;
-  right: 10px;
-  top: 40px;
-}
 /***** End travel_Section *****/
 
 /***** Section_faq *****/
@@ -1457,8 +1459,8 @@ input[type="date"]:focus::-webkit-datetime-edit {
   border-radius: 16px;
 }
 .accordion {
+  margin: 20px auto;
   max-width: 1170px;
-  margin: 40px auto 0;
 }
 
 .at-tab {
