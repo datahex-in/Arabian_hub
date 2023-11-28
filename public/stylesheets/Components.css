@@ -39,9 +39,11 @@ button {
   color: white !important;
   background: var(--button, #c69c41) !important;
 }
-
+#btn-large {
+  width: 190px !important;
+}
 .btn-yellow {
-  width: 180px !important;
+  width: 134px !important;
   margin-bottom: 0px;
   color: #fff !important;
   background: var(--button, #c69c41) !important;
@@ -67,13 +69,20 @@ button {
   position: absolute;
   top: 37px;
   left: 55px;
+  opacity: 0; /* Initially hide the arrow */
+  transition: opacity 0.3s ease; /* Add a transition effect for a smoother change */
 }
 
 .btn-yellow-gradient:hover {
   background-color: var(--button, #c69c41) !important;
 }
+
+.btn-yellow-gradient:hover::after {
+  opacity: 1; /* Show the arrow when the button is hovered */
+}
+
 .btn-darkblue {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-left: 3px;
   width: 160px !important;
   height: 50px;
@@ -124,7 +133,10 @@ button {
     height: 50px;
   }
   .btn-yellow {
-    width: 160px !important;
+    width: 110px !important;
     margin-bottom: 10px;
+  }
+  #btn-large {
+    width: 165px !important;
   }
 }

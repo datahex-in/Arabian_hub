@@ -626,8 +626,15 @@ li {
   padding: 10px 10px;
   max-width: 250px;
 }
+.form_label {
+  color: #c2c2c2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .form__field {
-  width: 180px;
+  width: 220px;
   cursor: pointer;
   color: #c2c2c2;
   font-family: var(--font-Montserrat);
@@ -1099,17 +1106,17 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .section_view_arrow {
   position: absolute;
   top: 12px;
-  right: 40px;
+  right: 65px;
 }
 .section_explore_arrow {
   position: absolute;
   top: 12px;
-  right: 14px;
+  right: 8px;
 }
 .section_curate_arrow {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 36px;
+  top: 28px;
 }
 .section_package_tabs {
   position: relative;
@@ -1362,7 +1369,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 .accordion:hover .accordion__title,
 .accordion__active .accordion__title {
-  background: var(--button-color);
+  background: none;
 }
 .accordion__content-wrap {
   background: var(--color-base-1);
