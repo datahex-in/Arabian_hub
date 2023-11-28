@@ -23,16 +23,20 @@
                         <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
                             <div class="footer_logo"><img src="/images/logo/logo_svg.svg" alt=""></div>
                             <div class="footer_content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    omnis eum minima blanditiis .
-                                    sunt corrupti?</p>
+                                <p>At Arabian Hub, we are your passport to unforgettable journeys and cherished
+                                    memories.</p>
                             </div>
                             <div class="social-links">
-                                <a href="#"><i><img src="/images/footer img/instagram_logo.svg" alt=""></i></a>
-                                <a href="#"><i><img src="/images/footer img/facebook_logo.svg" alt=""></i></a>
-                                <a href="#"><i><img src="/images/footer img/twiiter_logo.svg" alt=""></i></a>
-                                <a href="#"><i><img src="/images/footer img/youtube_logo.svg" alt=""></i></a>
-                                <a href="#"><i><img src="/images/footer img/linkedin_logo.svg" alt=""></i></a>
+                                <a href=" <%= aboutData.instagram %>"><i><img
+                                            src="/images/footer img/instagram_logo.svg" alt=""></i></a>
+                                <a href="<%= aboutData.facebook %>"><i><img src="/images/footer img/facebook_logo.svg"
+                                            alt=""></i></a>
+                                <a href="<%= aboutData.twitter %>"><i><img src="/images/footer img/twiiter_logo.svg"
+                                            alt=""></i></a>
+                                <a href="<%= aboutData.youtube %>"><i><img src="/images/footer img/youtube_logo.svg"
+                                            alt=""></i></a>
+                                <a href="<%= aboutData.linkedIn %>"><i><img src="/images/footer img/linkedin_logo.svg"
+                                            alt=""></i></a>
                             </div>
                         </div>
                         <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
@@ -49,19 +53,23 @@
                             <h4>Reach out to us</h4>
                             <ul>
                                 <li><a href="#"><img src="/images/footer img/call_logo.svg" alt="">
-                                        <span>+91700000000</span> </a>
+                                        <span>
+                                            <%= aboutData.mobile %>
+                                        </span> </a>
                                 </li>
                                 <li><a href="#"><img src="/images/footer img/msg_logo.svg" alt="">
-                                        <span>info@arabianhub.com</span></a>
+                                        <span>
+                                            <%= aboutData.email %>
+                                        </span></a>
                                 </li>
                             </ul>
                         </div>
                         <div class="footer-col col-xl-3 col-12 col-sm-6 col-md-4">
                             <h4>Registered Office</h4>
                             <ul>
-                                <li><a href="#"><img src="/images/footer img/loc_logo.svg" alt=""> <span>Arabian Tour
-                                            Hub
-                                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 553236</span></a></li>
+                                <li><a href="#"><img src="/images/footer img/loc_logo.svg" alt=""> <span>
+                                            <%= aboutData.address %>
+                                        </span></a></li>
                             </ul>
                         </div>
                     </div>
