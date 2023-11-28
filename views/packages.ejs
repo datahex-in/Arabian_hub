@@ -82,8 +82,11 @@
                                     <%= packageData[0].price%>
                                 </div>
                                 <div>
-                                    <a href="/packagesname"> <button type="button" class="btn btn-yellow-gradient">Know
-                                            More </button></a>
+
+                                    <a href="<%= `/packagesname/${packageData[0]._id}` %>">
+                                        <button type="button" class="btn btn-yellow-gradient">Know More</button>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -125,8 +128,9 @@
                                     <%= packageData[1].price%>
                                 </div>
                                 <div>
-                                    <a href="/packagesname"> <button type="button" class="btn btn-yellow-gradient">Know
-                                            More </button></a>
+                                    <a href="<%= `/packagesname/${packageData[1]._id}` %>">
+                                        <button type="button" class="btn btn-yellow-gradient">Know More</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -168,8 +172,9 @@
                                     <%= packageData[2].price%>
                                 </div>
                                 <div>
-                                    <a href="/packagesname"> <button type="button" class="btn btn-yellow-gradient">Know
-                                            More </button></a>
+                                    <a href="<%= `/packagesname/${packageData[2]._id}` %>">
+                                        <button type="button" class="btn btn-yellow-gradient">Know More</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
