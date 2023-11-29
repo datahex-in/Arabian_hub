@@ -1017,6 +1017,9 @@ input[type="date"]:focus::-webkit-datetime-edit {
   height: auto;
 }
 /* tours sections___________- */
+.section_packagename_right {
+  overflow-x: hidden;
+}
 .section_package_one {
   width: 100%;
   height: auto;
@@ -2574,6 +2577,7 @@ input::placeholder {
 .book_vist_rectangle {
   display: flex;
   justify-content: space-evenly;
+  overflow-x: hidden;
   gap: 40px;
   flex-wrap: wrap;
   position: relative;

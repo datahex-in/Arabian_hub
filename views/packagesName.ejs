@@ -1,5 +1,4 @@
 <body>
-
     <!-- ========== Start header navbar ========== -->
     <%-include("header.ejs")%>
         <!-- ========== End navbar ========== -->
@@ -32,215 +31,217 @@
             </div>
         </div>
         <!-- ========== Start overview_Section ========== -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-12">
-                    <h1 class="section_sub_title">Overview</h1>
-                    <p class="section_content">
-                        <%= packageData.description %>
-                    </p>
-                    <div class="included_excluded-section" style="margin-top: 80px;">
-                        <h1 class="section_sub_title">Included/Excluded</h1>
-                        <div class="feature_title_items">
-                            <div class="feature_title_tick">
+        <div class="section_packagename_right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-12">
+                        <h1 class="section_sub_title">Overview</h1>
+                        <p class="section_content w-100">
+                            <%= packageData.description %>
+                        </p>
+                        <div class="included_excluded-section" style="margin-top: 80px;">
+                            <h1 class="section_sub_title">Included/Excluded</h1>
+                            <div class="feature_title_items">
+                                <div class="feature_title_tick">
 
-                                <p class="section_included_content">
-                                    <span class="section_content_right">
-                                        <img src="/images/sandtours/tick.svg" alt="">
-                                    </span>
-                                    <%= packageData.included %>
-                                </p>
+                                    <p class="section_included_content">
+                                        <span class="section_content_right">
+                                            <img src="/images/sandtours/tick.svg" alt="">
+                                        </span>
+                                        <%= packageData.included %>
+                                    </p>
 
-                            </div>
-                            <div class="feature_title_tick">
-
-                                <p class="section_included_content">
-                                    <span class="section_content_right">
-                                        <img src="/images/sandtours/wrong.svg" alt="">
-                                    </span>
-                                    <%= packageData.excluded %>
-                                </p>
-
+                                </div>
+                                <div class="feature_title_tick">
+                                    <p class="section_included_content">
+                                        <span class="section_content_right">
+                                            <img src="/images/sandtours/wrong.svg" alt="">
+                                        </span>
+                                        <%= packageData.excluded %>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- ========== Start faq_Section ========== -->
-                    <div class="section_packageName_faq">
-                        <div class="section_faq">
-                            <div class="section_faq_box">
-                                <h1 class="section_sub_title">Tour Plan</h1>
-                                <div class="accordion_box">
-                                    <div class="accordion">
-                                        <% TourPlanData.forEach(function(tour) { %>
-                                            <div class="at-item">
-                                                <div class="section-at-title active">
-                                                    <h2>
-                                                        <%=tour.title %>
-                                                    </h2>
-                                                    <hr>
+                        <!-- ========== Start faq_Section ========== -->
+                        <div class="section_packageName_faq">
+                            <div class="section_faq">
+                                <div class="section_faq_box">
+                                    <h1 class="section_sub_title">Tour Plan</h1>
+                                    <div class="accordion_box">
+                                        <div class="accordion">
+                                            <% TourPlanData.forEach(function(tour, index) { %>
+                                                <div class="at-item">
+                                                    <div class="section-at-title">
+                                                        <h2>
+                                                            <%= tour.title %>
+                                                        </h2>
+                                                        <hr>
+                                                    </div>
+                                                    <div class="at-tab" style="display: none;">
+                                                        <%= tour.description %>
+                                                            <div class="section_included_title mt-2">
+                                                                <p class="section_included_content">
+                                                                    <span class="section_content_right">
+                                                                        <img src="/images/sandtours/tick.svg" alt="">
+                                                                    </span>
+                                                                    Featured Title
+                                                                </p>
+                                                            </div>
+                                                            <div class="section_included_title mt-2">
+                                                                <p class="section_included_content">
+                                                                    <span class="section_content_right">
+                                                                        <img src="/images/sandtours/tick.svg" alt="">
+                                                                    </span>
+                                                                    Featured Title
+                                                                </p>
+                                                            </div>
+                                                    </div>
                                                 </div>
-                                                <div class="at-tab" style="display: block;">
-                                                    <%=tour.description %>
-                                                        <div class="section_included_title mt-2">
-                                                            <p class="section_included_content">
-                                                                <span class="section_content_right">
-                                                                    <img src="/images/sandtours/tick.svg" alt="">
-                                                                </span>
-                                                                Featured Title
-                                                            </p>
-                                                        </div>
-                                                        <div class="section_included_title mt-2">
-                                                            <p class="section_included_content">
-                                                                <span class="section_content_right">
-                                                                    <img src="/images/sandtours/tick.svg" alt="">
-                                                                </span>
-                                                                Featured Title
-                                                            </p>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                            <% }); %>
+                                                <% }); %>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== End faq_Section ========== -->
+                        <!-- ========== Start location_Section ========== -->
+                        <div class="section_packagename_location">
+                            <h1 class="section_sub_title">Location</h1>
+                            <iframe class="mt-5"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.600473273236!2d-122.42695442458076!3d37.77596521209215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a2095575d9%3A0xbc85b6412cf68b83!2sPatricia%E2%80%99s%20Green%20In%20Hayes%20Valley!5e0!3m2!1sen!2sin!4v1699521966419!5m2!1sen!2sin"
+                                width="850" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <!-- ========== End location_Section ========== -->
+                        <!-- ========== Start tour_Amenties_Section ========== -->
 
-                                    </div>
+                        <!-- ========== End tour_Amenties_Section ========== -->
+                        <!-- ========== Start quick_tips_Section ========== -->
+                        <div class="section_quick_tips">
+                            <h1 class="section_sub_title">Quick Tips</h1>
+                            <div class="section_tips_one">
+                                <div class="section_weather_data">
+                                    <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
+                                    <span>
+                                        <p class="section_content">Weather at Ras-al-Khaimah</p>
+                                    </span>
+                                </div>
+                                <div class="section_weather_details">
+                                    <p class="section_content">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit.
+                                        Ullam
+                                        animi, quidem ex itaque
+                                        corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
+                                        amet
+                                        delectus
+                                        harum dolor voluptas aspernatur quisquam.</p>
+                                </div>
+                            </div>
+                            <div class="section_tips_one">
+                                <div class="section_weather_data">
+                                    <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
+                                    <span>
+                                        <p class="section_content">Weather at Ras-al-Khaimah</p>
+                                    </span>
+                                </div>
+                                <div class="section_weather_details">
+                                    <p class="section_content">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit.
+                                        Ullam
+                                        animi, quidem ex itaque
+                                        corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
+                                        amet
+                                        delectus
+                                        harum dolor voluptas aspernatur quisquam.</p>
+                                </div>
+                            </div>
+                            <div class="section_tips_one">
+                                <div class="section_weather_data">
+                                    <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
+                                    <span>
+                                        <p class="section_content">Weather at Ras-al-Khaimah</p>
+                                    </span>
+                                </div>
+                                <div class="section_weather_details">
+                                    <p class="section_content">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit.
+                                        Ullam
+                                        animi, quidem ex itaque
+                                        corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
+                                        amet
+                                        delectus
+                                        harum dolor voluptas aspernatur quisquam.</p>
                                 </div>
                             </div>
                         </div>
+                        <!-- ========== End quick_tips_Section ========== -->
                     </div>
-                    <!-- ========== End faq_Section ========== -->
-                    <!-- ========== Start location_Section ========== -->
-                    <div class="section_packagename_location">
-                        <h1 class="section_sub_title">Location</h1>
-                        <iframe class="mt-5"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.600473273236!2d-122.42695442458076!3d37.77596521209215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a2095575d9%3A0xbc85b6412cf68b83!2sPatricia%E2%80%99s%20Green%20In%20Hayes%20Valley!5e0!3m2!1sen!2sin!4v1699521966419!5m2!1sen!2sin"
-                            width="850" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <!-- ========== End location_Section ========== -->
-                    <!-- ========== Start tour_Amenties_Section ========== -->
-
-                    <!-- ========== End tour_Amenties_Section ========== -->
-                    <!-- ========== Start quick_tips_Section ========== -->
-                    <div class="section_quick_tips">
-                        <h1 class="section_sub_title">Quick Tips</h1>
-                        <div class="section_tips_one">
-                            <div class="section_weather_data">
-                                <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
-                                <span>
-                                    <p class="section_content">Weather at Ras-al-Khaimah</p>
-                                </span>
-                            </div>
-                            <div class="section_weather_details">
-                                <p class="section_content">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit.
-                                    Ullam
-                                    animi, quidem ex itaque
-                                    corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
-                                    amet
-                                    delectus
-                                    harum dolor voluptas aspernatur quisquam.</p>
-                            </div>
-                        </div>
-                        <div class="section_tips_one">
-                            <div class="section_weather_data">
-                                <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
-                                <span>
-                                    <p class="section_content">Weather at Ras-al-Khaimah</p>
-                                </span>
-                            </div>
-                            <div class="section_weather_details">
-                                <p class="section_content">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit.
-                                    Ullam
-                                    animi, quidem ex itaque
-                                    corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
-                                    amet
-                                    delectus
-                                    harum dolor voluptas aspernatur quisquam.</p>
-                            </div>
-                        </div>
-                        <div class="section_tips_one">
-                            <div class="section_weather_data">
-                                <span><img src="/images/quick tips/weather_img.svg" alt=""></span>
-                                <span>
-                                    <p class="section_content">Weather at Ras-al-Khaimah</p>
-                                </span>
-                            </div>
-                            <div class="section_weather_details">
-                                <p class="section_content">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit.
-                                    Ullam
-                                    animi, quidem ex itaque
-                                    corrupti ab debitis et assumenda maiores, illo repellendus tempore cum,
-                                    amet
-                                    delectus
-                                    harum dolor voluptas aspernatur quisquam.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ========== End quick_tips_Section ========== -->
-                </div>
-                <div class="col-12 col-xl-4 ">
-                    <div class="included_section">
-                        <div class="included_activites ">
-                            <h1 class="mini_sub_title">Included Activities</h1>
-                            <hr style="border: 1px solid grey;">
-                            <div class="include_activities_list_one">
-                                <p class="section_content"><span><img src="/images/sandtours/safari.svg" alt=""></span>
-                                    Desert Safari</p>
-                                <p class="section_content"><span><img src="/images/sandtours/trecking.svg"
-                                            alt=""></span>
-                                    Mountain Trekking</p>
-                                <p class="section_content"><span><img src="/images/sandtours/riding.svg" alt=""></span>
-                                    Camel Riding</p>
-                                <p class="section_content"><span><img src="/images/sandtours/boarding.svg"
-                                            alt=""></span>
-                                    Sand Boarding</p>
-                                <p class="section_content"> <span><img src="/images/sandtours/hot_baloons.svg"
-                                            alt=""></span>Hot
-                                    Air Balloon</p>
-                                <p class="section_content"><span><img src="/images/sandtours/sky.svg" alt=""></span>
-                                    Sky Diving</p>
-                            </div>
-                            <h1 class="mini_sub_title">Add-on Activities</h1>
-                            <hr style="border: 1px solid grey;">
-                            <div class="include_activities_list_two">
-                                <div class="include_activities_one">
-                                    <div><img src="/images/sandtours/boarding.svg" alt=""></div>
-                                    <div>
-                                        <p class="section_content"> Ziplining</p>
-                                        <h3>AED 150</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="include_activities_two"><button> + ADD</button></div>
-                            <div class="include_activities_list_two">
-                                <div class="include_activities_one">
-                                    <div><img src="/images/sandtours/boarding.svg" alt=""></div>
-                                    <div>
-                                        <p class="section_content"> Mountain Camping</p>
-                                        <h3>AED 150</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="include_activities_two"><button> + ADD</button></div>
-                            <div>
-                                <p class="section_package_book"> <a href="/book"><button>Book
-                                            Visit</button></a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 ">
                         <div class="included_section">
-                            <h3 class="included_section_headtitle">How about creating your very own personalized
-                                journey?
-                            </h3>
-                            <p class="included_section_headcontent">It's the perfect way to make your travel experience
-                                uniquely yours.</p>
-                            <div class="included_section_headbtn">
-                                <p class="section_package_book"> <a href="/book"><button>Curate your trip
-                                        </button></a>
-                                </p>
+                            <div class="included_activites ">
+                                <h1 class="mini_sub_title">Included Activities</h1>
+                                <hr style="border: 1px solid grey;">
+                                <div class="include_activities_list_one">
+                                    <p class="section_content"><span><img src="/images/sandtours/safari.svg"
+                                                alt=""></span>
+                                        Desert Safari</p>
+                                    <p class="section_content"><span><img src="/images/sandtours/trecking.svg"
+                                                alt=""></span>
+                                        Mountain Trekking</p>
+                                    <p class="section_content"><span><img src="/images/sandtours/riding.svg"
+                                                alt=""></span>
+                                        Camel Riding</p>
+                                    <p class="section_content"><span><img src="/images/sandtours/boarding.svg"
+                                                alt=""></span>
+                                        Sand Boarding</p>
+                                    <p class="section_content"> <span><img src="/images/sandtours/hot_baloons.svg"
+                                                alt=""></span>Hot
+                                        Air Balloon</p>
+                                    <p class="section_content"><span><img src="/images/sandtours/sky.svg" alt=""></span>
+                                        Sky Diving</p>
+                                </div>
+                                <h1 class="mini_sub_title">Add-on Activities</h1>
+                                <hr style="border: 1px solid grey;">
+                                <div class="include_activities_list_two">
+                                    <div class="include_activities_one">
+                                        <div><img src="/images/sandtours/boarding.svg" alt=""></div>
+                                        <div>
+                                            <p class="section_content"> Ziplining</p>
+                                            <h3>AED 150</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="include_activities_two"><button> + ADD</button></div>
+                                <div class="include_activities_list_two">
+                                    <div class="include_activities_one">
+                                        <div><img src="/images/sandtours/boarding.svg" alt=""></div>
+                                        <div>
+                                            <p class="section_content"> Mountain Camping</p>
+                                            <h3>AED 150</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="include_activities_two"><button> + ADD</button></div>
+                                <div>
+                                    <p class="section_package_book"> <a href="/book"><button>Book
+                                                Visit</button></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4">
+                            <div class="included_section">
+                                <h3 class="included_section_headtitle">How about creating your very own personalized
+                                    journey?
+                                </h3>
+                                <p class="included_section_headcontent">It's the perfect way to make your travel
+                                    experience
+                                    uniquely yours.</p>
+                                <div class="included_section_headbtn">
+                                    <p class="section_package_book"> <a href="/book"><button>Curate your trip
+                                            </button></a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -345,25 +346,44 @@
             </div>
         </div>
         <!-- ========== End similar_Section ========== -->
+
         <!-- ========== Start travel plan Section ========== -->
         <div class="section_travel">
             <div class="container">
                 <div class="section_travel_box">
                     <img src="/images/travel img/travel men.svg" alt="" class="section_travel_img">
                     <div class="section_travel_items">
-                        <h2 class="section_travel_content">Ensure your travel plans align seamlessly
-                            with
-                            your Schedule!</h2>
-                        <h1 class="section_travel_title">Customize your very own travel experience.
-                        </h1>
-                        <div class="section_travel_btn"> <button class=" btn travel_btn">Curate Your
-                                Trip</button> <span class="section_travel_arrow"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <h2 class="section_travel_content">Ensure your travel plans align seamlessly with your Schedule!
+                        </h2>
+                        <h1 class="section_travel_title">Customize your very own travel experience.</h1>
+                        <div class="section_package_btn">
+                            <a href="/activities"><button type="button" class="btn btn-darkblue">
+                                    Curate Your Trip
+                                </button></a>
+                            <div class="section_curate_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                                    fill="none">
                                     <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                     <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727" stroke="white"
                                         stroke-linecap="round" stroke-linejoin="round" />
-                                </svg></span></div>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_travel_mobile">
+            <div class="container">
+                <div class="section_travel_box">
+                    <img src="/images/travel img/travel men_mobile.svg" alt="" class="section_travel_img">
+                    <div class="section_travel_items">
+                        <h2 class="section_travel_content">Ensure your travel plans align seamlessly with your Schedule!
+                        </h2>
+                        <h1 class="section_travel_title">Customize your very own travel experience.</h1>
+                        <div class="section_travel_btn"> <button class=" btn btn-darkblue">Curate Your Trip</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -408,23 +428,18 @@
                 <%-include("footer.ejs")%>
             </div>
             <!-- ========== End footer ========== -->
+            d_section
+            </script>
             <script>
-                // faq_section
                 $(document).ready(function () {
-                    $(".section-at-title").click(function () {
-                        $(this)
-                            .toggleClass("active")
-                            .next(".at-tab")
-                            .slideToggle()
-                            .parent()
-                            .siblings()
-                            .find(".at-tab")
-                            .slideUp()
-                            .prev()
-                            .removeClass("active");
+                    $('.section-at-title').click(function (e) {
+                        e.preventDefault(); // Prevent the default behavior of the click event
+
+                        // Toggle the display of the corresponding at-tab
+                        $(this).parent('.at-item').find('.at-tab').slideToggle();
                     });
                 });
-                // faq_end_section
             </script>
+
             <!-- ========== End overview_Section ========== -->
 </body>
