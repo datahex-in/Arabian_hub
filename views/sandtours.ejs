@@ -4,7 +4,7 @@
         <!-- ========== End navbar ========== -->
         <div class=" section_sand">
             <div class="section_package_one">
-                <img src="/images/sandtours/sand.svg" alt="" loading="lazy">
+                <img src="/images/banner_img/banner_one.svg" alt="" loading="lazy">
                 <div class="section_experience_one">
                     <div class="section_experience_bar">
                         <hr class="section_bar">
@@ -44,75 +44,40 @@
                                 </div>
                                 <div class="section_activity_right">
                                     <div class="accordion__list">
-                                        <div class="accordion">
-                                            <span class="accordion__title">
-                                                Dune Bashing
-                                                <span class="arrow"></span>
-                                            </span>
-                                            <div class="accordion__content-wrap">
-                                                <div class="accordion__content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Consequatur facere fuga fugit iusto
-                                                    libero modi. Consectetur delectus eligendi esse id laboriosam
-                                                    mollitia nam, necessitatibus nihil
-                                                    nisi quae repellendus reprehenderit veniam?
+                                        <% activityData.forEach((activity, index)=> { %>
+                                            <div class="accordion">
+                                                <span class="accordion__title">
+                                                    <%=activity.title%>
+                                                        <span class="arrow"></span>
+                                                </span>
+                                                <div class="accordion__content-wrap">
+                                                    <div class="accordion__content" data-aos="fade-right"
+                                                        data-aos-duration="2000" data-aos-easing="linear">
+                                                        <%=activity.description%>
+                                                    </div>
                                                 </div>
+
                                             </div>
-                                        </div>
-                                        <div class="accordion">
-                                            <span class="accordion__title ">
-                                                Camel Riding
-                                                <span class="arrow"></span>
-                                            </span>
-                                            <div class="accordion__content-wrap">
-                                                <div class="accordion__content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Consequatur facere fuga fugit iusto
-                                                    libero modi. Consectetur delectus eligendi esse id laboriosam
-                                                    mollitia nam, necessitatibus nihil
-                                                    nisi quae repellendus reprehenderit veniam?
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion">
-                                            <span class="accordion__title ">
-                                                Sky Diving
-                                                <span class="arrow"></span>
-                                            </span>
-                                            <div class="accordion__content-wrap">
-                                                <div class="accordion__content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Consequatur facere fuga fugit iusto
-                                                    libero modi. Consectetur delectus eligendi esse id laboriosam
-                                                    mollitia nam, necessitatibus nihil
-                                                    nisi quae repellendus reprehenderit veniam?
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion">
-                                            <span class="accordion__title ">
-                                                Sky View Edge Walk
-                                                <span class="arrow"></span>
-                                            </span>
-                                            <div class="accordion__content-wrap">
-                                                <div class="accordion__content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Consequatur facere fuga fugit iusto
-                                                    libero modi. Consectetur delectus eligendi esse id laboriosam
-                                                    mollitia nam, necessitatibus nihil
-                                                    nisi quae repellendus reprehenderit veniam?data
-                                                </div>
-                                            </div>
-                                        </div>
+                                            <% }) %>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="section_activity_btn">
+                    <div class="section_explore_btn">
                         <div class="section_package_btn"> <a href="/activities"><button type="button"
-                                    class="btn btn-yellow">Explore
-                                    Activities</button></a>
+                                    class="btn btn-yellow" id="btn-large">Explore
+                                    Activities
+                                </button></a>
+                            <div class="section_explore_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                                    fill="none">
+                                    <path d="M2.72725 12.7727L12.2727 3.22728" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M2.72725 3.22728L12.2727 3.22728L12.2727 12.7727" stroke="white"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
                     <div class="section_activity_gradient"><img src="/images/activity img/yellow gradient.svg" alt="">
@@ -120,6 +85,7 @@
                 </div>
             </div>
             <!-- ========== End Section ========== -->
+
             <!-- ========== Start similar packages  ========== -->
             <div class="package_section">
                 <div class="container">
@@ -295,60 +261,48 @@
             <!-- ========== Start Section_faq ========== -->
             <div class="section_faq">
                 <div class="container">
-                    <div class="section_faq">
-                        <div class="container">
-                            <div class="section_faq_box">
-                                <div class="section_title">Frequently Asked Questions</div>
-                                <div class="section_faq_tab">
-                                    <button type="button" class="btn btn-yellow-gradient">Section 1</button>
-                                    <button type="button" class="btn btn-yellow-gradient">Section 2</button>
-                                    <button type="button" class="btn btn-yellow-gradient">Section 3</button>
-                                    <button type="button" class="btn btn-yellow-gradient">Section 4</button>
-                                    <button type="button" class="btn btn-yellow-gradient">Section 5</button>
-                                </div>
-                                <div class="accordion_box">
-                                    <div class="accordion">
-                                        <% faqData.forEach((faq, index)=> { %>
-                                            <div class="at-item">
-                                                <div class="section-at-title active">
-                                                    <h2>
-                                                        <%= faq.question %>
-                                                    </h2>
-                                                    <hr>
-                                                </div>
-                                                <div class="at-tab" style="display: block;">
-                                                    <%= faq.answer %>
-                                                </div>
-                                            </div>
-                                            <% }) %>
-
+                    <div class="section_faq_box">
+                        <div class="section_title">Frequently Asked Questions</div>
+                        <div class="section_faq_tab">
+                            <button type="button" class="btn btn-yellow-gradient">Section 1</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 2</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 3</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 4</button>
+                            <button type="button" class="btn btn-yellow-gradient">Section 5</button>
+                        </div>
+                        <div class="accordion_box">
+                            <div class="accordion">
+                                <% faqData.forEach((faq, index)=> { %>
+                                    <div class="at-item">
+                                        <div class="section-at-title active">
+                                            <h2>
+                                                <%= faq.question %>
+                                            </h2>
+                                            <hr>
+                                        </div>
+                                        <div class="at-tab" style="display: none;">
+                                            <!-- Set display to none initially -->
+                                            <%= faq.answer %>
+                                        </div>
                                     </div>
-                                </div>
+                                    <% }) %>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- ========== End Section_faq ========== -->
-            <!-- ========== Start footer ========== -->
-            <%-include("footer.ejs")%>
-                <!-- ========== End footer ========== -->
-                <script>
-                    // faq_section
-                    $(document).ready(function () {
-                        $(".section-at-title").click(function () {
-                            $(this)
-                                .toggleClass("active")
-                                .next(".at-tab")
-                                .slideToggle()
-                                .parent()
-                                .siblings()
-                                .find(".at-tab")
-                                .slideUp()
-                                .prev()
-                                .removeClass("active");
+                <!-- ========== End Section_faq ========== -->
+                <!-- ========== Start footer ========== -->
+                <%-include("footer.ejs")%>
+                    <!-- ========== End footer ========== -->
+
+                    <script>
+                        $(document).ready(function () {
+                            $('.section-at-title').click(function (e) {
+                                e.preventDefault(); // Prevent the default behavior of the click event
+
+                                // Toggle the display of the corresponding at-tab
+                                $(this).parent('.at-item').find('.at-tab').slideToggle();
+                            });
                         });
-                    });
-                    // faq_end_section
-                </script>
+                    </script>
 </body>

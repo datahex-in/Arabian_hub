@@ -1028,6 +1028,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .section_package_one > img {
   width: 100%;
   height: auto;
+  filter: brightness(0.7);
 }
 .tour_section_header {
   position: absolute;

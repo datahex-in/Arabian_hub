@@ -343,6 +343,10 @@
   .section_activity_right {
     margin-left: 20px;
   }
+  .section_activity_left {
+    width: 95%;
+    margin: auto;
+  }
   .accordion__title {
     padding: 8px 24px;
     font-size: 16px;
@@ -379,7 +383,7 @@
   .section_view_arrow {
     position: absolute;
     top: 11.5px;
-    right: 87px;
+    right: 80px;
   }
   .section_explore_arrow {
     position: absolute;
@@ -689,6 +693,7 @@
   .section_package_one > img {
     width: 100%;
     height: auto;
+    filter: brightness(0.7);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

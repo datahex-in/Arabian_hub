@@ -27,8 +27,8 @@
                 <div class="dropdown">
                     <input class="text-box" type="text" placeholder="Sort by Popularity" readonly>
                     <div class="options">
-                        <div onclick="show('HTML')">HTML</div>
-                        <div onclick="show('CSS')">CSS</div>
+                        <div onclick="show('HTML')">Plan 1</div>
+                        <div onclick="show('CSS')">Plan 2</div>
                     </div>
                 </div>
             </div>
@@ -115,8 +115,7 @@
                                 <h1>Desert Safari</h1>
                                 <div class="activities_explore">
                                     <button>Explore Packages </button>
-                                    <div class="chevron_tl"><img src="/images/sandtours/arrow-down-left.svg" alt=""
-                                            data-aos="fade-up" data-aos-duration="3000">
+                                    <div class="chevron_tl"><img src="/images/sandtours/arrow-down-left.svg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +248,6 @@
                     function show(value) {
                         document.querySelector(".text-box").value = value;
                     }
-
                     let dropdown = document.querySelector(".dropdown");
                     dropdown.onclick = function () {
                         dropdown.classList.toggle("active");
